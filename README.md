@@ -156,6 +156,7 @@ DQAgent/
 ├── requirements.txt               # 패키지 목록
 ├── .env.example                   # 환경변수 예시
 ├── CLAUDE.md                      # Claude Code 컨텍스트 문서
+├── run_compare.sh                 # 실행 + Before/After 비교 + ROI 분석 통합 스크립트
 │
 ├── agents/
 │   ├── stage1_duckdb_agent.py     # DuckDB 프로파일링 + 규칙 검증
@@ -167,7 +168,10 @@ DQAgent/
 │
 ├── tools/
 │   ├── compare.py                 # 원본 ↔ 처리본 변경 비교 (ANSI 색상)
-│   └── compare_duckdb.py          # DuckDB SQL 기반 비교 분석
+│   ├── compare_duckdb.py          # DuckDB SQL 기반 비교 분석
+│   ├── compare_table.py           # Before/After 표 + 시간 비교 출력
+│   ├── roi_pandas.py              # pandas 기반 ROI 분석 + Excel 저장
+│   └── make_ppt.py                # 소개 PPT 자동 생성
 │
 ├── tests/
 │   ├── test_stage1.py
@@ -176,16 +180,17 @@ DQAgent/
 │   ├── test_stage3b.py
 │   └── test_stage4.py
 │
-├── .claude/
-│   ├── settings.json              # Claude Code 훅 설정
-│   └── hooks/
-│       ├── check_env.py           # 세션 시작 시 환경 점검
-│       ├── check_syntax.py        # Python 파일 편집 후 문법 검사
-│       ├── guard_api_key.py       # API 키 노출 방지
-│       └── notify_report.py       # 파이프라인 완료 알림
-│
-├── run_dq.ps1                     # Windows PowerShell 실행 스크립트
-└── run_dq.sh                      # Git Bash / WSL 실행 스크립트
+└── .claude/
+    ├── settings.json              # Claude Code 훅 설정
+    ├── commands/                  # Claude Code 커스텀 슬래시 커맨드
+    │   ├── dq-run.md              # /dq-run  — 파이프라인 실행
+    │   ├── dq-result.md           # /dq-result — Before/After 결과 표
+    │   └── dq-cost.md             # /dq-cost — ROI/비용 분석
+    └── hooks/                     # Claude Code 자동화 훅 (bash)
+        ├── check_env.sh           # 세션 시작 시 환경 점검
+        ├── check_syntax.sh        # Python 파일 편집 후 문법 검사
+        ├── guard_api_key.sh       # API 키 노출 방지
+        └── notify_report.sh       # 파이프라인 완료 알림
 ```
 
 ---
@@ -201,7 +206,7 @@ pip install -r requirements.txt
 **환경변수 설정:**
 ```bash
 cp .env.example .env
-# .env 파일을 열어 OPENAI_API_KEY 입력
+# .env 파일을 열어 OPENAI_API_KEY 입력 (--skip-openai 사용 시 불필요)
 ```
 
 > **Claude CLI 설치 필요** (Stage 2B용):  
@@ -210,27 +215,6 @@ cp .env.example .env
 ---
 
 ## 실행 방법
-
-### PowerShell (Windows)
-
-```powershell
-# 실행 권한 설정 (최초 1회)
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-
-# 실행
-.\run_dq.ps1 data.json
-.\run_dq.ps1 data.jsonl --batch-size 100
-.\run_dq.ps1 data.csv --skip-openai
-```
-
-### Git Bash / WSL / Mac
-
-```bash
-chmod +x run_dq.sh
-./run_dq.sh data.json
-./run_dq.sh data.jsonl --batch-size 100
-./run_dq.sh data.csv --skip-openai
-```
 
 ### Python 직접 실행
 
@@ -244,6 +228,30 @@ python main.py data.json --batch-size 100 --skip-openai
 |------|--------|------|
 | `--batch-size N` | 500 | 배치 크기 |
 | `--skip-openai` | False | Stage 3A OpenAI 판단 건너뜀 |
+
+### 실행 + 비교 + ROI 한 번에 (run_compare.sh)
+
+```bash
+chmod +x run_compare.sh
+./run_compare.sh data.json
+./run_compare.sh data.json --batch-size 200
+```
+
+실행 후 다음을 자동으로 출력합니다:
+- Stage 1 위반 탐지 표
+- Before / After 변경 내역 표
+- pandas ROI 분석 (Excel 저장 포함)
+- Agent 소요시간 vs 수동 검토 속도 비교
+
+### Claude Code 커스텀 커맨드
+
+Claude Code 채팅창에서 슬래시 커맨드로 실행할 수 있습니다.
+
+| 커맨드 | 설명 |
+|--------|------|
+| `/dq-run [파일]` | 파이프라인 실행. 파일 미지정 시 최근 파일 자동 탐지 |
+| `/dq-result` | 최신 보고서 Before/After 표 + Critical 위반 목록 출력 |
+| `/dq-cost [--hourly-rate N]` | ROI 분석. 인건비 기본값 30,000원/시간 |
 
 ---
 
@@ -271,8 +279,32 @@ python tools/compare.py sample_input.json report/output_report.json
 
 # DuckDB SQL 분석 (8가지 프리셋 쿼리)
 python tools/compare_duckdb.py sample_input.json report/output_report.json --all
-python tools/compare_duckdb.py sample_input.json report/output_report.json --query 4
-python tools/compare_duckdb.py sample_input.json report/output_report.json --sql "SELECT field, COUNT(*) FROM changelog GROUP BY field"
+
+# Before/After 표 + 시간 비교
+python tools/compare_table.py sample_input.json report/output_report.json
+
+# pandas ROI 분석 + Excel 저장
+python tools/roi_pandas.py sample_input.json report/output_report.json --hourly-rate 30000 --export roi_result.xlsx
+```
+
+---
+
+## Claude Code 훅
+
+`.claude/hooks/` 의 bash 스크립트가 Claude Code 이벤트에 자동 실행됩니다.
+
+| 이벤트 | 파일 | 동작 |
+|--------|------|------|
+| `SessionStart` | `check_env.sh` | Claude CLI 설치 확인, report/ 디렉토리 생성, ANTHROPIC_API_KEY 경고 |
+| `PreToolUse (Bash)` | `guard_api_key.sh` | 명령어에 API 키 직접 포함 시 실행 전 차단 |
+| `PostToolUse (Write\|Edit)` | `check_syntax.sh` | .py 파일 수정 후 문법 오류 즉시 알림 |
+| `PostToolUse (Bash)` | `notify_report.sh` | main.py 완료 시 최신 보고서 경로 자동 주입 |
+
+훅 수동 테스트:
+```bash
+bash .claude/hooks/check_env.sh
+echo '{"tool_input":{"file_path":"agents/stage1_duckdb_agent.py"}}' | bash .claude/hooks/check_syntax.sh
+echo '{"tool_input":{"command":"python main.py data.json"},"tool_response":{"exit_code":0}}' | bash .claude/hooks/notify_report.sh
 ```
 
 ---
@@ -290,16 +322,16 @@ python tools/compare_duckdb.py sample_input.json report/output_report.json --sql
 [Stage1] 완료 — 위반 6건 (C:4 W:0 I:2)
 [Stage2A-Det] 완료 — 변경 58건 / 이상치(2B 대상) 2건
 [Stage2B-Claude] 모호성 판단 시작 — 2건 대상
-[Stage2B-Claude] 완료 — 추가 변경 4건 / 해석 4건
+[Stage2B-Claude] 완료 — 추가 변경 3건 / 해석 4건
 [Stage3B-Numerical] 완료 — 환각 0건, 수치위반 2건
 [Stage4-Report] 완료 — 최종 DQ 점수: 94/100 (A등급)
 
 ================================================================
-  소요 시간    : 124.5초
+  소요 시간    : 110.7초
   최종 DQ 점수 : 94/100  [A등급 — 우수]
   Critical     : 6개 필드
   Warning      : 0개 필드
-  보고서       : report/customer_data_report_20260630.json
+  보고서       : report/customer_data_report_20260702.json
 ================================================================
 ```
 
@@ -327,5 +359,7 @@ python tools/compare_duckdb.py sample_input.json report/output_report.json --sql
 | DuckDB | 통계 프로파일링, 규칙 검증, 비교 분석 |
 | Claude CLI (OAuth) | 이상치 해석 LLM (API 크레딧 소모 없음) |
 | OpenAI API | 교차검증 판사 (선택) |
-| pandas | 데이터 변환 및 DuckDB 등록 |
+| pandas | 데이터 변환 및 ROI 분석 |
+| tabulate | 터미널 표 출력 |
+| python-pptx | 소개 PPT 자동 생성 |
 | TypedDict schemas | 스테이지 간 상태 계약 |
