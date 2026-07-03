@@ -10,10 +10,27 @@ import argparse
 import json
 import math
 import os
+import re
 import sys
+from datetime import datetime
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
+
+
+class _Tee:
+    """stdout을 터미널과 파일에 동시에 출력. 파일에는 ANSI 코드를 제거."""
+    def __init__(self, term, file_):
+        self._term = term
+        self._file = file_
+    def write(self, data):
+        self._term.write(data)
+        self._file.write(re.sub(r"\033\[[0-9;]*m", "", data))
+    def flush(self):
+        self._term.flush()
+        self._file.flush()
+    def isatty(self):
+        return self._term.isatty()
 
 import pandas as pd
 from tabulate import tabulate
@@ -227,10 +244,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("original")
     ap.add_argument("report")
-    ap.add_argument("--agent-sec",  type=float, default=0)
-    ap.add_argument("--pandas-sec", type=float, default=0)
-    ap.add_argument("--max-rows",   type=int,   default=40)
+    ap.add_argument("--agent-sec",   type=float, default=0)
+    ap.add_argument("--pandas-sec",  type=float, default=0)
+    ap.add_argument("--max-rows",    type=int,   default=40)
+    ap.add_argument("--save-report", metavar="DIR", default=None,
+                    help="결과 텍스트를 지정 디렉터리에 저장 (예: report/)")
     args = ap.parse_args()
+
+    _file_handle = None
+    if args.save_report:
+        os.makedirs(args.save_report, exist_ok=True)
+        stem     = os.path.splitext(os.path.basename(args.report))[0]
+        out_path = os.path.join(args.save_report, f"{stem}_dq_result.txt")
+        _file_handle = open(out_path, "w", encoding="utf-8")
+        sys.stdout = _Tee(sys.__stdout__, _file_handle)
 
     df_before             = load_original(args.original)
     df_after, changelog, meta = load_report(args.report)
@@ -241,6 +268,11 @@ def main():
     print_violations(meta["violations"])
     print_before_after(df_before, df_after, changelog, args.max_rows)
     print_time_comparison(args.agent_sec, args.pandas_sec, meta, cl_count)
+
+    if _file_handle:
+        sys.stdout = sys.__stdout__
+        _file_handle.close()
+        print(f"  결과 저장: {out_path}")
 
 
 if __name__ == "__main__":

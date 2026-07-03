@@ -24,7 +24,7 @@
 
 4. Bash 도구로 roi_pandas.py 를 실행합니다:
    ```
-   python tools/roi_pandas.py <원본파일> <보고서파일> --hourly-rate <N>
+   python tools/roi_pandas.py <원본파일> <보고서파일> --hourly-rate <N> --save-report report/
    ```
    `--export` 가 요청된 경우 `--export roi_result.xlsx` 를 추가합니다.
 

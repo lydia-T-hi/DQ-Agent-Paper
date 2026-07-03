@@ -20,6 +20,12 @@
             "type": "command",
             "command": "bash .claude/hooks/guard_api_key.sh",
             "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/check_input_path.sh",
+            "timeout": 5,
+            "statusMessage": "입력 경로 보안 검사 중..."
           }
         ]
       }
@@ -33,6 +39,12 @@
             "command": "bash .claude/hooks/check_syntax.sh",
             "timeout": 10,
             "statusMessage": "Python 문법 검사 중..."
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/check_schema_drift.sh",
+            "timeout": 10,
+            "statusMessage": "스키마 무결성 확인 중..."
           }
         ]
       },
@@ -43,6 +55,12 @@
             "type": "command",
             "command": "bash .claude/hooks/notify_report.sh",
             "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/validate_report_json.sh",
+            "timeout": 10,
+            "statusMessage": "보고서 무결성 검증 중..."
           }
         ]
       }

@@ -13,10 +13,30 @@ import argparse
 import json
 import math
 import os
+import re
 import sys
 from datetime import datetime
 
 import pandas as pd
+
+
+class _Tee:
+    """stdout을 터미널과 파일에 동시에 출력. 파일에는 ANSI 코드를 제거."""
+    def __init__(self, term, file_):
+        self._term = term
+        self._file = file_
+    def write(self, data):
+        try:
+            self._term.write(data)
+        except UnicodeEncodeError:
+            enc = getattr(self._term, "encoding", "utf-8") or "utf-8"
+            self._term.write(data.encode(enc, errors="replace").decode(enc))
+        self._file.write(re.sub(r"\033\[[0-9;]*m", "", data))
+    def flush(self):
+        self._term.flush()
+        self._file.flush()
+    def isatty(self):
+        return self._term.isatty()
 
 # ── 기본 가정값 ─────────────────────────────────────────────────────────────
 _DEFAULT_HOURLY_RATE    = 30_000   # 원/시간 (수동 검토자 인건비)
@@ -250,7 +270,20 @@ def main():
         "--export", metavar="FILE",
         help="결과를 Excel 파일로 내보내기 (예: roi_result.xlsx)"
     )
+    ap.add_argument(
+        "--save-report", metavar="DIR", default=None,
+        help="결과 텍스트를 지정 디렉터리에 저장 (예: report/)"
+    )
     args = ap.parse_args()
+
+    _file_handle = None
+    _out_path    = None
+    if args.save_report:
+        os.makedirs(args.save_report, exist_ok=True)
+        stem      = os.path.splitext(os.path.basename(args.report))[0]
+        _out_path = os.path.join(args.save_report, f"{stem}_dq_cost.txt")
+        _file_handle = open(_out_path, "w", encoding="utf-8")
+        sys.stdout = _Tee(sys.__stdout__, _file_handle)
 
     print()
     print("=" * 70)
@@ -340,6 +373,11 @@ def main():
 
     print("=" * 70)
     print()
+
+    if _file_handle:
+        sys.stdout = sys.__stdout__
+        _file_handle.close()
+        print(f"  결과 저장: {_out_path}")
 
 
 if __name__ == "__main__":

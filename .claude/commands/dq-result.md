@@ -18,7 +18,7 @@
 
 3. Bash 도구로 compare_table.py 를 실행합니다:
    ```
-   python tools/compare_table.py <원본파일> <보고서파일> --agent-sec 0 --pandas-sec 0 --max-rows 60
+   python tools/compare_table.py <원본파일> <보고서파일> --agent-sec 0 --pandas-sec 0 --max-rows 60 --save-report report/
    ```
 
 4. 출력 결과를 그대로 표시한 뒤, 아래 항목을 추가로 요약합니다:

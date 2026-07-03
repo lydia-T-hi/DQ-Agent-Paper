@@ -16,7 +16,7 @@ _PANDAS_EXTS = {".xlsx", ".xls"}
 
 
 def _reader_expr(path: str, ext: str) -> str:
-    safe = path.replace("\\", "/")
+    safe = path.replace("\\", "/").replace("'", "''")
     return {
         ".csv":     f"read_csv_auto('{safe}')",
         ".tsv":     f"read_csv_auto('{safe}', delim='\t')",
