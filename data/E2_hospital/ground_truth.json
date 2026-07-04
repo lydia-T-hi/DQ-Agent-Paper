@@ -1,0 +1,3571 @@
+{
+  "source": "BigDaMa/raha (Apache-2.0), datasets/hospital",
+  "note": "실제 오류 — 합성 아님. 유형(T1~T5) 미분류. F1은 상한 추정치로 해석 (04 §2.3, §5)",
+  "total_rows": 1000,
+  "error_cells": 509,
+  "ground_truth": [
+    {
+      "row": 0,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery",
+      "corrupted": "surgery patients who were taking heart drugs caxxed beta bxockers before coming to the hospitax who were kept on the beta bxockers during the period just before and after their surgery"
+    },
+    {
+      "row": 3,
+      "col": "city",
+      "type": "unknown",
+      "original": "birmingham",
+      "corrupted": "birminghxm"
+    },
+    {
+      "row": 7,
+      "col": "city",
+      "type": "unknown",
+      "original": "birmingham",
+      "corrupted": "birmingxam"
+    },
+    {
+      "row": 10,
+      "col": "city",
+      "type": "unknown",
+      "original": "sheffield",
+      "corrupted": "sheffxeld"
+    },
+    {
+      "row": 13,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10019",
+      "corrupted": "1xx19"
+    },
+    {
+      "row": 16,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 17,
+      "col": "sample",
+      "type": "unknown",
+      "original": "37 patients",
+      "corrupted": "3x patients"
+    },
+    {
+      "row": 21,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "heart attaxk"
+    },
+    {
+      "row": 22,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "government - hospxtal dxstrxct or authorxty"
+    },
+    {
+      "row": 22,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "hearx axxack"
+    },
+    {
+      "row": 24,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3347938701",
+      "corrupted": "334793870x"
+    },
+    {
+      "row": 24,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 26,
+      "col": "name",
+      "type": "unknown",
+      "original": "southeast alabama medical center",
+      "corrupted": "southeast alabama medxcal center"
+    },
+    {
+      "row": 27,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "government - hospital xistrict or authority"
+    },
+    {
+      "row": 31,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "governmenx - hospixal disxricx or auxhorixy"
+    },
+    {
+      "row": 36,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3347938701",
+      "corrupted": "xx479x8701"
+    },
+    {
+      "row": 39,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acxte care hospitals"
+    },
+    {
+      "row": 42,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 42,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "gxvernment - hxspital district xr authxrity"
+    },
+    {
+      "row": 43,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 44,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35957",
+      "corrupted": "x5957"
+    },
+    {
+      "row": 45,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10005",
+      "corrupted": "x0005"
+    },
+    {
+      "row": 46,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 50,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 51,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 56,
+      "col": "city",
+      "type": "unknown",
+      "original": "boaz",
+      "corrupted": "boxz"
+    },
+    {
+      "row": 56,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-3b",
+      "corrupted": "al_pn-xb"
+    },
+    {
+      "row": 57,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "2505 u s highway 431 north",
+      "corrupted": "2505xuxsxhighwayx431xnorth"
+    },
+    {
+      "row": 57,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2565938310",
+      "corrupted": "2x6x938310"
+    },
+    {
+      "row": 60,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2565938310",
+      "corrupted": "2x6x938310"
+    },
+    {
+      "row": 63,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35957",
+      "corrupted": "3595x"
+    },
+    {
+      "row": 65,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2565938310",
+      "corrupted": "2565x38310"
+    },
+    {
+      "row": 67,
+      "col": "county",
+      "type": "unknown",
+      "original": "marshall",
+      "corrupted": "mxrshxll"
+    },
+    {
+      "row": 69,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-1",
+      "corrupted": "al_amx-1"
+    },
+    {
+      "row": 70,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35631",
+      "corrupted": "3563x"
+    },
+    {
+      "row": 72,
+      "col": "county",
+      "type": "unknown",
+      "original": "lauderdale",
+      "corrupted": "laudxrdalx"
+    },
+    {
+      "row": 73,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "hearx axxack"
+    },
+    {
+      "row": 77,
+      "col": "county",
+      "type": "unknown",
+      "original": "lauderdale",
+      "corrupted": "laudexdale"
+    },
+    {
+      "row": 79,
+      "col": "city",
+      "type": "unknown",
+      "original": "florence",
+      "corrupted": "fxorence"
+    },
+    {
+      "row": 81,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10006",
+      "corrupted": "1000x"
+    },
+    {
+      "row": 83,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 88,
+      "col": "city",
+      "type": "unknown",
+      "original": "florence",
+      "corrupted": "florxncx"
+    },
+    {
+      "row": 91,
+      "col": "sample",
+      "type": "unknown",
+      "original": "619 patients",
+      "corrupted": "619 paxienxs"
+    },
+    {
+      "row": 93,
+      "col": "city",
+      "type": "unknown",
+      "original": "florence",
+      "corrupted": "flxrence"
+    },
+    {
+      "row": 93,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35631",
+      "corrupted": "3563x"
+    },
+    {
+      "row": 94,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "702 n main st",
+      "corrupted": "702xnxmainxst"
+    },
+    {
+      "row": 94,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at arrival",
+      "corrupted": "xeart attack patients given aspirin at arrival"
+    },
+    {
+      "row": 97,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-4",
+      "corrupted": "axi-4"
+    },
+    {
+      "row": 98,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 98,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hosxitals"
+    },
+    {
+      "row": 101,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3344933541",
+      "corrupted": "3344x33541"
+    },
+    {
+      "row": 101,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-1",
+      "corrupted": "hfx1"
+    },
+    {
+      "row": 106,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "702 n main st",
+      "corrupted": "702 x maix st"
+    },
+    {
+      "row": 108,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-5c",
+      "corrupted": "pnx5c"
+    },
+    {
+      "row": 111,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery",
+      "corrupted": "surgery patiexts who were takixg heart drugs called beta blockers before comixg to the hospital who were kept ox the beta blockers durixg the period just before axd after their surgery"
+    },
+    {
+      "row": 113,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "volunxary non-profix - privaxe"
+    },
+    {
+      "row": 115,
+      "col": "sample",
+      "type": "unknown",
+      "original": "0 patients",
+      "corrupted": "0 patixnts"
+    },
+    {
+      "row": 119,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 119,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at arrival",
+      "corrupted": "heart attack patients given aspirin at arrivax"
+    },
+    {
+      "row": 120,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-2",
+      "corrupted": "axi-2"
+    },
+    {
+      "row": 120,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "x00%"
+    },
+    {
+      "row": 127,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "heaxt failuxe"
+    },
+    {
+      "row": 131,
+      "col": "name",
+      "type": "unknown",
+      "original": "crenshaw community hospital",
+      "corrupted": "crenshaw cxmmunity hxspital"
+    },
+    {
+      "row": 133,
+      "col": "sample",
+      "type": "unknown",
+      "original": "21 patients",
+      "corrupted": "21 pxtients"
+    },
+    {
+      "row": 136,
+      "col": "county",
+      "type": "unknown",
+      "original": "crenshaw",
+      "corrupted": "crxnshaw"
+    },
+    {
+      "row": 137,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36049",
+      "corrupted": "36x49"
+    },
+    {
+      "row": 139,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36049",
+      "corrupted": "360x9"
+    },
+    {
+      "row": 140,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 145,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at discharge",
+      "corrupted": "heart attaxk patients given aspirin at disxharge"
+    },
+    {
+      "row": 149,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35640",
+      "corrupted": "3x640"
+    },
+    {
+      "row": 157,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35640",
+      "corrupted": "3x640"
+    },
+    {
+      "row": 157,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "pxopxietaxy"
+    },
+    {
+      "row": 157,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 158,
+      "col": "score",
+      "type": "unknown",
+      "original": "98%",
+      "corrupted": "9x%"
+    },
+    {
+      "row": 159,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "proxrietary"
+    },
+    {
+      "row": 161,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "201 pine street northwest",
+      "corrupted": "201 pine sxreex norxhwesx"
+    },
+    {
+      "row": 162,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "xroprietary"
+    },
+    {
+      "row": 163,
+      "col": "score",
+      "type": "unknown",
+      "original": "57%",
+      "corrupted": "x7%"
+    },
+    {
+      "row": 164,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "pxopxietaxy"
+    },
+    {
+      "row": 165,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 166,
+      "col": "sample",
+      "type": "unknown",
+      "original": "11 patients",
+      "corrupted": "xx patients"
+    },
+    {
+      "row": 170,
+      "col": "sample",
+      "type": "unknown",
+      "original": "6 patients",
+      "corrupted": "6xpatients"
+    },
+    {
+      "row": 171,
+      "col": "name",
+      "type": "unknown",
+      "original": "marshall medical center north",
+      "corrupted": "marshall medical cenxer norxh"
+    },
+    {
+      "row": 175,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "8000 alabama highway 69",
+      "corrupted": "8000 alabama xigxway 69"
+    },
+    {
+      "row": 177,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-2",
+      "corrupted": "hf-x"
+    },
+    {
+      "row": 180,
+      "col": "city",
+      "type": "unknown",
+      "original": "guntersville",
+      "corrupted": "guntxrsvillx"
+    },
+    {
+      "row": 182,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 187,
+      "col": "score",
+      "type": "unknown",
+      "original": "95%",
+      "corrupted": "95x"
+    },
+    {
+      "row": 190,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-inf-4",
+      "corrupted": "scip-inx-4"
+    },
+    {
+      "row": 193,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-vte-2",
+      "corrupted": "al_scix-vte-2"
+    },
+    {
+      "row": 196,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35235",
+      "corrupted": "3x23x"
+    },
+    {
+      "row": 199,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hosxitals"
+    },
+    {
+      "row": 199,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "heaxt attack"
+    },
+    {
+      "row": 207,
+      "col": "city",
+      "type": "unknown",
+      "original": "birmingham",
+      "corrupted": "birmixgham"
+    },
+    {
+      "row": 208,
+      "col": "score",
+      "type": "unknown",
+      "original": "95%",
+      "corrupted": "x5%"
+    },
+    {
+      "row": 210,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients assessed and given influenza vaccination",
+      "corrupted": "pneumoniaxpatientsxassessedxandxgivenxinfluenzaxvaccination"
+    },
+    {
+      "row": 212,
+      "col": "city",
+      "type": "unknown",
+      "original": "birmingham",
+      "corrupted": "bxrmxngham"
+    },
+    {
+      "row": 213,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10011",
+      "corrupted": "x00xx"
+    },
+    {
+      "row": 213,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutx carx hospitals"
+    },
+    {
+      "row": 213,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-inf-2",
+      "corrupted": "al_sxip-inf-2"
+    },
+    {
+      "row": 216,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "jeffersxn"
+    },
+    {
+      "row": 216,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "volunxary non-profix - privaxe"
+    },
+    {
+      "row": 217,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2058383122",
+      "corrupted": "2058x8x122"
+    },
+    {
+      "row": 218,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "voluntary nonxprofit x private"
+    },
+    {
+      "row": 219,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at arrival",
+      "corrupted": "heartxattackxpatientsxgivenxaspirinxatxarrival"
+    },
+    {
+      "row": 221,
+      "col": "county",
+      "type": "unknown",
+      "original": "de kalb",
+      "corrupted": "dx kalb"
+    },
+    {
+      "row": 221,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - church",
+      "corrupted": "voluntaryxnon-profitx-xchurch"
+    },
+    {
+      "row": 223,
+      "col": "county",
+      "type": "unknown",
+      "original": "de kalb",
+      "corrupted": "xe kalb"
+    },
+    {
+      "row": 224,
+      "col": "sample",
+      "type": "unknown",
+      "original": "1 patients",
+      "corrupted": "1 patiexts"
+    },
+    {
+      "row": 225,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "hexrt attxck"
+    },
+    {
+      "row": 227,
+      "col": "county",
+      "type": "unknown",
+      "original": "de kalb",
+      "corrupted": "dx kalb"
+    },
+    {
+      "row": 228,
+      "col": "city",
+      "type": "unknown",
+      "original": "fort payne",
+      "corrupted": "fort payxe"
+    },
+    {
+      "row": 228,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 228,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2568453150",
+      "corrupted": "2568453x50"
+    },
+    {
+      "row": 229,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "heart faxlure"
+    },
+    {
+      "row": 232,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35968",
+      "corrupted": "359x8"
+    },
+    {
+      "row": 234,
+      "col": "sample",
+      "type": "unknown",
+      "original": "82 patients",
+      "corrupted": "82 patientx"
+    },
+    {
+      "row": 236,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "suxgical infection pxevention"
+    },
+    {
+      "row": 237,
+      "col": "score",
+      "type": "unknown",
+      "original": "97%",
+      "corrupted": "9x%"
+    },
+    {
+      "row": 238,
+      "col": "county",
+      "type": "unknown",
+      "original": "de kalb",
+      "corrupted": "xe kalb"
+    },
+    {
+      "row": 238,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - church",
+      "corrupted": "voxuntary non-profit - church"
+    },
+    {
+      "row": 238,
+      "col": "score",
+      "type": "unknown",
+      "original": "99%",
+      "corrupted": "xx%"
+    },
+    {
+      "row": 239,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgxcal infectxon preventxon"
+    },
+    {
+      "row": 243,
+      "col": "name",
+      "type": "unknown",
+      "original": "dekalb regional medical center",
+      "corrupted": "dexalb regional medical center"
+    },
+    {
+      "row": 244,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10015",
+      "corrupted": "x00x5"
+    },
+    {
+      "row": 244,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-1",
+      "corrupted": "ax_ami-1"
+    },
+    {
+      "row": 247,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3346366221",
+      "corrupted": "xx46x66221"
+    },
+    {
+      "row": 247,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - federal",
+      "corrupted": "governxent - federal"
+    },
+    {
+      "row": 248,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-5",
+      "corrupted": "xl_xmi-5"
+    },
+    {
+      "row": 252,
+      "col": "county",
+      "type": "unknown",
+      "original": "clarke",
+      "corrupted": "xlarke"
+    },
+    {
+      "row": 252,
+      "col": "score",
+      "type": "unknown",
+      "original": "89%",
+      "corrupted": "89x"
+    },
+    {
+      "row": 253,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10015",
+      "corrupted": "1xx15"
+    },
+    {
+      "row": 256,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "xneumonia"
+    },
+    {
+      "row": 256,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics",
+      "corrupted": "pneumonxa patxents whose inxtxal emergency room blood culture was performed prxor to the admxnxstratxon of the fxrst hospxtal dose of antxbxotxcs"
+    },
+    {
+      "row": 256,
+      "col": "score",
+      "type": "unknown",
+      "original": "96%",
+      "corrupted": "x6%"
+    },
+    {
+      "row": 260,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "33700 highway 43",
+      "corrupted": "33700 hxghway 43"
+    },
+    {
+      "row": 261,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3346366221",
+      "corrupted": "334x3xx221"
+    },
+    {
+      "row": 264,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "33700 highway 43",
+      "corrupted": "33700 highway x3"
+    },
+    {
+      "row": 264,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-inf-3",
+      "corrupted": "scxp-xnf-3"
+    },
+    {
+      "row": 266,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 267,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36784",
+      "corrupted": "x6784"
+    },
+    {
+      "row": 269,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-1",
+      "corrupted": "al_axi-1"
+    },
+    {
+      "row": 273,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10016",
+      "corrupted": "1xx16"
+    },
+    {
+      "row": 275,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1000 first street north",
+      "corrupted": "1000 fixst stxeet noxth"
+    },
+    {
+      "row": 278,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 279,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "xeart failure"
+    },
+    {
+      "row": 280,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 281,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics",
+      "corrupted": "pnxumonia patixnts whosx initial emxrgxncy room blood culturx was pxrformxd prior to thx administration of thx first hospital dosx of antibiotics"
+    },
+    {
+      "row": 283,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35007",
+      "corrupted": "3x007"
+    },
+    {
+      "row": 290,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35007",
+      "corrupted": "x5007"
+    },
+    {
+      "row": 290,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery",
+      "corrupted": "all heart surgerx patients whose blood sugar (blood glucose) is kept under good control in the daxs right after surgerx"
+    },
+    {
+      "row": 293,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 295,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1720 university blvd",
+      "corrupted": "1720 univxrsity blvd"
+    },
+    {
+      "row": 311,
+      "col": "city",
+      "type": "unknown",
+      "original": "anniston",
+      "corrupted": "axxistox"
+    },
+    {
+      "row": 312,
+      "col": "county",
+      "type": "unknown",
+      "original": "calhoun",
+      "corrupted": "calhoxn"
+    },
+    {
+      "row": 313,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "prxprietary"
+    },
+    {
+      "row": 314,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10038",
+      "corrupted": "100x8"
+    },
+    {
+      "row": 316,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "301 east 18th st",
+      "corrupted": "301xeastx18thxst"
+    },
+    {
+      "row": 316,
+      "col": "sample",
+      "type": "unknown",
+      "original": "29 patients",
+      "corrupted": "29 xatients"
+    },
+    {
+      "row": 318,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "xes"
+    },
+    {
+      "row": 321,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2562358900",
+      "corrupted": "256235x900"
+    },
+    {
+      "row": 324,
+      "col": "county",
+      "type": "unknown",
+      "original": "calhoun",
+      "corrupted": "caxhoun"
+    },
+    {
+      "row": 325,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36201",
+      "corrupted": "36x01"
+    },
+    {
+      "row": 327,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 332,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36305",
+      "corrupted": "3x305"
+    },
+    {
+      "row": 332,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "proxrietary"
+    },
+    {
+      "row": 332,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 334,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "4370 west main street",
+      "corrupted": "4370xwestxmainxstreet"
+    },
+    {
+      "row": 334,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-2",
+      "corrupted": "al_pnx2"
+    },
+    {
+      "row": 336,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "x00%"
+    },
+    {
+      "row": 337,
+      "col": "name",
+      "type": "unknown",
+      "original": "flowers hospital",
+      "corrupted": "floxers hospital"
+    },
+    {
+      "row": 340,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36305",
+      "corrupted": "x6x05"
+    },
+    {
+      "row": 342,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3347935000",
+      "corrupted": "xx479x5000"
+    },
+    {
+      "row": 346,
+      "col": "county",
+      "type": "unknown",
+      "original": "houston",
+      "corrupted": "housxon"
+    },
+    {
+      "row": 346,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries",
+      "corrupted": "surgery pxtients whose doctors ordered trextments to prevent blood clots xfter certxin types of surgeries"
+    },
+    {
+      "row": 347,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-vte-2",
+      "corrupted": "al_scipxvtex2"
+    },
+    {
+      "row": 349,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-2",
+      "corrupted": "amix2"
+    },
+    {
+      "row": 350,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "810 st vincents drive",
+      "corrupted": "810 st vxncents drxve"
+    },
+    {
+      "row": 350,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 354,
+      "col": "sample",
+      "type": "unknown",
+      "original": "10 patients",
+      "corrupted": "1x patients"
+    },
+    {
+      "row": 356,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 356,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "prxprietary"
+    },
+    {
+      "row": 360,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10086",
+      "corrupted": "100x6"
+    },
+    {
+      "row": 363,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1530 u s highway 43",
+      "corrupted": "1530xuxsxhighwayx43"
+    },
+    {
+      "row": 366,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35594",
+      "corrupted": "3xx94"
+    },
+    {
+      "row": 366,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "pnxumonia"
+    },
+    {
+      "row": 367,
+      "col": "city",
+      "type": "unknown",
+      "original": "winfield",
+      "corrupted": "winfielx"
+    },
+    {
+      "row": 369,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "pnexmonia"
+    },
+    {
+      "row": 370,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-7",
+      "corrupted": "alxpn-7"
+    },
+    {
+      "row": 373,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-inf-2",
+      "corrupted": "al_sxip-inf-2"
+    },
+    {
+      "row": 374,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 375,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35594",
+      "corrupted": "3xx94"
+    },
+    {
+      "row": 378,
+      "col": "score",
+      "type": "unknown",
+      "original": "95%",
+      "corrupted": "x5%"
+    },
+    {
+      "row": 380,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at discharge",
+      "corrupted": "heaxt attack patients given aspixin at dischaxge"
+    },
+    {
+      "row": 381,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2514717110",
+      "corrupted": "25x47x7xx0"
+    },
+    {
+      "row": 384,
+      "col": "name",
+      "type": "unknown",
+      "original": "univ of south alabama medical center",
+      "corrupted": "univ ox south alabama medical center"
+    },
+    {
+      "row": 384,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2514717110",
+      "corrupted": "25x47x7xx0"
+    },
+    {
+      "row": 385,
+      "col": "name",
+      "type": "unknown",
+      "original": "univ of south alabama medical center",
+      "corrupted": "xniv of soxth alabama medical center"
+    },
+    {
+      "row": 386,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 386,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2514717110",
+      "corrupted": "25x47x7xx0"
+    },
+    {
+      "row": 386,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "hxart failurx"
+    },
+    {
+      "row": 387,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_hf-2",
+      "corrupted": "al_hx-2"
+    },
+    {
+      "row": 389,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 389,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given smoking cessation advice/counseling",
+      "corrupted": "heart xailure patients given smoking cessation advice/counseling"
+    },
+    {
+      "row": 391,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-3b",
+      "corrupted": "pn-xb"
+    },
+    {
+      "row": 393,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "124 s memorial dr",
+      "corrupted": "124xsxmemorialxdr"
+    },
+    {
+      "row": 393,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3343614267",
+      "corrupted": "33x361x267"
+    },
+    {
+      "row": 398,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-1",
+      "corrupted": "hx-1"
+    },
+    {
+      "row": 400,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "hxart failurx"
+    },
+    {
+      "row": 402,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 405,
+      "col": "score",
+      "type": "unknown",
+      "original": "94%",
+      "corrupted": "x4%"
+    },
+    {
+      "row": 406,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36067",
+      "corrupted": "3x0x7"
+    },
+    {
+      "row": 408,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10108",
+      "corrupted": "x0x08"
+    },
+    {
+      "row": 409,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-inf-1",
+      "corrupted": "scipxinfx1"
+    },
+    {
+      "row": 410,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 411,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "124 s memorial dr",
+      "corrupted": "124 s mxmorial dr"
+    },
+    {
+      "row": 411,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hosxitals"
+    },
+    {
+      "row": 411,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "1xx%"
+    },
+    {
+      "row": 413,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 413,
+      "col": "sample",
+      "type": "unknown",
+      "original": "125 patients",
+      "corrupted": "125 patixnts"
+    },
+    {
+      "row": 415,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "315 w hickory st",
+      "corrupted": "315 w hickxry st"
+    },
+    {
+      "row": 415,
+      "col": "county",
+      "type": "unknown",
+      "original": "talladega",
+      "corrupted": "tallaxega"
+    },
+    {
+      "row": 418,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "no",
+      "corrupted": "xo"
+    },
+    {
+      "row": 418,
+      "col": "sample",
+      "type": "unknown",
+      "original": "4 patients",
+      "corrupted": "4 xatients"
+    },
+    {
+      "row": 420,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35150",
+      "corrupted": "x5150"
+    },
+    {
+      "row": 426,
+      "col": "score",
+      "type": "unknown",
+      "original": "97%",
+      "corrupted": "x7%"
+    },
+    {
+      "row": 428,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35150",
+      "corrupted": "3x1x0"
+    },
+    {
+      "row": 431,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "315 w hickory st",
+      "corrupted": "315xwxhickoryxst"
+    },
+    {
+      "row": 434,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd)",
+      "corrupted": "heart faxlure patxents gxven ace inhxbxtor or arb for left ventrxcular systolxc dysfunctxon (lvsd)"
+    },
+    {
+      "row": 437,
+      "col": "city",
+      "type": "unknown",
+      "original": "anchorage",
+      "corrupted": "anchoraxe"
+    },
+    {
+      "row": 444,
+      "col": "sample",
+      "type": "unknown",
+      "original": "521 patients",
+      "corrupted": "521 patiexts"
+    },
+    {
+      "row": 447,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor)",
+      "corrupted": "surgeryxpatientsxneedingxhairxremovedxfromxthexsurgicalxareaxbeforexsurgery& xwhoxhadxhairxremovedxusingxaxsaferxmethodx(electricxclippersxorxhairxremovalxcreamxï¿½cxnotxaxrazor)"
+    },
+    {
+      "row": 448,
+      "col": "name",
+      "type": "unknown",
+      "original": "alaska regional hospital",
+      "corrupted": "xlxskx regionxl hospitxl"
+    },
+    {
+      "row": 449,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "proxrietary"
+    },
+    {
+      "row": 451,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "po box 287",
+      "corrupted": "poxboxx287"
+    },
+    {
+      "row": 453,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hospitaxs"
+    },
+    {
+      "row": 456,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "jxffxrson"
+    },
+    {
+      "row": 456,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "gxvernment - hxspital district xr authxrity"
+    },
+    {
+      "row": 457,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "xefferson"
+    },
+    {
+      "row": 462,
+      "col": "sample",
+      "type": "unknown",
+      "original": "0 patients",
+      "corrupted": "x patients"
+    },
+    {
+      "row": 464,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-vte-1",
+      "corrupted": "sxip-vte-1"
+    },
+    {
+      "row": 465,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "jexxerson"
+    },
+    {
+      "row": 467,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "hexrt attxck"
+    },
+    {
+      "row": 471,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3347742601",
+      "corrupted": "334774x601"
+    },
+    {
+      "row": 472,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "126 hospital ave",
+      "corrupted": "126xhospitalxave"
+    },
+    {
+      "row": 473,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given discharge instructions",
+      "corrupted": "heaxt failuxe patients given dischaxge instxuctions"
+    },
+    {
+      "row": 474,
+      "col": "city",
+      "type": "unknown",
+      "original": "ozark",
+      "corrupted": "ozarx"
+    },
+    {
+      "row": 477,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 477,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-2",
+      "corrupted": "ax_pn-2"
+    },
+    {
+      "row": 482,
+      "col": "sample",
+      "type": "unknown",
+      "original": "62 patients",
+      "corrupted": "62 patientx"
+    },
+    {
+      "row": 483,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 484,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "126 hospital ave",
+      "corrupted": "1x6 hospital ave"
+    },
+    {
+      "row": 485,
+      "col": "city",
+      "type": "unknown",
+      "original": "ozark",
+      "corrupted": "xzark"
+    },
+    {
+      "row": 488,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "1xx%"
+    },
+    {
+      "row": 490,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36360",
+      "corrupted": "x6x60"
+    },
+    {
+      "row": 490,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute caxe hospitals"
+    },
+    {
+      "row": 492,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 493,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hxspitals"
+    },
+    {
+      "row": 493,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "voluntaryxnon-profitx-xprivate"
+    },
+    {
+      "row": 493,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd)",
+      "corrupted": "hxart attack patixnts givxn ace inhibitor or arb for lxft vxntricular systolic dysfunction (lvsd)"
+    },
+    {
+      "row": 495,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-5",
+      "corrupted": "ami-x"
+    },
+    {
+      "row": 496,
+      "col": "sample",
+      "type": "unknown",
+      "original": "0 patients",
+      "corrupted": "0 patxents"
+    },
+    {
+      "row": 497,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutx carx hospitals"
+    },
+    {
+      "row": 499,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35960",
+      "corrupted": "x5960"
+    },
+    {
+      "row": 502,
+      "col": "county",
+      "type": "unknown",
+      "original": "cherokee",
+      "corrupted": "chxrokxx"
+    },
+    {
+      "row": 502,
+      "col": "sample",
+      "type": "unknown",
+      "original": "44 patients",
+      "corrupted": "44 paxienxs"
+    },
+    {
+      "row": 504,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 506,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "pneumonix"
+    },
+    {
+      "row": 506,
+      "col": "score",
+      "type": "unknown",
+      "original": "93%",
+      "corrupted": "93x"
+    },
+    {
+      "row": 507,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients assessed and given influenza vaccination",
+      "corrupted": "pneumonix pxtients assessed xnd given influenzx vxccinxtion"
+    },
+    {
+      "row": 511,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 513,
+      "col": "county",
+      "type": "unknown",
+      "original": "cherokee",
+      "corrupted": "chxrokxx"
+    },
+    {
+      "row": 514,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "1xx%"
+    },
+    {
+      "row": 516,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342882100",
+      "corrupted": "3342xx2100"
+    },
+    {
+      "row": 517,
+      "col": "city",
+      "type": "unknown",
+      "original": "montgomery",
+      "corrupted": "montxomery"
+    },
+    {
+      "row": 521,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 523,
+      "col": "sample",
+      "type": "unknown",
+      "original": "257 patients",
+      "corrupted": "25x patients"
+    },
+    {
+      "row": 526,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - church",
+      "corrupted": "volxntary non-profit - chxrch"
+    },
+    {
+      "row": 527,
+      "col": "county",
+      "type": "unknown",
+      "original": "montgomery",
+      "corrupted": "monxgomery"
+    },
+    {
+      "row": 532,
+      "col": "name",
+      "type": "unknown",
+      "original": "baptist medical center south",
+      "corrupted": "baptist medical cexter south"
+    },
+    {
+      "row": 532,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hosxitals"
+    },
+    {
+      "row": 532,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients assessed and given influenza vaccination",
+      "corrupted": "pxeumoxia patiexts assessed axd givex ixfluexza vaccixatiox"
+    },
+    {
+      "row": 532,
+      "col": "sample",
+      "type": "unknown",
+      "original": "87 patients",
+      "corrupted": "87 patientx"
+    },
+    {
+      "row": 536,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 540,
+      "col": "county",
+      "type": "unknown",
+      "original": "montgomery",
+      "corrupted": "montgomexy"
+    },
+    {
+      "row": 541,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at arrival",
+      "corrupted": "hexrt attxck pxtients given aspirin xt arrivxl"
+    },
+    {
+      "row": 544,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36106",
+      "corrupted": "3x10x"
+    },
+    {
+      "row": 545,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given beta blocker at discharge",
+      "corrupted": "heaxt attack patients given beta blockex at dischaxge"
+    },
+    {
+      "row": 546,
+      "col": "sample",
+      "type": "unknown",
+      "original": "0 patients",
+      "corrupted": "x patients"
+    },
+    {
+      "row": 548,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342938000",
+      "corrupted": "3342938xxx"
+    },
+    {
+      "row": 551,
+      "col": "county",
+      "type": "unknown",
+      "original": "montgomery",
+      "corrupted": "monxgomery"
+    },
+    {
+      "row": 554,
+      "col": "sample",
+      "type": "unknown",
+      "original": "74 patients",
+      "corrupted": "74 patxents"
+    },
+    {
+      "row": 555,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "pxeumoxia"
+    },
+    {
+      "row": 555,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-5c",
+      "corrupted": "al_pn-5x"
+    },
+    {
+      "row": 559,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10024",
+      "corrupted": "1xx24"
+    },
+    {
+      "row": 559,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 560,
+      "col": "name",
+      "type": "unknown",
+      "original": "jackson hospital & clinic inc",
+      "corrupted": "jaxkson hospital & xlinix inx"
+    },
+    {
+      "row": 561,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342938000",
+      "corrupted": "33x2938000"
+    },
+    {
+      "row": 562,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342938000",
+      "corrupted": "3342938xxx"
+    },
+    {
+      "row": 562,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery",
+      "corrupted": "allxheartxsurgeryxpatientsxwhosexbloodxsugarx(bloodxglucose)xisxkeptxunderxgoodxcontrolxinxthexdaysxrightxafterxsurgery"
+    },
+    {
+      "row": 564,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "xes"
+    },
+    {
+      "row": 564,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-vte-1",
+      "corrupted": "al_scipxvtex1"
+    },
+    {
+      "row": 567,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-2",
+      "corrupted": "xl_xmi-2"
+    },
+    {
+      "row": 572,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 572,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3347561400",
+      "corrupted": "334x561400"
+    },
+    {
+      "row": 572,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - other",
+      "corrupted": "voluntary non-profit - otxer"
+    },
+    {
+      "row": 578,
+      "col": "city",
+      "type": "unknown",
+      "original": "valley",
+      "corrupted": "vallex"
+    },
+    {
+      "row": 578,
+      "col": "county",
+      "type": "unknown",
+      "original": "chambers",
+      "corrupted": "xhambers"
+    },
+    {
+      "row": 579,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "xes"
+    },
+    {
+      "row": 580,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-5c",
+      "corrupted": "px-5c"
+    },
+    {
+      "row": 580,
+      "col": "sample",
+      "type": "unknown",
+      "original": "50 patients",
+      "corrupted": "50 pxtients"
+    },
+    {
+      "row": 587,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "xes"
+    },
+    {
+      "row": 588,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 588,
+      "col": "sample",
+      "type": "unknown",
+      "original": "172 patients",
+      "corrupted": "172 patxents"
+    },
+    {
+      "row": 590,
+      "col": "city",
+      "type": "unknown",
+      "original": "valley",
+      "corrupted": "vxlley"
+    },
+    {
+      "row": 590,
+      "col": "county",
+      "type": "unknown",
+      "original": "chambers",
+      "corrupted": "chaxbers"
+    },
+    {
+      "row": 592,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 593,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3348972257",
+      "corrupted": "33x8972257"
+    },
+    {
+      "row": 599,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "heart faixure"
+    },
+    {
+      "row": 601,
+      "col": "city",
+      "type": "unknown",
+      "original": "elba",
+      "corrupted": "exba"
+    },
+    {
+      "row": 602,
+      "col": "county",
+      "type": "unknown",
+      "original": "coffee",
+      "corrupted": "coffxx"
+    },
+    {
+      "row": 608,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10027",
+      "corrupted": "x0027"
+    },
+    {
+      "row": 608,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgical ixfectiox prevextiox"
+    },
+    {
+      "row": 612,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery",
+      "corrupted": "all heaxt suxgexy patients whose blood sugax (blood glucose) is kept undex good contxol in the days xight aftex suxgexy"
+    },
+    {
+      "row": 622,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-8a",
+      "corrupted": "al_amix8a"
+    },
+    {
+      "row": 627,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10029",
+      "corrupted": "x0029"
+    },
+    {
+      "row": 628,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 631,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "pneumonxa"
+    },
+    {
+      "row": 633,
+      "col": "county",
+      "type": "unknown",
+      "original": "lee",
+      "corrupted": "xee"
+    },
+    {
+      "row": 634,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 639,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10029",
+      "corrupted": "1xx29"
+    },
+    {
+      "row": 639,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-vte-1",
+      "corrupted": "scip-vtx-1"
+    },
+    {
+      "row": 645,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10032",
+      "corrupted": "1xx32"
+    },
+    {
+      "row": 646,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-7a",
+      "corrupted": "alxami-7a"
+    },
+    {
+      "row": 648,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-1",
+      "corrupted": "hfx1"
+    },
+    {
+      "row": 650,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd)",
+      "corrupted": "heart failure patients given ace inhibitor or arb for left xentricular systolic dysfunction (lxsd)"
+    },
+    {
+      "row": 651,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given smoking cessation advice/counseling",
+      "corrupted": "heart faxlure patxents gxven smokxng cessatxon advxce/counselxng"
+    },
+    {
+      "row": 652,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "209 north main street",
+      "corrupted": "209 xorth maix street"
+    },
+    {
+      "row": 653,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "no",
+      "corrupted": "xo"
+    },
+    {
+      "row": 654,
+      "col": "name",
+      "type": "unknown",
+      "original": "wedowee hospital",
+      "corrupted": "wedowee hosxital"
+    },
+    {
+      "row": 654,
+      "col": "city",
+      "type": "unknown",
+      "original": "wedowee",
+      "corrupted": "wxdowxx"
+    },
+    {
+      "row": 655,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10032",
+      "corrupted": "1xx32"
+    },
+    {
+      "row": 666,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2059344011",
+      "corrupted": "20593xx011"
+    },
+    {
+      "row": 668,
+      "col": "sample",
+      "type": "unknown",
+      "original": "87 patients",
+      "corrupted": "87 paxienxs"
+    },
+    {
+      "row": 672,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "jxffxrson"
+    },
+    {
+      "row": 672,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given pci within 90 minutes of arrival",
+      "corrupted": "heartxattackxpatientsxgivenxpcixwithinx90xminutesxofxarrival"
+    },
+    {
+      "row": 673,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-1",
+      "corrupted": "xf-1"
+    },
+    {
+      "row": 673,
+      "col": "sample",
+      "type": "unknown",
+      "original": "618 patients",
+      "corrupted": "618 xatients"
+    },
+    {
+      "row": 674,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 676,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-4",
+      "corrupted": "hfx4"
+    },
+    {
+      "row": 678,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-3b",
+      "corrupted": "alxpn-3b"
+    },
+    {
+      "row": 679,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35233",
+      "corrupted": "3x233"
+    },
+    {
+      "row": 679,
+      "col": "condition",
+      "type": "unknown",
+      "original": "pneumonia",
+      "corrupted": "xneumonia"
+    },
+    {
+      "row": 685,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35233",
+      "corrupted": "x52xx"
+    },
+    {
+      "row": 689,
+      "col": "county",
+      "type": "unknown",
+      "original": "jefferson",
+      "corrupted": "jexxerson"
+    },
+    {
+      "row": 690,
+      "col": "city",
+      "type": "unknown",
+      "original": "birmingham",
+      "corrupted": "birminxham"
+    },
+    {
+      "row": 691,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-1",
+      "corrupted": "amix1"
+    },
+    {
+      "row": 692,
+      "col": "county",
+      "type": "unknown",
+      "original": "elmore",
+      "corrupted": "elmoxe"
+    },
+    {
+      "row": 694,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-4",
+      "corrupted": "amx-4"
+    },
+    {
+      "row": 695,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute cxre hospitxls"
+    },
+    {
+      "row": 695,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "heart attaxk"
+    },
+    {
+      "row": 696,
+      "col": "city",
+      "type": "unknown",
+      "original": "tallassee",
+      "corrupted": "tallaxxee"
+    },
+    {
+      "row": 697,
+      "col": "name",
+      "type": "unknown",
+      "original": "community hospital inc",
+      "corrupted": "communitx hospital inc"
+    },
+    {
+      "row": 698,
+      "col": "county",
+      "type": "unknown",
+      "original": "elmore",
+      "corrupted": "elxore"
+    },
+    {
+      "row": 698,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart failure",
+      "corrupted": "hexrt fxilure"
+    },
+    {
+      "row": 698,
+      "col": "score",
+      "type": "unknown",
+      "original": "88%",
+      "corrupted": "xx%"
+    },
+    {
+      "row": 699,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342836541",
+      "corrupted": "334x836541"
+    },
+    {
+      "row": 701,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 704,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10034",
+      "corrupted": "100x4"
+    },
+    {
+      "row": 705,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 705,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients given initial antibiotic(s) within 6 hours after arrival",
+      "corrupted": "pxeumoxia patiexts givex ixitial axtibiotic(s) withix 6 hours after arrival"
+    },
+    {
+      "row": 706,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients given the most appropriate initial antibiotic(s)",
+      "corrupted": "pxeumoxia patiexts givex the most appropriate ixitial axtibiotic(s)"
+    },
+    {
+      "row": 710,
+      "col": "name",
+      "type": "unknown",
+      "original": "community hospital inc",
+      "corrupted": "communixy hospixal inc"
+    },
+    {
+      "row": 710,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36078",
+      "corrupted": "36x78"
+    },
+    {
+      "row": 711,
+      "col": "score",
+      "type": "unknown",
+      "original": "100%",
+      "corrupted": "1xx%"
+    },
+    {
+      "row": 712,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgical infection xrevention"
+    },
+    {
+      "row": 713,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342836541",
+      "corrupted": "33x28365x1"
+    },
+    {
+      "row": 713,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor)",
+      "corrupted": "surgery paxienxs needing hair removed from xhe surgical area before surgery who had hair removed using a safer mexhod (elecxric clippers or hair removal cream c nox a razor)"
+    },
+    {
+      "row": 716,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "heartxattack"
+    },
+    {
+      "row": 718,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-3",
+      "corrupted": "amx-3"
+    },
+    {
+      "row": 718,
+      "col": "score",
+      "type": "unknown",
+      "original": "67%",
+      "corrupted": "x7%"
+    },
+    {
+      "row": 721,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10035",
+      "corrupted": "100x5"
+    },
+    {
+      "row": 721,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-7a",
+      "corrupted": "al_amx-7a"
+    },
+    {
+      "row": 722,
+      "col": "county",
+      "type": "unknown",
+      "original": "cullman",
+      "corrupted": "cxllman"
+    },
+    {
+      "row": 724,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10035",
+      "corrupted": "1xx35"
+    },
+    {
+      "row": 729,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 729,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-4",
+      "corrupted": "px-4"
+    },
+    {
+      "row": 730,
+      "col": "name",
+      "type": "unknown",
+      "original": "cullman regional medical center",
+      "corrupted": "cullmxn regionxl medicxl center"
+    },
+    {
+      "row": 730,
+      "col": "county",
+      "type": "unknown",
+      "original": "cullman",
+      "corrupted": "cxllman"
+    },
+    {
+      "row": 733,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "suxgical infection pxevention"
+    },
+    {
+      "row": 735,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "scip-inf-2",
+      "corrupted": "scix-inf-2"
+    },
+    {
+      "row": 736,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1912 alabama highway 157",
+      "corrupted": "1912xalabamaxhighwayx157"
+    },
+    {
+      "row": 736,
+      "col": "city",
+      "type": "unknown",
+      "original": "cullman",
+      "corrupted": "cuxxman"
+    },
+    {
+      "row": 744,
+      "col": "owner",
+      "type": "unknown",
+      "original": "proprietary",
+      "corrupted": "prxprietary"
+    },
+    {
+      "row": 749,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "hf-2",
+      "corrupted": "hx-2"
+    },
+    {
+      "row": 750,
+      "col": "zip",
+      "type": "unknown",
+      "original": "36420",
+      "corrupted": "3642x"
+    },
+    {
+      "row": 751,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342228466",
+      "corrupted": "334xxx8466"
+    },
+    {
+      "row": 752,
+      "col": "county",
+      "type": "unknown",
+      "original": "covington",
+      "corrupted": "coxington"
+    },
+    {
+      "row": 755,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10036",
+      "corrupted": "1xx36"
+    },
+    {
+      "row": 756,
+      "col": "city",
+      "type": "unknown",
+      "original": "andalusia",
+      "corrupted": "andaluxia"
+    },
+    {
+      "row": 758,
+      "col": "name",
+      "type": "unknown",
+      "original": "andalusia regional hospital",
+      "corrupted": "andaxusia regionax hospitax"
+    },
+    {
+      "row": 760,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-inf-2",
+      "corrupted": "al_scipxinfx2"
+    },
+    {
+      "row": 763,
+      "col": "phone",
+      "type": "unknown",
+      "original": "3342228466",
+      "corrupted": "33422284xx"
+    },
+    {
+      "row": 764,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 764,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-vte-1",
+      "corrupted": "al_scix-vte-1"
+    },
+    {
+      "row": 765,
+      "col": "name",
+      "type": "unknown",
+      "original": "andalusia regional hospital",
+      "corrupted": "andaluxia regional hoxpital"
+    },
+    {
+      "row": 767,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "301 east 18th st",
+      "corrupted": "301 east 1xth st"
+    },
+    {
+      "row": 769,
+      "col": "score",
+      "type": "unknown",
+      "original": "93%",
+      "corrupted": "x3%"
+    },
+    {
+      "row": 772,
+      "col": "city",
+      "type": "unknown",
+      "original": "anniston",
+      "corrupted": "annxston"
+    },
+    {
+      "row": 774,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "cac-1",
+      "corrupted": "xax-1"
+    },
+    {
+      "row": 776,
+      "col": "sample",
+      "type": "unknown",
+      "original": "193 patients",
+      "corrupted": "193 paxienxs"
+    },
+    {
+      "row": 777,
+      "col": "name",
+      "type": "unknown",
+      "original": "huntsville hospital",
+      "corrupted": "huntsvxlle hospxtal"
+    },
+    {
+      "row": 779,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 780,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10039",
+      "corrupted": "1003x"
+    },
+    {
+      "row": 780,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "heart attaxk"
+    },
+    {
+      "row": 782,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hospitaxs"
+    },
+    {
+      "row": 784,
+      "col": "owner",
+      "type": "unknown",
+      "original": "government - hospital district or authority",
+      "corrupted": "goverxmext - hospital district or authority"
+    },
+    {
+      "row": 785,
+      "col": "county",
+      "type": "unknown",
+      "original": "madison",
+      "corrupted": "madisxn"
+    },
+    {
+      "row": 785,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given an evaluation of left ventricular systolic (lvs) function",
+      "corrupted": "heaxt failuxe patients given an evaluation of left ventxiculax systolic (lvs) function"
+    },
+    {
+      "row": 787,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_hf-4",
+      "corrupted": "al_hf-x"
+    },
+    {
+      "row": 788,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-2",
+      "corrupted": "pn-x"
+    },
+    {
+      "row": 789,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10039",
+      "corrupted": "1xx39"
+    },
+    {
+      "row": 791,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 793,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10039",
+      "corrupted": "100x9"
+    },
+    {
+      "row": 796,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_scip-inf-2",
+      "corrupted": "xl_scip-inf-2"
+    },
+    {
+      "row": 797,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 798,
+      "col": "county",
+      "type": "unknown",
+      "original": "madison",
+      "corrupted": "madisox"
+    },
+    {
+      "row": 802,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart attack patients given aspirin at arrival",
+      "corrupted": "heart attack patxents gxven aspxrxn at arrxval"
+    },
+    {
+      "row": 809,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "xes"
+    },
+    {
+      "row": 814,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "axute care hospitals"
+    },
+    {
+      "row": 815,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35903",
+      "corrupted": "x590x"
+    },
+    {
+      "row": 816,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients given initial antibiotic(s) within 6 hours after arrival",
+      "corrupted": "pneumonix pxtients given initixl antibiotic(s) within 6 hours after arrivxl"
+    },
+    {
+      "row": 821,
+      "col": "city",
+      "type": "unknown",
+      "original": "gadsden",
+      "corrupted": "gxdsden"
+    },
+    {
+      "row": 824,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2564944000",
+      "corrupted": "2564944xxx"
+    },
+    {
+      "row": 827,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_ami-1",
+      "corrupted": "xl_xmi-1"
+    },
+    {
+      "row": 842,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-6",
+      "corrupted": "pnx6"
+    },
+    {
+      "row": 842,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-6",
+      "corrupted": "al_pnx6"
+    },
+    {
+      "row": 845,
+      "col": "sample",
+      "type": "unknown",
+      "original": "4 patients",
+      "corrupted": "4 patiexts"
+    },
+    {
+      "row": 846,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "voluntaxy non-pxofit - pxivate"
+    },
+    {
+      "row": 848,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute caxe hospitals"
+    },
+    {
+      "row": 849,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1010 lay dam road",
+      "corrupted": "x0x0 lay dam road"
+    },
+    {
+      "row": 851,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgical infxction prxvxntion"
+    },
+    {
+      "row": 855,
+      "col": "city",
+      "type": "unknown",
+      "original": "hamilton",
+      "corrupted": "hamilxon"
+    },
+    {
+      "row": 855,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2059216200",
+      "corrupted": "x059x16x00"
+    },
+    {
+      "row": 857,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "1256 military street south",
+      "corrupted": "1256 military street sxuth"
+    },
+    {
+      "row": 859,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10044",
+      "corrupted": "1xx44"
+    },
+    {
+      "row": 860,
+      "col": "score",
+      "type": "unknown",
+      "original": "80%",
+      "corrupted": "80x"
+    },
+    {
+      "row": 865,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2059216200",
+      "corrupted": "20x9216200"
+    },
+    {
+      "row": 865,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "pn-4",
+      "corrupted": "px-4"
+    },
+    {
+      "row": 866,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 866,
+      "col": "sample",
+      "type": "unknown",
+      "original": "121 patients",
+      "corrupted": "121 patiexts"
+    },
+    {
+      "row": 868,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "voluxtary xox-profit - private"
+    },
+    {
+      "row": 869,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgical ixfectiox prevextiox"
+    },
+    {
+      "row": 872,
+      "col": "owner",
+      "type": "unknown",
+      "original": "voluntary non-profit - private",
+      "corrupted": "voluntaxy non-pxofit - pxivate"
+    },
+    {
+      "row": 872,
+      "col": "sample",
+      "type": "unknown",
+      "original": "15 patients",
+      "corrupted": "15 patiexts"
+    },
+    {
+      "row": 877,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hoxpitalx"
+    },
+    {
+      "row": 878,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10045",
+      "corrupted": "1xx45"
+    },
+    {
+      "row": 881,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2059325966",
+      "corrupted": "x0593x5966"
+    },
+    {
+      "row": 883,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2059325966",
+      "corrupted": "x0593x5966"
+    },
+    {
+      "row": 884,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 886,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "xl"
+    },
+    {
+      "row": 888,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10045",
+      "corrupted": "x0045"
+    },
+    {
+      "row": 888,
+      "col": "score",
+      "type": "unknown",
+      "original": "85%",
+      "corrupted": "x5%"
+    },
+    {
+      "row": 889,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 893,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "pneumonia patients assessed and given influenza vaccination",
+      "corrupted": "pneumonia patients assessed and given influenza vaxxination"
+    },
+    {
+      "row": 895,
+      "col": "city",
+      "type": "unknown",
+      "original": "fayette",
+      "corrupted": "faxette"
+    },
+    {
+      "row": 895,
+      "col": "county",
+      "type": "unknown",
+      "original": "fayette",
+      "corrupted": "fayexxe"
+    },
+    {
+      "row": 902,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 902,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "children who received reliever medication while hospitalized for asthma",
+      "corrupted": "childrenxwhoxreceivedxrelieverxmedicationxwhilexhospitalizedxforxasthma"
+    },
+    {
+      "row": 903,
+      "col": "name",
+      "type": "unknown",
+      "original": "riverview regional medical center",
+      "corrupted": "rivxrvixw rxgional mxdical cxntxr"
+    },
+    {
+      "row": 905,
+      "col": "sample",
+      "type": "unknown",
+      "original": "126 patients",
+      "corrupted": "126 patxents"
+    },
+    {
+      "row": 915,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "600 south third street",
+      "corrupted": "600 souxh xhird sxreex"
+    },
+    {
+      "row": 915,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "heart failure patients given smoking cessation advice/counseling",
+      "corrupted": "hearx failure paxienxs given smoking cessaxion advice/counseling"
+    },
+    {
+      "row": 916,
+      "col": "phone",
+      "type": "unknown",
+      "original": "2565435200",
+      "corrupted": "x565435x00"
+    },
+    {
+      "row": 917,
+      "col": "county",
+      "type": "unknown",
+      "original": "etowah",
+      "corrupted": "etowxh"
+    },
+    {
+      "row": 919,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yex"
+    },
+    {
+      "row": 920,
+      "col": "state_average",
+      "type": "unknown",
+      "original": "al_pn-6",
+      "corrupted": "alxpn-6"
+    },
+    {
+      "row": 921,
+      "col": "name",
+      "type": "unknown",
+      "original": "riverview regional medical center",
+      "corrupted": "xivexview xegional medical centex"
+    },
+    {
+      "row": 921,
+      "col": "emergency_service",
+      "type": "unknown",
+      "original": "yes",
+      "corrupted": "yxs"
+    },
+    {
+      "row": 922,
+      "col": "name",
+      "type": "unknown",
+      "original": "riverview regional medical center",
+      "corrupted": "riverview rexional medical center"
+    },
+    {
+      "row": 922,
+      "col": "state",
+      "type": "unknown",
+      "original": "al",
+      "corrupted": "ax"
+    },
+    {
+      "row": 923,
+      "col": "zip",
+      "type": "unknown",
+      "original": "35901",
+      "corrupted": "3590x"
+    },
+    {
+      "row": 926,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acuxe care hospixals"
+    },
+    {
+      "row": 930,
+      "col": "measure_code",
+      "type": "unknown",
+      "original": "ami-1",
+      "corrupted": "amix1"
+    },
+    {
+      "row": 933,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10047",
+      "corrupted": "1xx47"
+    },
+    {
+      "row": 934,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "515 miranda st",
+      "corrupted": "515 miranda sx"
+    },
+    {
+      "row": 935,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "515 miranda st",
+      "corrupted": "515 miranxa st"
+    },
+    {
+      "row": 938,
+      "col": "name",
+      "type": "unknown",
+      "original": "georgiana hospital",
+      "corrupted": "georgiaxa hospital"
+    },
+    {
+      "row": 943,
+      "col": "county",
+      "type": "unknown",
+      "original": "butler",
+      "corrupted": "butxer"
+    },
+    {
+      "row": 945,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "515 miranda st",
+      "corrupted": "515 mirxndx st"
+    },
+    {
+      "row": 949,
+      "col": "city",
+      "type": "unknown",
+      "original": "georgiana",
+      "corrupted": "geoxgiana"
+    },
+    {
+      "row": 949,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute care hosxitals"
+    },
+    {
+      "row": 955,
+      "col": "provider_number",
+      "type": "unknown",
+      "original": "10049",
+      "corrupted": "1004x"
+    },
+    {
+      "row": 955,
+      "col": "condition",
+      "type": "unknown",
+      "original": "heart attack",
+      "corrupted": "hexrt attxck"
+    },
+    {
+      "row": 956,
+      "col": "name",
+      "type": "unknown",
+      "original": "medical center enterprise",
+      "corrupted": "medixal xenter enterprise"
+    },
+    {
+      "row": 956,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "400 n edwards street",
+      "corrupted": "400xnxedwardsxstreet"
+    },
+    {
+      "row": 956,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acute xare hospitals"
+    },
+    {
+      "row": 960,
+      "col": "city",
+      "type": "unknown",
+      "original": "enterprise",
+      "corrupted": "enterprxse"
+    },
+    {
+      "row": 962,
+      "col": "name",
+      "type": "unknown",
+      "original": "medical center enterprise",
+      "corrupted": "medxcal center enterprxse"
+    },
+    {
+      "row": 964,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 966,
+      "col": "county",
+      "type": "unknown",
+      "original": "coffee",
+      "corrupted": "cxffee"
+    },
+    {
+      "row": 968,
+      "col": "city",
+      "type": "unknown",
+      "original": "enterprise",
+      "corrupted": "xntxrprisx"
+    },
+    {
+      "row": 972,
+      "col": "sample",
+      "type": "unknown",
+      "original": "27 patients",
+      "corrupted": "27 paxienxs"
+    },
+    {
+      "row": 974,
+      "col": "condition",
+      "type": "unknown",
+      "original": "surgical infection prevention",
+      "corrupted": "surgical xnfection prevention"
+    },
+    {
+      "row": 976,
+      "col": "type",
+      "type": "unknown",
+      "original": "acute care hospitals",
+      "corrupted": "acutexcarexhospitals"
+    },
+    {
+      "row": 985,
+      "col": "city",
+      "type": "unknown",
+      "original": "oneonta",
+      "corrupted": "onxonta"
+    },
+    {
+      "row": 986,
+      "col": "address_1",
+      "type": "unknown",
+      "original": "150 gilbreath drive",
+      "corrupted": "150 gilxreath drive"
+    },
+    {
+      "row": 987,
+      "col": "name",
+      "type": "unknown",
+      "original": "st vincents blount",
+      "corrupted": "st vincents bxount"
+    },
+    {
+      "row": 997,
+      "col": "measure_name",
+      "type": "unknown",
+      "original": "surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery",
+      "corrupted": "surgery pxtients who were txking hexrt drugs cxlled betx blockers before coming to the hospitxl who were kept on the betx blockers during the period just before xnd xfter their surgery"
+    }
+  ]
+}

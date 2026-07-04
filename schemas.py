@@ -4,7 +4,7 @@
 """
 from __future__ import annotations
 
-from typing import Any, List, Optional
+from typing import Any, Dict, List, Optional
 
 try:
     from typing import NotRequired, TypedDict
@@ -44,6 +44,15 @@ class ChangeEntry(TypedDict):
     stage:        str       # "2a" | "2b"
 
 
+class TokenUsage(TypedDict):
+    """LLM 스테이지별 토큰 계측 (CostMeter). USD 환산은 분석 단계에서 후처리."""
+    input:          int
+    output:         int
+    calls:          int
+    cache_creation: NotRequired[int]
+    cache_read:     NotRequired[int]
+
+
 class Interpretation(TypedDict):
     rule:           str
     field:          str
@@ -73,3 +82,6 @@ class PipelineState(TypedDict):
     # ── Stage 3 ──────────────────────────────────────────
     stage3a: NotRequired[dict]
     stage3b: NotRequired[dict]
+
+    # ── 계측 (CostMeter) ─────────────────────────────────
+    token_usage: NotRequired[Dict[str, TokenUsage]]   # stage명 → 사용량
