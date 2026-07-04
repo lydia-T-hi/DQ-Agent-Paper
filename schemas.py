@@ -51,6 +51,23 @@ class TokenUsage(TypedDict):
     calls:          int
     cache_creation: NotRequired[int]
     cache_read:     NotRequired[int]
+    model:          NotRequired[str]     # 실행에 사용된 모델 버전 문자열
+
+
+class StageError(TypedDict):
+    """스테이지 예외 기록 — 예외 발생 시 중단 대신 기록 후 후속 진행 (부분 결과 보존)"""
+    stage:   str
+    error:   str
+    fatal:   bool
+
+
+class RunMeta(TypedDict):
+    """실험 실행 메타데이터 (04 문서 §6 로그 스키마 대응)"""
+    run_id:     str
+    experiment: NotRequired[str]         # E0 | E1 | E2
+    dataset:    NotRequired[str]
+    error_rate: NotRequired[Optional[float]]
+    seed:       NotRequired[Optional[int]]
 
 
 class Interpretation(TypedDict):
@@ -85,3 +102,8 @@ class PipelineState(TypedDict):
 
     # ── 계측 (CostMeter) ─────────────────────────────────
     token_usage: NotRequired[Dict[str, TokenUsage]]   # stage명 → 사용량
+
+    # ── 실험 제어 (04/05 문서 §4) ────────────────────────
+    config:       NotRequired[str]                    # "A1".."A5" (기본 A5)
+    run_meta:     NotRequired[RunMeta]
+    stage_errors: NotRequired[List[StageError]]

@@ -1,0 +1,31 @@
+{
+  "_doc": [
+    "LLM 단가표 — USD 환산은 분석 단계 후처리 (05 문서 §3.2). rate_date 필수 기록.",
+    "cache_write/read multiplier는 입력 단가 대비 배율 (Anthropic 공시: write 1.25x, read 0.1x).",
+    "주의: 2B는 Claude Pro OAuth로 실행되어 실제 청구액은 0이나, 논문의 비용 지표는",
+    "'해당 토큰을 API로 썼을 때의 공시 단가 환산액'으로 정의한다 (재현자 관점의 비용).",
+    "gpt-4o 단가는 게재 전 OpenAI 공시가와 재대조할 것."
+  ],
+  "rate_date": "2026-07-05",
+  "currency": "USD",
+  "models": {
+    "claude-sonnet-4-6": {
+      "input_per_mtok": 3.00,
+      "output_per_mtok": 15.00,
+      "cache_write_multiplier": 1.25,
+      "cache_read_multiplier": 0.10,
+      "source": "Anthropic 공시 (claude-api skill cache 2026-06-24)"
+    },
+    "gpt-4o": {
+      "input_per_mtok": 2.50,
+      "output_per_mtok": 10.00,
+      "cache_write_multiplier": 0.0,
+      "cache_read_multiplier": 0.50,
+      "source": "OpenAI 공시 (모델 지식 기준 — 게재 전 재확인 필요)"
+    }
+  },
+  "stage_default_model": {
+    "stage2b": "claude-sonnet-4-6",
+    "stage3a": "gpt-4o"
+  }
+}

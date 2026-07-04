@@ -9,10 +9,17 @@ LLM 없이 Python 규칙으로 처리 가능한 DQ 이슈를 즉시 수정합니
   - 금액: 음수 → null
   - 국가코드: 명백히 잘못된 코드 → null
 
-처리 후 Z-score > 3 이상치가 남은 레코드는 ambiguous_indices에 기록되어
-Stage 2B(Claude)로 전달됩니다.
+처리 후에도 남는 모호 레코드는 ambiguous_indices에 기록되어 Stage 2B(Claude)로 전달됩니다.
+
+ambiguous 판정 기준 (05 문서 §2.3):
+  1. 강건 통계 이상치 — 중앙값/MAD 기반 수정 Z-score > 3.5 (Iglewicz & Hoaglin).
+     평균/표준편차 대신 중앙값/MAD를 쓰는 이유: 극단 오염값이 평균·표준편차를
+     부풀려 자기 자신의 Z-score를 낮추는 마스킹(masking)을 방지 (오염 데이터 전제)
+  2. 교차필드 충돌 — 선행일(가입 등) > 후행일(최근구매 등) 날짜쌍 모순
 """
 import math
+import re
+import statistics
 from datetime import date, datetime
 
 from langchain_core.runnables import RunnableLambda
@@ -164,24 +171,62 @@ def _process_record(idx: int, record: dict, profile: dict) -> tuple:
             new_rec[field] = None if _is_null(new_val) else new_val
             entries.append(_entry(idx, field, value, new_val, reason))
 
-    # 모호성 판단: 처리 후에도 Z-score > 3 이상치가 남아 있는 필드
-    is_ambiguous = _has_statistical_outlier(new_rec, profile)
-    return new_rec, entries, is_ambiguous
+    return new_rec, entries
 
 
-def _has_statistical_outlier(record: dict, profile: dict) -> bool:
-    for field, value in record.items():
-        if _is_null(value):
+# ── 모호성 판정 (05 §2.3) ────────────────────────────────────────────────────
+_MAD_Z_THRESHOLD = 3.5          # Iglewicz & Hoaglin (1993) 권장 임계값
+_DATE_RE         = re.compile(r"^\d{4}-\d{2}-\d{2}")
+
+
+def _numeric_field_stats(records: list) -> dict:
+    """처리 후 값 기준 필드별 (median, MAD).
+    평균/표준편차가 아닌 강건 통계를 쓰는 이유: 오염 극단값의 자기 마스킹 방지."""
+    cols: dict = {}
+    for rec in records:
+        for f, v in rec.items():
+            if isinstance(v, bool) or _is_null(v) or not isinstance(v, (int, float)):
+                continue
+            cols.setdefault(f, []).append(float(v))
+
+    stats = {}
+    for f, vals in cols.items():
+        if len(vals) < 8:               # 표본이 너무 적으면 통계 판정 생략
             continue
-        p = profile.get(field, {})
-        if "avg" not in p or not p.get("stddev") or p["stddev"] == 0:
+        med = statistics.median(vals)
+        mad = statistics.median(abs(x - med) for x in vals)
+        if mad > 0:                     # MAD=0(과반 동일값) 필드는 판정 제외
+            stats[f] = (med, mad)
+    return stats
+
+
+def _find_date_pair(records: list):
+    """(선행일, 후행일) 날짜 컬럼쌍 휴리스틱 — 없으면 None"""
+    if not records:
+        return None
+    sample = records[: min(50, len(records))]
+    date_cols = [
+        c for c in records[0].keys()
+        if any(isinstance(r.get(c), str) and _DATE_RE.match(r[c]) for r in sample)
+    ]
+    starts = [c for c in date_cols if any(k in c.lower() for k in ("signup", "join", "start", "가입"))]
+    ends   = [c for c in date_cols if any(k in c.lower() for k in ("last", "end", "purchase", "구매", "최근"))]
+    return (starts[0], ends[0]) if starts and ends else None
+
+
+def _is_ambiguous(rec: dict, stats: dict, date_pair) -> bool:
+    for f, (med, mad) in stats.items():
+        v = rec.get(f)
+        if _is_null(v) or isinstance(v, bool) or not isinstance(v, (int, float)):
             continue
-        try:
-            z = abs(float(value) - p["avg"]) / p["stddev"]
-            if z > 3:
-                return True
-        except Exception:
-            pass
+        if 0.6745 * abs(float(v) - med) / mad > _MAD_Z_THRESHOLD:
+            return True
+
+    if date_pair:
+        sv, ev = rec.get(date_pair[0]), rec.get(date_pair[1])
+        if (isinstance(sv, str) and isinstance(ev, str)
+                and _DATE_RE.match(sv) and _DATE_RE.match(ev) and sv > ev):
+            return True
     return False
 
 
@@ -194,14 +239,18 @@ def _run(state: dict) -> dict:
 
     processed       = []
     changelog: list = []
-    ambiguous_idx   = []
 
     for i, record in enumerate(all_records):
-        new_rec, entries, is_ambiguous = _process_record(i, record, profile)
+        new_rec, entries = _process_record(i, record, profile)
         processed.append(new_rec)
         changelog.extend(entries)
-        if is_ambiguous:
-            ambiguous_idx.append(i)
+
+    # 모호성 판정은 처리 후 전체 분포 기준으로 일괄 수행 (강건 통계 + 교차필드)
+    stats     = _numeric_field_stats(processed)
+    date_pair = _find_date_pair(processed)
+    ambiguous_idx = [
+        i for i, rec in enumerate(processed) if _is_ambiguous(rec, stats, date_pair)
+    ]
 
     print(
         f"[Stage2A-Det] 완료 — 변경 {len(changelog)}건 / "

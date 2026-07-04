@@ -1,0 +1,44 @@
+{
+  "run_id": "E1pre-S1_customer_1000_r10_s1-r10-A1-s1",
+  "experiment": "E1pre",
+  "dataset": "S1_customer_1000_r10_s1",
+  "dataset_path": "runs/injected/S1_customer_1000_r10_s1.json",
+  "error_rate": 0.1,
+  "config": "A1",
+  "seed": 1,
+  "rep": 1,
+  "models": {
+    "detector": null,
+    "validator": null
+  },
+  "temperature": 0,
+  "started_at": "2026-07-05T07:36:20.166956",
+  "ended_at": "2026-07-05T07:36:21.838186",
+  "token_usage": {},
+  "usd_cost": {
+    "rate_date": null,
+    "total": null
+  },
+  "predictions": "report\\S1_customer_1000_r10_s1_report_20260705.json",
+  "metrics": {
+    "precision": 0.2139,
+    "recall": 0.2933,
+    "f1": 0.2474,
+    "latency_s": 1.7,
+    "tp": 347,
+    "fp": 1275,
+    "fn": 836,
+    "gt_cells": 1183,
+    "pred_cells": 1622
+  },
+  "stage_errors": [],
+  "status": "ok",
+  "retry_log": [],
+  "scores": {
+    "duckdb_rules": 84,
+    "openai_judge": null,
+    "numerical": 100,
+    "weighted_final": 90
+  },
+  "grade": "A"
+}

@@ -1,0 +1,38 @@
+{
+  "_doc": [
+    "DQ 점수 산정 규칙 — ISO/IEC 25012 품질 차원 기반 (현업 표준 형태)",
+    "차원 점수 = 100 x (1 - min(1, 영향레코드수/전체레코드수)), 종합 = 가중합",
+    "산식은 config(A1~A5)와 무관하게 동일 — 소스별 가중 재분배 없음.",
+    "단, 점수는 '탐지된' 위반 기반이므로 스테이지가 적은 구성일수록 높게 나올 수 있음",
+    "-> 구성 간 비교는 F1/비용으로만 수행 (04 문서 §5). 이 파일은 동결 대상."
+  ],
+  "dimension_weights": {
+    "completeness": 0.25,
+    "validity": 0.25,
+    "accuracy": 0.20,
+    "consistency": 0.15,
+    "uniqueness": 0.15
+  },
+  "grade_bands": { "A": 90, "B": 75, "C": 60 },
+  "rule_dimension_map": {
+    "high_null_rate": "completeness",
+    "invalid_email": "validity",
+    "future_date": "validity",
+    "invalid_age": "accuracy",
+    "negative_amount": "accuracy",
+    "statistical_outlier": "accuracy",
+    "duplicate_id": "uniqueness",
+    "hallucination": "accuracy"
+  },
+  "issue_type_keyword_map": {
+    "consist": "consistency",
+    "duplicate": "uniqueness",
+    "missing": "completeness",
+    "null": "completeness",
+    "complete": "completeness",
+    "format": "validity",
+    "domain": "validity",
+    "valid": "validity"
+  },
+  "default_dimension": "accuracy"
+}

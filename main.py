@@ -41,6 +41,8 @@ def main():
                         help="배치 크기 (기본: 500)")
     parser.add_argument("--skip-openai", action="store_true",
                         help="Stage 3A OpenAI 판단 건너뜀 (API 키 없을 때)")
+    parser.add_argument("--config", default="A5", choices=["A1", "A2", "A3", "A4", "A5"],
+                        help="실험 구성 (04 문서 §4, 기본: A5 전체 파이프라인)")
     args = parser.parse_args()
 
     # 파일 확인
@@ -48,8 +50,9 @@ def main():
         print(f"[ERROR] 파일 없음: {args.file_path}")
         sys.exit(1)
 
-    # API 키 확인
-    missing = check_env(args.skip_openai)
+    # API 키 확인 (3A를 쓰지 않는 구성이면 OpenAI 키 불필요)
+    needs_openai = args.config in ("A4", "A5") and not args.skip_openai
+    missing = check_env(skip_openai=not needs_openai)
     if missing:
         print(f"[ERROR] .env에 누락된 키: {', '.join(missing)}")
         print("  --skip-openai 옵션을 사용하면 OpenAI 없이 실행 가능합니다.")
@@ -60,7 +63,8 @@ def main():
     print("  DQ Multi-Agent Pipeline")
     print(f"  파일     : {args.file_path}")
     print(f"  배치크기 : {args.batch_size}")
-    print(f"  OpenAI   : {'건너뜀 (--skip-openai)' if args.skip_openai else '사용'}")
+    print(f"  구성     : {args.config}")
+    print(f"  OpenAI   : {'사용' if needs_openai else '건너뜀'}")
     print("=" * 64)
     print()
 
@@ -72,6 +76,7 @@ def main():
             file_path=args.file_path,
             batch_size=args.batch_size,
             skip_openai=args.skip_openai,
+            config=args.config,
         )
     except FileNotFoundError as e:
         print(f"\n[ERROR] {e}")

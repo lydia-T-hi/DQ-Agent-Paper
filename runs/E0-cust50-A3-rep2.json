@@ -1,0 +1,48 @@
+{
+  "run_id": "E0-cust50-A3-rep2",
+  "experiment": "E0",
+  "dataset": "cust50",
+  "dataset_path": "data/customer_data_50.json",
+  "error_rate": null,
+  "config": "A3",
+  "seed": 2,
+  "rep": 2,
+  "models": {
+    "detector": "claude-fable-5[1m]",
+    "validator": null
+  },
+  "temperature": 0,
+  "started_at": "2026-07-05T00:06:16.150595",
+  "ended_at": "2026-07-05T00:06:57.673850",
+  "token_usage": {
+    "stage2b": {
+      "input": 5667,
+      "output": 2743,
+      "cache_creation": 0,
+      "cache_read": 19413,
+      "calls": 1,
+      "model": "claude-fable-5[1m]"
+    }
+  },
+  "usd_cost": {
+    "rate_date": null,
+    "total": null
+  },
+  "predictions": "report\\customer_data_50_report_20260705.json",
+  "metrics": {
+    "precision": null,
+    "recall": null,
+    "f1": null,
+    "latency_s": 41.5
+  },
+  "stage_errors": [],
+  "status": "ok",
+  "retry_log": [],
+  "scores": {
+    "duckdb_rules": 92,
+    "openai_judge": null,
+    "numerical": 100,
+    "weighted_final": 95
+  },
+  "grade": "A"
+}

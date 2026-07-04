@@ -1,4 +1,26 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(python run_experiments.py --experiment E0 --dataset data/customer_data_50.json --configs A5 --reps 3)",
+      "Bash(python -c ' *)",
+      "Bash(python run_experiments.py --experiment E1pre --dataset runs/injected/S1_customer_1000_r10_s1.json --configs A1 --reps 1 --error-rate 0.10 --seed 1 --ground-truth runs/injected/S1_customer_1000_r10_s1_ground_truth.json)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(env -u ANTHROPIC_API_KEY claude --print --model claude-sonnet-4-6 --output-format json)",
+      "Bash(mkdir -p prompts)",
+      "Bash(python run_experiments.py --experiment E1smoke --dataset runs/injected/S1_customer_1000_r10_s1.json --configs A1 --reps 1 --error-rate 0.10 --seed 1 --ground-truth runs/injected/S1_customer_1000_r10_s1_ground_truth.json)",
+      "Bash(python run_experiments.py --experiment E1smoke --dataset runs/injected/S1_customer_1000_r10_s1.json --configs A3 --reps 1 --error-rate 0.10 --seed 1 --ground-truth runs/injected/S1_customer_1000_r10_s1_ground_truth.json)",
+      "Bash(python run_experiments.py --experiment E2smoke --dataset data/E2_hospital/dirty.csv --configs A1 --reps 1 --ground-truth data/E2_hospital/ground_truth.json)",
+      "Bash(ls runs/E1smoke-*A5*)",
+      "Bash(tail -c 2000 runs/a5_smoke.log)",
+      "Bash(python run_experiments.py --experiment E1smoke --dataset runs/injected/S1_customer_1000_r10_s2.json --configs A1 --reps 1 --error-rate 0.10 --seed 2 --ground-truth runs/injected/S1_customer_1000_r10_s2_ground_truth.json)",
+      "Skill(dataviz)",
+      "Skill(dataviz:*)",
+      "Bash(python -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import matplotlib; print\\('OK', matplotlib.__version__\\)\")"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {

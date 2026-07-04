@@ -8,9 +8,6 @@ from datetime import datetime
 
 from langchain_core.runnables import RunnableLambda
 
-_WEIGHT = {"duckdb": 0.40, "openai": 0.35, "numerical": 0.25}
-
-
 def _severity_score(sev: str) -> int:
     return {"critical": 3, "warning": 2, "info": 1}.get(sev, 0)
 
@@ -112,42 +109,59 @@ def _build_consensus(state: dict) -> list:
     return consensus
 
 
+def _load_scoring_config() -> dict:
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "config", "dq_scoring.json")
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _issue_dimension(issue_type: str, cfg: dict) -> str:
+    itype = (issue_type or "").lower()
+    for keyword, dim in cfg["issue_type_keyword_map"].items():
+        if keyword in itype:
+            return dim
+    return cfg["default_dimension"]
+
+
 def _compute_scores(state: dict) -> dict:
+    """ISO/IEC 25012 차원 기반 DQ 점수 (산식은 config/dq_scoring.json — 동결 대상).
+
+    차원 점수 = 100 x (1 - min(1, 영향레코드수/전체)), 종합 = 차원 가중합.
+    구성(A1~A5)과 무관하게 동일 산식 — 소스별 가중 재분배 없음.
+    """
+    cfg     = _load_scoring_config()
     stage3a = state.get("stage3a", {})
     stage3b = state.get("stage3b", {})
+    total   = state.get("total_records", 1) or 1
 
-    total = state.get("total_records", 1) or 1
-    rule_violations = state.get("rule_violations", [])
+    affected = {dim: 0 for dim in cfg["dimension_weights"]}
 
-    # DuckDB 점수: critical 위반 레코드 비율 기반
-    crit_records = sum(v["count"] for v in rule_violations if v["severity"] == "critical")
-    duckdb_score = max(0, round(100 - (crit_records / total) * 100))
+    for v in state.get("rule_violations", []):
+        dim = cfg["rule_dimension_map"].get(v["rule"], cfg["default_dimension"])
+        affected[dim] += v.get("count") or 0
 
-    # OpenAI 점수: 직접 제공 (None이면 skip-openai 모드)
-    openai_score = stage3a.get("overall_score")
+    for issue in stage3a.get("issues", []):
+        affected[_issue_dimension(issue.get("issue_type"), cfg)] += 1
 
-    # 수치 점수: 환각 + 위반 건수 기반
-    num_issues = (
-        stage3b.get("summary", {}).get("hallucination_count", 0)
-        + stage3b.get("summary", {}).get("numerical_violation_count", 0)
-    )
-    numerical_score = max(0, round(100 - (num_issues / total) * 100))
+    for v in stage3b.get("numerical_violations", []):
+        dim = cfg["rule_dimension_map"].get(v.get("rule"), cfg["default_dimension"])
+        affected[dim] += v.get("count") or 1
+    affected["accuracy"] += len(stage3b.get("hallucinations", []))
 
-    # skip-openai 시 가중치 재분배 (DuckDB 60% / 수치 40%)
-    if openai_score is None:
-        weighted = round(duckdb_score * 0.60 + numerical_score * 0.40)
-    else:
-        weighted = round(
-            duckdb_score      * _WEIGHT["duckdb"]
-            + openai_score    * _WEIGHT["openai"]
-            + numerical_score * _WEIGHT["numerical"]
-        )
+    dimension_scores = {
+        dim: max(0.0, round(100 * (1 - min(1.0, cnt / total)), 1))
+        for dim, cnt in affected.items()
+    }
+    weighted = round(sum(
+        dimension_scores[dim] * w for dim, w in cfg["dimension_weights"].items()
+    ))
 
     return {
-        "duckdb_rules":  duckdb_score,
-        "openai_judge":  openai_score,
-        "numerical":     numerical_score,
-        "weighted_final": weighted,
+        "dimension_scores": dimension_scores,
+        "affected_counts":  affected,
+        "openai_judge":     stage3a.get("overall_score"),   # 참고용 (산식 미포함)
+        "weighted_final":   weighted,
     }
 
 
@@ -170,9 +184,11 @@ def _run(state: dict) -> dict:
     warning_items  = [c for c in consensus if c["consensus_level"] == "warning"]
     pass_count     = sum(1 for c in consensus if c["consensus_level"] == "pass")
 
-    grade = "A" if scores["weighted_final"] >= 90 else \
-            "B" if scores["weighted_final"] >= 75 else \
-            "C" if scores["weighted_final"] >= 60 else "D"
+    bands = _load_scoring_config()["grade_bands"]
+    score_v = scores["weighted_final"]
+    grade = "A" if score_v >= bands["A"] else \
+            "B" if score_v >= bands["B"] else \
+            "C" if score_v >= bands["C"] else "D"
 
     report = {
         "metadata": {
@@ -206,9 +222,7 @@ def _run(state: dict) -> dict:
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2, default=str)
 
-    score = scores["weighted_final"]
-    grade = "A" if score >= 90 else "B" if score >= 75 else "C" if score >= 60 else "D"
-    print(f"[Stage4-Report] 완료 — 최종 DQ 점수: {score}/100 ({grade}등급)")
+    print(f"[Stage4-Report] 완료 — 최종 DQ 점수: {score_v}/100 ({grade}등급)")
     print(f"[Stage4-Report] 보고서 저장: {out_path}")
 
     return {
@@ -216,6 +230,13 @@ def _run(state: dict) -> dict:
         "scores":      scores,
         "grade":       grade,
         "consensus_summary": report["consensus_summary"],
+        # 실험 계측·제어 키는 최종 출력까지 보존 (ExperimentRunner가 소비)
+        "pipeline_id":  state.get("pipeline_id"),
+        "config":       state.get("config"),
+        "run_meta":     state.get("run_meta"),
+        "token_usage":  state.get("token_usage", {}),
+        "stage_errors": state.get("stage_errors", []),
+        "total_records": state.get("total_records"),
     }
 
 

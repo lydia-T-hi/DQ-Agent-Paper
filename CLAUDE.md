@@ -162,3 +162,5 @@ python tools/compare_duckdb.py <원본.json> <report.json> --all
 |---|---|
 | `report/` | 최종 DQ 보고서 JSON (날짜별 파일명) |
 | `tests/output/` | 스테이지별 중간 출력 (테스트용) |
+| `runs/` | 실험 실행 로그 (1실행 1파일, 04 문서 §6 스키마 — 정본) |
+| `bench-result/` | **실험회차별 기록** — `{회차:03d}_{날짜}/` 폴더에 summary.md·json + 로그 사본. `run_experiments.py`가 실행마다 자동 생성 (러너 1회 실행 = 1회차). 실험은 반드시 러너를 통해 실행할 것 |

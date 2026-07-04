@@ -1,0 +1,23 @@
+{
+  "round": 1,
+  "date": "2026-07-05",
+  "recorded_at": "2026-07-05T08:30:17.955565",
+  "experiment": "E1smoke",
+  "dataset": "runs/injected/S1_customer_1000_r10_s2.json",
+  "configs": "A1",
+  "reps": 1,
+  "error_rate": 0.1,
+  "seed": 2,
+  "runs": [
+    {
+      "run_id": "E1smoke-S1_customer_1000_r10_s2-r10-A1-s2-rep1",
+      "config": "A1",
+      "status": "ok",
+      "f1": 0.2404,
+      "precision": 0.2101,
+      "recall": 0.281,
+      "latency_s": 1.7,
+      "usd": 0.0
+    }
+  ]
+}
