@@ -1,0 +1,23 @@
+{
+  "round": 2,
+  "date": "2026-07-05",
+  "recorded_at": "2026-07-05T08:37:44.598841",
+  "experiment": "E2smoke",
+  "dataset": "data/E2_flights/dirty.csv",
+  "configs": "A1",
+  "reps": 1,
+  "error_rate": null,
+  "seed": null,
+  "runs": [
+    {
+      "run_id": "E2smoke-dirty-A1-rep1",
+      "config": "A1",
+      "status": "ok",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "latency_s": 2.1,
+      "usd": 0.0
+    }
+  ]
+}
