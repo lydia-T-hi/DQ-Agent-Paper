@@ -1,0 +1,57 @@
+{
+  "run_id": "E2smoke-E2_hospital_dirty-A1-rep1",
+  "experiment": "E2smoke",
+  "dataset": "E2_hospital_dirty",
+  "dataset_path": "data/E2_hospital/dirty.csv",
+  "error_rate": null,
+  "config": "A1",
+  "seed": 1,
+  "rep": 1,
+  "models": {
+    "detector": null,
+    "validator": null
+  },
+  "temperature": 0,
+  "started_at": "2026-07-05T08:38:36.574472",
+  "ended_at": "2026-07-05T08:38:40.216449",
+  "token_usage": {},
+  "usd_cost": {
+    "rate_date": "2026-07-05",
+    "total": 0.0,
+    "by_stage": {}
+  },
+  "predictions": "report\\dirty_report_20260705.json",
+  "metrics": {
+    "precision": 0.03,
+    "recall": 0.1179,
+    "f1": 0.0478,
+    "latency_s": 3.6,
+    "tp": 60,
+    "fp": 1940,
+    "fn": 449,
+    "gt_cells": 509,
+    "pred_cells": 2000
+  },
+  "stage_errors": [],
+  "status": "ok",
+  "retry_log": [],
+  "scores": {
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 100.0,
+      "accuracy": 100.0,
+      "consistency": 100.0,
+      "uniqueness": 100.0
+    },
+    "affected_counts": {
+      "completeness": 0,
+      "validity": 0,
+      "accuracy": 0,
+      "consistency": 0,
+      "uniqueness": 0
+    },
+    "openai_judge": null,
+    "weighted_final": 100
+  },
+  "grade": "A"
+}
