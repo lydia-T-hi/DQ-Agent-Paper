@@ -179,6 +179,9 @@ def _compute_usd(token_usage: dict) -> dict:
 
 def _dataset_tag(path: str) -> str:
     base = os.path.splitext(os.path.basename(path))[0]
+    if base in ("dirty", "clean"):     # E2 벤치마크류 — 파일명이 범용이라 폴더명으로 구분
+        parent = os.path.basename(os.path.dirname(os.path.abspath(path)))
+        base = f"{parent}_{base}"
     return base.replace("customer_data_50", "cust50")
 
 
