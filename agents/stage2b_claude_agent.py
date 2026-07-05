@@ -94,7 +94,9 @@ changelog: {"record_index": 2, "field": "signup_date", "action": "flag",
 """
 
 _CHUNK_SIZE  = 20   # 공정성 프로토콜 고정값 (05 문서 §2.4) — config와 무관하게 동일 배치 유지
-_MAX_WORKERS = 4    # 병렬 워커 수 — 자유 변수 (wall-clock에만 영향, 토큰 비용 불변)
+_MAX_WORKERS = int(os.environ.get("DQ_MAX_WORKERS", "4"))
+# 병렬 워커 수 — 자유 변수 (wall-clock에만 영향, 토큰 비용·판정 불변).
+# 무료 티어 분당 한도에 걸리면 DQ_MAX_WORKERS=2로 낮춰 실행
 _TIMEOUT     = 600
 _MAX_RETRY   = 1
 _CLI_MODEL   = "claude-sonnet-4-6"   # cli 백엔드(개발용) 모델
@@ -215,26 +217,40 @@ def _call_claude_once(prompt: str) -> tuple:
     return _parse_response_text(cli_data.get("result", "")), usage
 
 
+_RATE_LIMIT_RETRIES = 5   # 429 전용 — 무료 티어 분당 한도는 일시적이므로 판정 재시도와 별도 관리
+
+
 def _call_llm(user_prompt: str, backend: str) -> tuple:
     """백엔드 라우팅 + 재시도. CLI는 시스템 프롬프트를 본문에 결합해 전달 (stdin 단일 블롭).
-    api(Gemini) 429/RESOURCE_EXHAUSTED는 무료 티어 분당 한도 — 백오프 후 1회 재시도."""
-    for attempt in range(_MAX_RETRY + 1):
+    api(Gemini) 429/RESOURCE_EXHAUSTED는 무료 티어 분당 한도 — 점증 백오프로 최대
+    _RATE_LIMIT_RETRIES회 재시도 (일반 오류 재시도 _MAX_RETRY와 별도 계수)."""
+    import time
+    rate_hits = 0
+    attempt   = 0
+    while True:
         try:
             if backend == "api":
                 return _call_gemini_once(user_prompt)
             return _call_claude_once(_SYSTEM_INSTRUCTIONS + "\n\n---\n\n" + user_prompt)
         except subprocess.TimeoutExpired:
-            if attempt < _MAX_RETRY:
-                print(f"[Stage2B-Claude] 타임아웃({_TIMEOUT}s), 재시도... ({attempt+1}/{_MAX_RETRY})")
+            attempt += 1
+            if attempt <= _MAX_RETRY:
+                print(f"[Stage2B-Claude] 타임아웃({_TIMEOUT}s), 재시도... ({attempt}/{_MAX_RETRY})")
             else:
                 raise RuntimeError(f"Claude CLI 타임아웃: {_TIMEOUT}초 × {_MAX_RETRY+1}회 초과")
         except Exception as e:
             msg = str(e)
-            if backend == "api" and attempt < _MAX_RETRY and \
-                    ("429" in msg or "RESOURCE_EXHAUSTED" in msg or "rate" in msg.lower()):
-                import time
-                print(f"[Stage2B-Claude] Gemini 레이트리밋 — 35초 대기 후 재시도 ({attempt+1}/{_MAX_RETRY})")
-                time.sleep(35)
+            is_rate = "429" in msg or "RESOURCE_EXHAUSTED" in msg or "rate limit" in msg.lower()
+            if backend == "api" and is_rate and rate_hits < _RATE_LIMIT_RETRIES:
+                rate_hits += 1
+                wait = min(20 * rate_hits, 70)
+                print(f"[Stage2B-Claude] Gemini 레이트리밋 — {wait}초 대기 후 재시도 "
+                      f"({rate_hits}/{_RATE_LIMIT_RETRIES})")
+                time.sleep(wait)
+                continue
+            attempt += 1
+            if attempt <= _MAX_RETRY:
+                print(f"[Stage2B-Claude] 호출 오류, 재시도 ({attempt}/{_MAX_RETRY}): {msg[:120]}")
                 continue
             raise
 
