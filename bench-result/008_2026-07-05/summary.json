@@ -1,0 +1,23 @@
+{
+  "round": 8,
+  "date": "2026-07-05",
+  "recorded_at": "2026-07-05T19:17:06.748761",
+  "experiment": "SLIMv3",
+  "dataset": "runs/injected/S1_customer_1000_r10_s1.json",
+  "configs": "A3",
+  "reps": 1,
+  "error_rate": 0.1,
+  "seed": 1,
+  "runs": [
+    {
+      "run_id": "SLIMv3-S1_customer_1000_r10_s1-r10-A3-s1-rep1",
+      "config": "A3",
+      "status": "ok",
+      "f1": 0.2648,
+      "precision": 0.2221,
+      "recall": 0.328,
+      "latency_s": 360.1,
+      "usd": 1.488783
+    }
+  ]
+}

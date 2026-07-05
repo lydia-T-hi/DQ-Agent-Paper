@@ -1,0 +1,70 @@
+{
+  "run_id": "SLIMv3-S1_customer_1000_r10_s1-r10-A3-s1-rep1",
+  "experiment": "SLIMv3",
+  "dataset": "S1_customer_1000_r10_s1",
+  "dataset_path": "runs/injected/S1_customer_1000_r10_s1.json",
+  "error_rate": 0.1,
+  "config": "A3",
+  "seed": 1,
+  "rep": 1,
+  "models": {
+    "detector": "claude-sonnet-4-6",
+    "validator": null
+  },
+  "llm_backend": "cli",
+  "temperature": null,
+  "started_at": "2026-07-05T19:11:06.638193",
+  "ended_at": "2026-07-05T19:17:06.704711",
+  "token_usage": {
+    "stage2b": {
+      "input": 15,
+      "output": 80229,
+      "cache_creation": 69623,
+      "cache_read": 80723,
+      "calls": 5,
+      "model": "claude-sonnet-4-6",
+      "backend": "cli"
+    }
+  },
+  "usd_cost": {
+    "rate_date": "2026-07-05",
+    "total": 1.488783,
+    "by_stage": {
+      "stage2b": 1.488783
+    }
+  },
+  "predictions": "report\\S1_customer_1000_r10_s1_report_20260705.json",
+  "metrics": {
+    "precision": 0.2221,
+    "recall": 0.328,
+    "f1": 0.2648,
+    "latency_s": 360.1,
+    "tp": 388,
+    "fp": 1359,
+    "fn": 795,
+    "gt_cells": 1183,
+    "pred_cells": 1747
+  },
+  "stage_errors": [],
+  "status": "ok",
+  "retry_log": [],
+  "scores": {
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 84.8,
+      "accuracy": 100.0,
+      "consistency": 100.0,
+      "uniqueness": 98.9
+    },
+    "affected_counts": {
+      "completeness": 0,
+      "validity": 188,
+      "accuracy": 0,
+      "consistency": 0,
+      "uniqueness": 14
+    },
+    "openai_judge": null,
+    "weighted_final": 96
+  },
+  "grade": "A"
+}
