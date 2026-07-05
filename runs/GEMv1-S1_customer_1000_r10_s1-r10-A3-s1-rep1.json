@@ -1,0 +1,70 @@
+{
+  "run_id": "GEMv1-S1_customer_1000_r10_s1-r10-A3-s1-rep1",
+  "experiment": "GEMv1",
+  "dataset": "S1_customer_1000_r10_s1",
+  "dataset_path": "runs/injected/S1_customer_1000_r10_s1.json",
+  "error_rate": 0.1,
+  "config": "A3",
+  "seed": 1,
+  "rep": 1,
+  "models": {
+    "detector": "gemini-2.5-flash",
+    "validator": null
+  },
+  "llm_backend": "api",
+  "temperature": 0,
+  "started_at": "2026-07-05T20:35:43.336656",
+  "ended_at": "2026-07-05T20:36:12.292708",
+  "token_usage": {
+    "stage2b": {
+      "input": 22862,
+      "output": 13719,
+      "cache_creation": 0,
+      "cache_read": 1005,
+      "calls": 5,
+      "model": "gemini-2.5-flash",
+      "backend": "api"
+    }
+  },
+  "usd_cost": {
+    "rate_date": "2026-07-05",
+    "total": 0.041186,
+    "by_stage": {
+      "stage2b": 0.041186
+    }
+  },
+  "predictions": "report\\S1_customer_1000_r10_s1_report_20260705.json",
+  "metrics": {
+    "precision": 0.2438,
+    "recall": 0.3584,
+    "f1": 0.2902,
+    "latency_s": 29.0,
+    "tp": 424,
+    "fp": 1315,
+    "fn": 759,
+    "gt_cells": 1183,
+    "pred_cells": 1739
+  },
+  "stage_errors": [],
+  "status": "ok",
+  "retry_log": [],
+  "scores": {
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 84.8,
+      "accuracy": 100.0,
+      "consistency": 100.0,
+      "uniqueness": 98.9
+    },
+    "affected_counts": {
+      "completeness": 0,
+      "validity": 188,
+      "accuracy": 0,
+      "consistency": 0,
+      "uniqueness": 14
+    },
+    "openai_judge": null,
+    "weighted_final": 96
+  },
+  "grade": "A"
+}
