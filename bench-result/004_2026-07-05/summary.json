@@ -1,0 +1,23 @@
+{
+  "round": 4,
+  "date": "2026-07-05",
+  "recorded_at": "2026-07-05T18:14:57.180410",
+  "experiment": "BKV",
+  "dataset": "runs/injected/S1_sample120_r10_s1.json",
+  "configs": "A3",
+  "reps": 1,
+  "error_rate": 0.1,
+  "seed": 1,
+  "runs": [
+    {
+      "run_id": "BKV-S1_sample120_r10_s1-r10-A3-s1-rep1",
+      "config": "A3",
+      "status": "ok",
+      "f1": 0.3579,
+      "precision": 0.2982,
+      "recall": 0.4474,
+      "latency_s": 212.8,
+      "usd": 0.275202
+    }
+  ]
+}
