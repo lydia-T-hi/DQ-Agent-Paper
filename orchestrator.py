@@ -97,7 +97,7 @@ def build_pipeline(config: str = "A5", skip_openai: bool = False):
     # stage1은 자신의 출력만 반환하므로 실험 제어 키(config, run_meta)를 여기서 보존
     def _stage1_carry(inputs: dict) -> dict:
         out   = stage1_duckdb_agent.func(inputs)
-        carry = {k: inputs[k] for k in ("config", "run_meta") if k in inputs}
+        carry = {k: inputs[k] for k in ("config", "run_meta", "llm_backend") if k in inputs}
         return {**out, **carry}
 
     chain = RunnableLambda(_stage1_carry)
@@ -132,6 +132,7 @@ def run(
     skip_openai: bool = False,
     config: str = "A5",
     run_meta: dict = None,
+    llm_backend: str = None,
 ) -> dict:
     pipeline = build_pipeline(config=config, skip_openai=skip_openai)
     initial = {
@@ -141,4 +142,6 @@ def run(
     }
     if run_meta:
         initial["run_meta"] = run_meta
+    if llm_backend:
+        initial["llm_backend"] = llm_backend
     return pipeline.invoke(initial)

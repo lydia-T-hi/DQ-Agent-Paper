@@ -18,9 +18,12 @@
 
 ## 🔴 P0 — E1 동결 선언 전 마지막 확인
 
-- [ ] **A5 스모크 로그 확인** (`runs/E1smoke-*-A5-*.json`) — 3A usage 승격·USD 합산 검증
-- [ ] **2B temperature 미제어 문서화**: CLI 경유라 temperature=0 강제 불가.
-      계획서 §4 각주로 명시하거나 대안(CLI 설정) 탐색 후 동결
+- [ ] **API 크레딧 충전 결정** (사용자): E1 본실험을 `--llm-backend api`(temperature=0,
+      정가 ~$400-600 예상)로 할지, CLI 백엔드로 동결하고 temperature 미제어를 §4 각주로
+      한계 명시할지. api 선택 시 충전 후 BKVapi 재실행으로 E2E 검증 필요
+- [x] ~~A5 스모크 로그 확인~~ — 3A usage 승격·USD 합산 검증 완료
+- [x] ~~2B temperature 미제어~~ — API 백엔드로 해소 (크레딧 충전 조건부),
+      하이브리드 구현·검증: paper-hist/2026-07-05_llm-backend-hybrid.md
 - [ ] **동결 선언**: 프롬프트·dq_scoring.json·pricing.json·합의 로직·모델 버전을
       커밋 해시로 paper-hist에 기록 (05 §6) — **커밋 필요 (이번 세션 변경분 미커밋)**
 - [ ] E1 실행 시간 산정: A3 ~9.3분/회 관측 → 50회 매트릭스 예상 소요·일정 검토.

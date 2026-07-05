@@ -227,6 +227,7 @@ def run_once(
     seed=None,
     ground_truth=None,
     batch_size: int = 500,
+    llm_backend: str = "cli",
 ) -> dict:
     import orchestrator
 
@@ -251,7 +252,8 @@ def run_once(
         "seed":        seed if seed is not None else rep,
         "rep":         rep,
         "models":      {"detector": None, "validator": None},
-        "temperature": 0,
+        "llm_backend": llm_backend,
+        "temperature": 0 if llm_backend == "api" else None,   # cli는 temperature 미제어
         "started_at":  datetime.now().isoformat(),
         "ended_at":    None,
         "token_usage": {},
@@ -268,7 +270,7 @@ def run_once(
         try:
             result = orchestrator.run(
                 file_path=dataset, batch_size=batch_size,
-                config=config, run_meta=run_meta,
+                config=config, run_meta=run_meta, llm_backend=llm_backend,
             )
             break
         except Exception as e:
@@ -283,7 +285,9 @@ def run_once(
     if result is None:
         log["status"] = "failed"
     else:
-        log["status"]       = "ok"
+        # 스테이지 예외가 있으면 partial — 구성이 온전히 실행되지 않은 run은
+        # 분석에서 정상 run과 구분해야 함 (예: 2B 실패 시 A3가 A1로 조용히 강등)
+        log["status"]       = "partial" if result.get("stage_errors") else "ok"
         log["token_usage"]  = result.get("token_usage", {})
         log["stage_errors"] = result.get("stage_errors", [])
         log["predictions"]  = result.get("output_path")
@@ -322,6 +326,8 @@ def main():
     parser.add_argument("--batch-size", type=int, default=500)
     parser.add_argument("--no-commit", action="store_true",
                         help="실험 기록 자동 커밋/푸시 생략")
+    parser.add_argument("--llm-backend", default="cli", choices=["cli", "api"],
+                        help="Stage 2B 백엔드: cli(OAuth 무료, 개발용) | api(실비, 본실험용 — temperature=0)")
     args = parser.parse_args()
 
     configs = [c.strip() for c in args.configs.split(",")]
@@ -333,6 +339,7 @@ def main():
                 config=config, rep=rep,
                 error_rate=args.error_rate, seed=args.seed,
                 ground_truth=args.ground_truth, batch_size=args.batch_size,
+                llm_backend=args.llm_backend,
             )
             logs.append(log)
 

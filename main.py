@@ -43,6 +43,8 @@ def main():
                         help="Stage 3A OpenAI 판단 건너뜀 (API 키 없을 때)")
     parser.add_argument("--config", default="A5", choices=["A1", "A2", "A3", "A4", "A5"],
                         help="실험 구성 (04 문서 §4, 기본: A5 전체 파이프라인)")
+    parser.add_argument("--llm-backend", default="cli", choices=["cli", "api"],
+                        help="Stage 2B 백엔드 (기본 cli — Pro OAuth 무료)")
     args = parser.parse_args()
 
     # 파일 확인
@@ -77,6 +79,7 @@ def main():
             batch_size=args.batch_size,
             skip_openai=args.skip_openai,
             config=args.config,
+            llm_backend=args.llm_backend,
         )
     except FileNotFoundError as e:
         print(f"\n[ERROR] {e}")

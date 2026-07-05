@@ -52,6 +52,7 @@ class TokenUsage(TypedDict):
     cache_creation: NotRequired[int]
     cache_read:     NotRequired[int]
     model:          NotRequired[str]     # 실행에 사용된 모델 버전 문자열
+    backend:        NotRequired[str]     # cli | api (Stage 2B)
 
 
 class StageError(TypedDict):
