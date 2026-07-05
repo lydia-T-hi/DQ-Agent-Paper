@@ -18,9 +18,10 @@
 
 ## 🔴 P0 — E1 동결 선언 전 마지막 확인
 
-- [ ] **API 크레딧 충전 결정** (사용자): E1 본실험을 `--llm-backend api`(temperature=0,
-      정가 ~$400-600 예상)로 할지, CLI 백엔드로 동결하고 temperature 미제어를 §4 각주로
-      한계 명시할지. api 선택 시 충전 후 BKVapi 재실행으로 E2E 검증 필요
+- [ ] **API 크레딧 충전** (사용자): 스키마 v3로 E1 예산이 **~$50-90**로 재추정됨
+      ($100 충전 권장). 충전 후 BKVapi 재실행으로 API 경로 E2E 검증 → 동결 선언
+- [ ] **비용 지표는 API 실측으로**: CLI 출력 토큰은 thinking 포함이라 과대 계상
+      (paper-hist/2026-07-05_schema-v3-slim.md §3) — E1 본실험은 반드시 api 백엔드
 - [x] ~~A5 스모크 로그 확인~~ — 3A usage 승격·USD 합산 검증 완료
 - [x] ~~2B temperature 미제어~~ — API 백엔드로 해소 (크레딧 충전 조건부),
       하이브리드 구현·검증: paper-hist/2026-07-05_llm-backend-hybrid.md
