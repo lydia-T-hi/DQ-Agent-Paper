@@ -1,0 +1,8322 @@
+{
+  "source": "data/S1_customer_1000.json",
+  "rate": 0.1,
+  "seed": 4,
+  "budget_cells": 1200,
+  "per_type": 240,
+  "injected": 1187,
+  "skipped_types": [],
+  "rows_before": 1000,
+  "rows_after": 1240,
+  "ground_truth": [
+    {
+      "row": 241,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "rgang@example.net",
+      "corrupted": null
+    },
+    {
+      "row": 105,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": ""
+    },
+    {
+      "row": 405,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2021-08-27",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 158,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "장민준",
+      "corrupted": "-"
+    },
+    {
+      "row": 68,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00069",
+      "corrupted": null
+    },
+    {
+      "row": 411,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2025-07-02",
+      "corrupted": ""
+    },
+    {
+      "row": 939,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "gimsangho@example.org",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 819,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00820",
+      "corrupted": "-"
+    },
+    {
+      "row": 227,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2023-10-18",
+      "corrupted": null
+    },
+    {
+      "row": 549,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "017-873-3978",
+      "corrupted": ""
+    },
+    {
+      "row": 283,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 20,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 846,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "정영길",
+      "corrupted": "-"
+    },
+    {
+      "row": 268,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": null
+    },
+    {
+      "row": 965,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00966",
+      "corrupted": ""
+    },
+    {
+      "row": 848,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 826,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "gimyeongmi@example.com",
+      "corrupted": "-"
+    },
+    {
+      "row": 819,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "yeonggilgim@example.org",
+      "corrupted": null
+    },
+    {
+      "row": 198,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 44,
+      "corrupted": ""
+    },
+    {
+      "row": 317,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "bagjaeho@example.net",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 642,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 983,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "054-764-4974",
+      "corrupted": null
+    },
+    {
+      "row": 88,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 3633584,
+      "corrupted": ""
+    },
+    {
+      "row": 345,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Gold",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 397,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-05-28",
+      "corrupted": "-"
+    },
+    {
+      "row": 254,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 54,
+      "corrupted": null
+    },
+    {
+      "row": 253,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2024-02-20",
+      "corrupted": ""
+    },
+    {
+      "row": 286,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "조미정",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 967,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-03-15",
+      "corrupted": "-"
+    },
+    {
+      "row": 860,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "bageunju@example.org",
+      "corrupted": null
+    },
+    {
+      "row": 7,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "namjiyeong@example.com",
+      "corrupted": ""
+    },
+    {
+      "row": 586,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 903,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "ai@example.org",
+      "corrupted": "-"
+    },
+    {
+      "row": 868,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2021-11-07",
+      "corrupted": null
+    },
+    {
+      "row": 199,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "20438",
+      "corrupted": ""
+    },
+    {
+      "row": 433,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 2262411,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 295,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "19292",
+      "corrupted": "-"
+    },
+    {
+      "row": 462,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 73,
+      "corrupted": null
+    },
+    {
+      "row": 238,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "minji28@example.org",
+      "corrupted": ""
+    },
+    {
+      "row": 265,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00266",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 83,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00084",
+      "corrupted": "-"
+    },
+    {
+      "row": 473,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": null
+    },
+    {
+      "row": 287,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2025-04-26",
+      "corrupted": ""
+    },
+    {
+      "row": 547,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 482,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 351,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 21,
+      "corrupted": null
+    },
+    {
+      "row": 689,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": ""
+    },
+    {
+      "row": 68,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "12779",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 935,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "-"
+    },
+    {
+      "row": 650,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": null
+    },
+    {
+      "row": 451,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "ngang@example.com",
+      "corrupted": ""
+    },
+    {
+      "row": 188,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "070-1437-4470",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 446,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 602,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "019-884-1834",
+      "corrupted": null
+    },
+    {
+      "row": 649,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-06-04",
+      "corrupted": ""
+    },
+    {
+      "row": 203,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "018-555-4398",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 103,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00104",
+      "corrupted": "-"
+    },
+    {
+      "row": 725,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": null
+    },
+    {
+      "row": 284,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 421350,
+      "corrupted": ""
+    },
+    {
+      "row": 630,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 125,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "053-692-4593",
+      "corrupted": "-"
+    },
+    {
+      "row": 957,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 19,
+      "corrupted": null
+    },
+    {
+      "row": 297,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2023-04-19",
+      "corrupted": ""
+    },
+    {
+      "row": 26,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00027",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 365,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 84,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "junyeong90@example.net",
+      "corrupted": null
+    },
+    {
+      "row": 752,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": ""
+    },
+    {
+      "row": 982,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "019-431-9165",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 18,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "061-025-6342",
+      "corrupted": "-"
+    },
+    {
+      "row": 295,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "032-442-9444",
+      "corrupted": null
+    },
+    {
+      "row": 989,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 62,
+      "corrupted": ""
+    },
+    {
+      "row": 793,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 420,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 3507975,
+      "corrupted": "-"
+    },
+    {
+      "row": 696,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "김영순",
+      "corrupted": null
+    },
+    {
+      "row": 300,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 2669828,
+      "corrupted": ""
+    },
+    {
+      "row": 196,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-07-02",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 299,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 43,
+      "corrupted": "-"
+    },
+    {
+      "row": 256,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "51790",
+      "corrupted": null
+    },
+    {
+      "row": 613,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 33,
+      "corrupted": ""
+    },
+    {
+      "row": 339,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 1020192,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 9,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "032-834-7382",
+      "corrupted": "-"
+    },
+    {
+      "row": 45,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-12-30",
+      "corrupted": null
+    },
+    {
+      "row": 173,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "044-074-5054",
+      "corrupted": ""
+    },
+    {
+      "row": 802,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "043-546-2127",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 297,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 376629,
+      "corrupted": "-"
+    },
+    {
+      "row": 99,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-06-13",
+      "corrupted": null
+    },
+    {
+      "row": 212,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "88725",
+      "corrupted": ""
+    },
+    {
+      "row": 938,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 116,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00117",
+      "corrupted": "-"
+    },
+    {
+      "row": 63,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00064",
+      "corrupted": null
+    },
+    {
+      "row": 754,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 34,
+      "corrupted": ""
+    },
+    {
+      "row": 609,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 993,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 73,
+      "corrupted": "-"
+    },
+    {
+      "row": 621,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00622",
+      "corrupted": null
+    },
+    {
+      "row": 559,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-04-03",
+      "corrupted": ""
+    },
+    {
+      "row": 596,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 329,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00330",
+      "corrupted": "-"
+    },
+    {
+      "row": 125,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2024-10-07",
+      "corrupted": null
+    },
+    {
+      "row": 299,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "30091",
+      "corrupted": ""
+    },
+    {
+      "row": 667,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 489,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "-"
+    },
+    {
+      "row": 247,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2026-05-30",
+      "corrupted": null
+    },
+    {
+      "row": 420,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-06-10",
+      "corrupted": ""
+    },
+    {
+      "row": 37,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 431,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2023-12-07",
+      "corrupted": "-"
+    },
+    {
+      "row": 254,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": null
+    },
+    {
+      "row": 910,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "76334",
+      "corrupted": ""
+    },
+    {
+      "row": 850,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 510,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": "-"
+    },
+    {
+      "row": 32,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00033",
+      "corrupted": null
+    },
+    {
+      "row": 260,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "yeonghyijang@example.com",
+      "corrupted": ""
+    },
+    {
+      "row": 248,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2023-07-29",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 213,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": "-"
+    },
+    {
+      "row": 427,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "ebag@example.org",
+      "corrupted": null
+    },
+    {
+      "row": 145,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "017-918-0552",
+      "corrupted": ""
+    },
+    {
+      "row": 52,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "010-5884-2474",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 578,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "양정숙",
+      "corrupted": "-"
+    },
+    {
+      "row": 583,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "19639",
+      "corrupted": null
+    },
+    {
+      "row": 985,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": ""
+    },
+    {
+      "row": 669,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 762,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00763",
+      "corrupted": "-"
+    },
+    {
+      "row": 506,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "90550",
+      "corrupted": null
+    },
+    {
+      "row": 95,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "94705",
+      "corrupted": ""
+    },
+    {
+      "row": 215,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 3071726,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 921,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 38,
+      "corrupted": "-"
+    },
+    {
+      "row": 344,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "imyeongsug@example.com",
+      "corrupted": null
+    },
+    {
+      "row": 672,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2024-10-13",
+      "corrupted": ""
+    },
+    {
+      "row": 818,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 322,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "24375",
+      "corrupted": "-"
+    },
+    {
+      "row": 540,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": null
+    },
+    {
+      "row": 670,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "VIP",
+      "corrupted": ""
+    },
+    {
+      "row": 820,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "seongjieun@example.org",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 346,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "71357",
+      "corrupted": "-"
+    },
+    {
+      "row": 979,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-06-09",
+      "corrupted": null
+    },
+    {
+      "row": 76,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "omisug@example.org",
+      "corrupted": ""
+    },
+    {
+      "row": 984,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "VIP",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 684,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "-"
+    },
+    {
+      "row": 45,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "27875",
+      "corrupted": null
+    },
+    {
+      "row": 920,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 1815334,
+      "corrupted": ""
+    },
+    {
+      "row": 130,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "gyeongja77@example.com",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 683,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00684",
+      "corrupted": "-"
+    },
+    {
+      "row": 890,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 37,
+      "corrupted": null
+    },
+    {
+      "row": 704,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": ""
+    },
+    {
+      "row": 475,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 1774215,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 483,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 413,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "89731",
+      "corrupted": null
+    },
+    {
+      "row": 223,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00224",
+      "corrupted": ""
+    },
+    {
+      "row": 216,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 51,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 13,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 478746,
+      "corrupted": "-"
+    },
+    {
+      "row": 897,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "si@example.org",
+      "corrupted": null
+    },
+    {
+      "row": 118,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "16668",
+      "corrupted": ""
+    },
+    {
+      "row": 829,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "83893",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 898,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "-"
+    },
+    {
+      "row": 563,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00564",
+      "corrupted": null
+    },
+    {
+      "row": 899,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": ""
+    },
+    {
+      "row": 165,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Gold",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 622,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "063-150-9688",
+      "corrupted": "-"
+    },
+    {
+      "row": 838,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-03-12",
+      "corrupted": null
+    },
+    {
+      "row": 792,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2023-12-12",
+      "corrupted": ""
+    },
+    {
+      "row": 937,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2025-11-22",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 450,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00451",
+      "corrupted": "-"
+    },
+    {
+      "row": 80,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00081",
+      "corrupted": null
+    },
+    {
+      "row": 712,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 399230,
+      "corrupted": ""
+    },
+    {
+      "row": 115,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-06-13",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 574,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "seongminseo@example.org",
+      "corrupted": "-"
+    },
+    {
+      "row": 622,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 40,
+      "corrupted": null
+    },
+    {
+      "row": 42,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "019-746-8071",
+      "corrupted": ""
+    },
+    {
+      "row": 81,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-01-19",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 926,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00927",
+      "corrupted": "-"
+    },
+    {
+      "row": 304,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "032-743-2806",
+      "corrupted": null
+    },
+    {
+      "row": 847,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "김우진",
+      "corrupted": ""
+    },
+    {
+      "row": 87,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2026-05-28",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 464,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "14870",
+      "corrupted": "-"
+    },
+    {
+      "row": 210,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "sanghyeongang@example.org",
+      "corrupted": null
+    },
+    {
+      "row": 397,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": ""
+    },
+    {
+      "row": 776,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-12-07",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 876,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "48155",
+      "corrupted": "-"
+    },
+    {
+      "row": 97,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "박승현",
+      "corrupted": null
+    },
+    {
+      "row": 117,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 1079861,
+      "corrupted": ""
+    },
+    {
+      "row": 817,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "033-119-7871",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 524,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "97745",
+      "corrupted": "-"
+    },
+    {
+      "row": 425,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": null
+    },
+    {
+      "row": 795,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-05-13",
+      "corrupted": ""
+    },
+    {
+      "row": 68,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Gold",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 902,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "-"
+    },
+    {
+      "row": 652,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "igyeongsug@example.com",
+      "corrupted": null
+    },
+    {
+      "row": 952,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-06-30",
+      "corrupted": ""
+    },
+    {
+      "row": 432,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "장명자",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 817,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2025-06-28",
+      "corrupted": "-"
+    },
+    {
+      "row": 171,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "016-451-1686",
+      "corrupted": null
+    },
+    {
+      "row": 895,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 64,
+      "corrupted": ""
+    },
+    {
+      "row": 180,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 152,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "044-850-5064",
+      "corrupted": "-"
+    },
+    {
+      "row": 506,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "019-829-6353",
+      "corrupted": null
+    },
+    {
+      "row": 264,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2022-11-10",
+      "corrupted": ""
+    },
+    {
+      "row": 997,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00998",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 727,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 48,
+      "corrupted": "-"
+    },
+    {
+      "row": 5,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": null
+    },
+    {
+      "row": 319,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "이재호",
+      "corrupted": ""
+    },
+    {
+      "row": 558,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "전서준",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 498,
+      "col": "is_churned",
+      "type": "T1_missing",
+      "original": false,
+      "corrupted": "-"
+    },
+    {
+      "row": 615,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2025-01-01",
+      "corrupted": null
+    },
+    {
+      "row": 538,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "황상훈",
+      "corrupted": ""
+    },
+    {
+      "row": 533,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Male",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 421,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "ygim@example.org",
+      "corrupted": "-"
+    },
+    {
+      "row": 365,
+      "col": "gender",
+      "type": "T1_missing",
+      "original": "Female",
+      "corrupted": null
+    },
+    {
+      "row": 785,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 32,
+      "corrupted": ""
+    },
+    {
+      "row": 884,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 1,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Bronze",
+      "corrupted": "-"
+    },
+    {
+      "row": 54,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 388618,
+      "corrupted": null
+    },
+    {
+      "row": 929,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "032-788-2247",
+      "corrupted": ""
+    },
+    {
+      "row": 557,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-07-22",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 801,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 326502,
+      "corrupted": "-"
+    },
+    {
+      "row": 312,
+      "col": "last_purchase_date",
+      "type": "T1_missing",
+      "original": "2023-09-01",
+      "corrupted": null
+    },
+    {
+      "row": 805,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2021-12-16",
+      "corrupted": ""
+    },
+    {
+      "row": 627,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 446298,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 452,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "47292",
+      "corrupted": "-"
+    },
+    {
+      "row": 144,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "eunyeong34@example.net",
+      "corrupted": null
+    },
+    {
+      "row": 789,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 276164,
+      "corrupted": ""
+    },
+    {
+      "row": 370,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 348,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 64,
+      "corrupted": "-"
+    },
+    {
+      "row": 443,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "이서준",
+      "corrupted": null
+    },
+    {
+      "row": 620,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 31,
+      "corrupted": ""
+    },
+    {
+      "row": 691,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 485852,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 181,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "bagseunghyeon@example.org",
+      "corrupted": "-"
+    },
+    {
+      "row": 923,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "010-8917-8791",
+      "corrupted": null
+    },
+    {
+      "row": 202,
+      "col": "purchase_amount_krw",
+      "type": "T1_missing",
+      "original": 1895320,
+      "corrupted": ""
+    },
+    {
+      "row": 812,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "064-718-8044",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 904,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "황숙자",
+      "corrupted": "-"
+    },
+    {
+      "row": 78,
+      "col": "postal_code",
+      "type": "T1_missing",
+      "original": "79808",
+      "corrupted": null
+    },
+    {
+      "row": 661,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 70,
+      "corrupted": ""
+    },
+    {
+      "row": 337,
+      "col": "membership_level",
+      "type": "T1_missing",
+      "original": "Silver",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 380,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "019-787-1255",
+      "corrupted": "-"
+    },
+    {
+      "row": 178,
+      "col": "email",
+      "type": "T1_missing",
+      "original": "gimhyejin@example.com",
+      "corrupted": null
+    },
+    {
+      "row": 904,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00905",
+      "corrupted": ""
+    },
+    {
+      "row": 618,
+      "col": "customer_id",
+      "type": "T1_missing",
+      "original": "CUST-00619",
+      "corrupted": "N/A"
+    },
+    {
+      "row": 536,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "김준영",
+      "corrupted": "-"
+    },
+    {
+      "row": 820,
+      "col": "phone",
+      "type": "T1_missing",
+      "original": "016-365-9520",
+      "corrupted": null
+    },
+    {
+      "row": 826,
+      "col": "name",
+      "type": "T1_missing",
+      "original": "김성호",
+      "corrupted": ""
+    },
+    {
+      "row": 162,
+      "col": "age",
+      "type": "T1_missing",
+      "original": 70,
+      "corrupted": "N/A"
+    },
+    {
+      "row": 598,
+      "col": "signup_date",
+      "type": "T1_missing",
+      "original": "2022-01-03",
+      "corrupted": "-"
+    },
+    {
+      "row": 676,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-08-25",
+      "corrupted": "25/08/2025"
+    },
+    {
+      "row": 778,
+      "col": "email",
+      "type": "T2_format",
+      "original": "agim@example.com",
+      "corrupted": "agim#example.com"
+    },
+    {
+      "row": 667,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-04-06",
+      "corrupted": "20230406"
+    },
+    {
+      "row": 907,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "032-299-5704",
+      "corrupted": "0322995704"
+    },
+    {
+      "row": 632,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "18939",
+      "corrupted": "18939_x"
+    },
+    {
+      "row": 415,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-04-22",
+      "corrupted": "22/04/2025"
+    },
+    {
+      "row": 918,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2025-07-27",
+      "corrupted": "20250727"
+    },
+    {
+      "row": 226,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "81845",
+      "corrupted": "81845  "
+    },
+    {
+      "row": 235,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "55449",
+      "corrupted": "55449_x"
+    },
+    {
+      "row": 641,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-04-07",
+      "corrupted": "2024.04.07"
+    },
+    {
+      "row": 920,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-02-03",
+      "corrupted": "20240203"
+    },
+    {
+      "row": 410,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "08124",
+      "corrupted": "08124  "
+    },
+    {
+      "row": 448,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2021-12-30",
+      "corrupted": "20211230"
+    },
+    {
+      "row": 13,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "91699",
+      "corrupted": "91699!"
+    },
+    {
+      "row": 918,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-05-14",
+      "corrupted": "2026.05.14"
+    },
+    {
+      "row": 709,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-10-01",
+      "corrupted": "20241001"
+    },
+    {
+      "row": 845,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "07152",
+      "corrupted": "07152  "
+    },
+    {
+      "row": 973,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-11-14",
+      "corrupted": "20231114"
+    },
+    {
+      "row": 28,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "02-6990-1627",
+      "corrupted": "0269901627"
+    },
+    {
+      "row": 523,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jia63@example.org",
+      "corrupted": "jia63 at example.org"
+    },
+    {
+      "row": 997,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "76279",
+      "corrupted": "76279_x"
+    },
+    {
+      "row": 815,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "31538",
+      "corrupted": "31538!"
+    },
+    {
+      "row": 773,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "46277",
+      "corrupted": "46277  "
+    },
+    {
+      "row": 227,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2021-10-28",
+      "corrupted": "20211028"
+    },
+    {
+      "row": 796,
+      "col": "email",
+      "type": "T2_format",
+      "original": "yeongceol38@example.net",
+      "corrupted": "yeongceol38#example.net"
+    },
+    {
+      "row": 946,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "010-6843-0211",
+      "corrupted": "01068430211"
+    },
+    {
+      "row": 70,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "82071",
+      "corrupted": "82071!"
+    },
+    {
+      "row": 970,
+      "col": "email",
+      "type": "T2_format",
+      "original": "tgim@example.org",
+      "corrupted": "tgim#example.org"
+    },
+    {
+      "row": 407,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-01-28",
+      "corrupted": "20260128"
+    },
+    {
+      "row": 635,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-01-16",
+      "corrupted": "20260116"
+    },
+    {
+      "row": 982,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-02-08",
+      "corrupted": "2026.02.08"
+    },
+    {
+      "row": 18,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-03-06",
+      "corrupted": "06/03/2025"
+    },
+    {
+      "row": 161,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jihyeon05@example.net",
+      "corrupted": "jihyeon05#example.net"
+    },
+    {
+      "row": 32,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "53147",
+      "corrupted": "53147!"
+    },
+    {
+      "row": 124,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "79937",
+      "corrupted": "79937!"
+    },
+    {
+      "row": 899,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "98939",
+      "corrupted": "98939_x"
+    },
+    {
+      "row": 911,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "010-6217-5080",
+      "corrupted": "01062175080"
+    },
+    {
+      "row": 748,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "016-994-8532",
+      "corrupted": "0169948532"
+    },
+    {
+      "row": 670,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-01-10",
+      "corrupted": "10/01/2024"
+    },
+    {
+      "row": 899,
+      "col": "email",
+      "type": "T2_format",
+      "original": "hi@example.org",
+      "corrupted": "hiexample.org"
+    },
+    {
+      "row": 373,
+      "col": "email",
+      "type": "T2_format",
+      "original": "yeongja64@example.org",
+      "corrupted": "yeongja64example.org"
+    },
+    {
+      "row": 901,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-07-27",
+      "corrupted": "27/07/2024"
+    },
+    {
+      "row": 514,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-10-11",
+      "corrupted": "11/10/2023"
+    },
+    {
+      "row": 220,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "76599",
+      "corrupted": "76599  "
+    },
+    {
+      "row": 519,
+      "col": "email",
+      "type": "T2_format",
+      "original": "areumi@example.com",
+      "corrupted": "areumi at example.com"
+    },
+    {
+      "row": 172,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "033-914-8564",
+      "corrupted": "0339148564"
+    },
+    {
+      "row": 895,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "09114",
+      "corrupted": "09114_x"
+    },
+    {
+      "row": 400,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-11-23",
+      "corrupted": "20241123"
+    },
+    {
+      "row": 310,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-05-25",
+      "corrupted": "2024.05.25"
+    },
+    {
+      "row": 174,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-04-19",
+      "corrupted": "19/04/2022"
+    },
+    {
+      "row": 433,
+      "col": "email",
+      "type": "T2_format",
+      "original": "seongjingim@example.org",
+      "corrupted": "seongjingim at example.org"
+    },
+    {
+      "row": 311,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "063-722-0054",
+      "corrupted": "0637220054"
+    },
+    {
+      "row": 87,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "011-125-1778",
+      "corrupted": "0111251778"
+    },
+    {
+      "row": 118,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-10-21",
+      "corrupted": "21/10/2024"
+    },
+    {
+      "row": 237,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "017-643-3472",
+      "corrupted": "0176433472"
+    },
+    {
+      "row": 566,
+      "col": "email",
+      "type": "T2_format",
+      "original": "hbag@example.net",
+      "corrupted": "hbag at example.net"
+    },
+    {
+      "row": 932,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-03-31",
+      "corrupted": "31/03/2026"
+    },
+    {
+      "row": 906,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-02-07",
+      "corrupted": "20230207"
+    },
+    {
+      "row": 723,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-05-01",
+      "corrupted": "2022.05.01"
+    },
+    {
+      "row": 867,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "041-201-2560",
+      "corrupted": "0412012560"
+    },
+    {
+      "row": 853,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-05-02",
+      "corrupted": "20260502"
+    },
+    {
+      "row": 192,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jgim@example.net",
+      "corrupted": "jgim at example.net"
+    },
+    {
+      "row": 634,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "72216",
+      "corrupted": "72216  "
+    },
+    {
+      "row": 614,
+      "col": "email",
+      "type": "T2_format",
+      "original": "ihyeonju@example.org",
+      "corrupted": "ihyeonjuexample.org"
+    },
+    {
+      "row": 217,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "92024",
+      "corrupted": "92024_x"
+    },
+    {
+      "row": 878,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-09-10",
+      "corrupted": "2025.09.10"
+    },
+    {
+      "row": 803,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-10-24",
+      "corrupted": "20221024"
+    },
+    {
+      "row": 853,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "36750",
+      "corrupted": "36750!"
+    },
+    {
+      "row": 913,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "051-454-4608",
+      "corrupted": "0514544608"
+    },
+    {
+      "row": 914,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "86999",
+      "corrupted": "86999!"
+    },
+    {
+      "row": 674,
+      "col": "email",
+      "type": "T2_format",
+      "original": "useo@example.org",
+      "corrupted": "useoexample.org"
+    },
+    {
+      "row": 330,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-11-27",
+      "corrupted": "2024.11.27"
+    },
+    {
+      "row": 978,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "16411",
+      "corrupted": "16411!"
+    },
+    {
+      "row": 510,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-07-19",
+      "corrupted": "20250719"
+    },
+    {
+      "row": 847,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-11-22",
+      "corrupted": "20251122"
+    },
+    {
+      "row": 255,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jiyeong66@example.org",
+      "corrupted": "jiyeong66#example.org"
+    },
+    {
+      "row": 692,
+      "col": "email",
+      "type": "T2_format",
+      "original": "seoyeonha@example.net",
+      "corrupted": "seoyeonha at example.net"
+    },
+    {
+      "row": 800,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2023-11-24",
+      "corrupted": "24/11/2023"
+    },
+    {
+      "row": 713,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "40388",
+      "corrupted": "40388!"
+    },
+    {
+      "row": 519,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-12-09",
+      "corrupted": "09/12/2025"
+    },
+    {
+      "row": 73,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "02-5423-5733",
+      "corrupted": "0254235733"
+    },
+    {
+      "row": 638,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "25797",
+      "corrupted": "25797_x"
+    },
+    {
+      "row": 977,
+      "col": "email",
+      "type": "T2_format",
+      "original": "yeongsig84@example.org",
+      "corrupted": "yeongsig84example.org"
+    },
+    {
+      "row": 996,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jihun52@example.com",
+      "corrupted": "jihun52#example.com"
+    },
+    {
+      "row": 489,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "010-7883-6196",
+      "corrupted": "01078836196"
+    },
+    {
+      "row": 218,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "92929",
+      "corrupted": "92929!"
+    },
+    {
+      "row": 911,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "96304",
+      "corrupted": "96304  "
+    },
+    {
+      "row": 878,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-03-18",
+      "corrupted": "20230318"
+    },
+    {
+      "row": 619,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2026-03-02",
+      "corrupted": "02/03/2026"
+    },
+    {
+      "row": 177,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-02-11",
+      "corrupted": "2022.02.11"
+    },
+    {
+      "row": 998,
+      "col": "email",
+      "type": "T2_format",
+      "original": "gimsunog@example.org",
+      "corrupted": "gimsunogexample.org"
+    },
+    {
+      "row": 883,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-10-24",
+      "corrupted": "2025.10.24"
+    },
+    {
+      "row": 573,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "34213",
+      "corrupted": "34213!"
+    },
+    {
+      "row": 721,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-03-12",
+      "corrupted": "2024.03.12"
+    },
+    {
+      "row": 179,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "070-0744-6660",
+      "corrupted": "07007446660"
+    },
+    {
+      "row": 18,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-06-22",
+      "corrupted": "2024.06.22"
+    },
+    {
+      "row": 954,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "65064",
+      "corrupted": "65064  "
+    },
+    {
+      "row": 773,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-02-28",
+      "corrupted": "20240228"
+    },
+    {
+      "row": 949,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-09-04",
+      "corrupted": "2022.09.04"
+    },
+    {
+      "row": 768,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-08-19",
+      "corrupted": "19/08/2025"
+    },
+    {
+      "row": 262,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "60843",
+      "corrupted": "60843_x"
+    },
+    {
+      "row": 88,
+      "col": "email",
+      "type": "T2_format",
+      "original": "bagjaeho@example.org",
+      "corrupted": "bagjaeho at example.org"
+    },
+    {
+      "row": 269,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-08-10",
+      "corrupted": "2025.08.10"
+    },
+    {
+      "row": 691,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "043-666-7776",
+      "corrupted": "0436667776"
+    },
+    {
+      "row": 627,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "22946",
+      "corrupted": "22946!"
+    },
+    {
+      "row": 957,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "064-705-6856",
+      "corrupted": "0647056856"
+    },
+    {
+      "row": 635,
+      "col": "email",
+      "type": "T2_format",
+      "original": "sunog82@example.org",
+      "corrupted": "sunog82example.org"
+    },
+    {
+      "row": 216,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "91365",
+      "corrupted": "91365_x"
+    },
+    {
+      "row": 221,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-10-01",
+      "corrupted": "01/10/2022"
+    },
+    {
+      "row": 660,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "45018",
+      "corrupted": "45018!"
+    },
+    {
+      "row": 466,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-04-23",
+      "corrupted": "23/04/2025"
+    },
+    {
+      "row": 170,
+      "col": "email",
+      "type": "T2_format",
+      "original": "pcoe@example.com",
+      "corrupted": "pcoe#example.com"
+    },
+    {
+      "row": 531,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jangjihun@example.org",
+      "corrupted": "jangjihun#example.org"
+    },
+    {
+      "row": 816,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "33538",
+      "corrupted": "33538  "
+    },
+    {
+      "row": 890,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-06-04",
+      "corrupted": "20260604"
+    },
+    {
+      "row": 676,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "064-700-5640",
+      "corrupted": "0647005640"
+    },
+    {
+      "row": 928,
+      "col": "email",
+      "type": "T2_format",
+      "original": "ogwangsu@example.net",
+      "corrupted": "ogwangsuexample.net"
+    },
+    {
+      "row": 920,
+      "col": "email",
+      "type": "T2_format",
+      "original": "gimsiu@example.org",
+      "corrupted": "gimsiu#example.org"
+    },
+    {
+      "row": 692,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "018-957-8654",
+      "corrupted": "0189578654"
+    },
+    {
+      "row": 269,
+      "col": "email",
+      "type": "T2_format",
+      "original": "subin08@example.org",
+      "corrupted": "subin08example.org"
+    },
+    {
+      "row": 332,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "28457",
+      "corrupted": "28457_x"
+    },
+    {
+      "row": 788,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-07-11",
+      "corrupted": "2024.07.11"
+    },
+    {
+      "row": 166,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "053-262-1815",
+      "corrupted": "0532621815"
+    },
+    {
+      "row": 773,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "031-526-3510",
+      "corrupted": "0315263510"
+    },
+    {
+      "row": 50,
+      "col": "email",
+      "type": "T2_format",
+      "original": "sunog64@example.com",
+      "corrupted": "sunog64#example.com"
+    },
+    {
+      "row": 700,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jieuni@example.org",
+      "corrupted": "jieuniexample.org"
+    },
+    {
+      "row": 925,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "27469",
+      "corrupted": "27469_x"
+    },
+    {
+      "row": 943,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-12-19",
+      "corrupted": "19/12/2024"
+    },
+    {
+      "row": 816,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "019-050-4043",
+      "corrupted": "0190504043"
+    },
+    {
+      "row": 401,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-08-22",
+      "corrupted": "20230822"
+    },
+    {
+      "row": 553,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "89608",
+      "corrupted": "89608  "
+    },
+    {
+      "row": 440,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2026-03-25",
+      "corrupted": "25/03/2026"
+    },
+    {
+      "row": 776,
+      "col": "email",
+      "type": "T2_format",
+      "original": "mijeong89@example.net",
+      "corrupted": "mijeong89#example.net"
+    },
+    {
+      "row": 156,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "32365",
+      "corrupted": "32365!"
+    },
+    {
+      "row": 303,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "063-766-1830",
+      "corrupted": "0637661830"
+    },
+    {
+      "row": 372,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2022-10-12",
+      "corrupted": "12/10/2022"
+    },
+    {
+      "row": 961,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-09-12",
+      "corrupted": "20250912"
+    },
+    {
+      "row": 352,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2021-11-23",
+      "corrupted": "2021.11.23"
+    },
+    {
+      "row": 548,
+      "col": "email",
+      "type": "T2_format",
+      "original": "seunghyeonbag@example.net",
+      "corrupted": "seunghyeonbag#example.net"
+    },
+    {
+      "row": 195,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "16373",
+      "corrupted": "16373!"
+    },
+    {
+      "row": 547,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "055-610-9410",
+      "corrupted": "0556109410"
+    },
+    {
+      "row": 21,
+      "col": "email",
+      "type": "T2_format",
+      "original": "sujin14@example.net",
+      "corrupted": "sujin14#example.net"
+    },
+    {
+      "row": 960,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-02-01",
+      "corrupted": "2026.02.01"
+    },
+    {
+      "row": 963,
+      "col": "email",
+      "type": "T2_format",
+      "original": "rjin@example.com",
+      "corrupted": "rjin at example.com"
+    },
+    {
+      "row": 819,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-07-22",
+      "corrupted": "22/07/2022"
+    },
+    {
+      "row": 142,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-03-30",
+      "corrupted": "20220330"
+    },
+    {
+      "row": 474,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "91624",
+      "corrupted": "91624  "
+    },
+    {
+      "row": 5,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-05-25",
+      "corrupted": "20230525"
+    },
+    {
+      "row": 139,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-01-01",
+      "corrupted": "01/01/2022"
+    },
+    {
+      "row": 761,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-07-04",
+      "corrupted": "04/07/2023"
+    },
+    {
+      "row": 117,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "86211",
+      "corrupted": "86211  "
+    },
+    {
+      "row": 611,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-02-04",
+      "corrupted": "04/02/2026"
+    },
+    {
+      "row": 916,
+      "col": "email",
+      "type": "T2_format",
+      "original": "lo@example.com",
+      "corrupted": "lo at example.com"
+    },
+    {
+      "row": 165,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-12-22",
+      "corrupted": "22/12/2024"
+    },
+    {
+      "row": 185,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-09-26",
+      "corrupted": "26/09/2025"
+    },
+    {
+      "row": 614,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "13944",
+      "corrupted": "13944_x"
+    },
+    {
+      "row": 20,
+      "col": "email",
+      "type": "T2_format",
+      "original": "yi@example.com",
+      "corrupted": "yi at example.com"
+    },
+    {
+      "row": 447,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "063-833-3211",
+      "corrupted": "0638333211"
+    },
+    {
+      "row": 819,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-08-08",
+      "corrupted": "08/08/2025"
+    },
+    {
+      "row": 636,
+      "col": "email",
+      "type": "T2_format",
+      "original": "kan@example.net",
+      "corrupted": "kan#example.net"
+    },
+    {
+      "row": 187,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-01-10",
+      "corrupted": "2024.01.10"
+    },
+    {
+      "row": 239,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-03-26",
+      "corrupted": "20240326"
+    },
+    {
+      "row": 321,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-06-10",
+      "corrupted": "20240610"
+    },
+    {
+      "row": 747,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "63090",
+      "corrupted": "63090_x"
+    },
+    {
+      "row": 856,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2023-07-29",
+      "corrupted": "20230729"
+    },
+    {
+      "row": 981,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-02-04",
+      "corrupted": "2026.02.04"
+    },
+    {
+      "row": 343,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-07-28",
+      "corrupted": "28/07/2025"
+    },
+    {
+      "row": 557,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "064-734-8315",
+      "corrupted": "0647348315"
+    },
+    {
+      "row": 374,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-01-20",
+      "corrupted": "20/01/2026"
+    },
+    {
+      "row": 506,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-05-05",
+      "corrupted": "05/05/2024"
+    },
+    {
+      "row": 75,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2023-11-29",
+      "corrupted": "29/11/2023"
+    },
+    {
+      "row": 162,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "053-002-9218",
+      "corrupted": "0530029218"
+    },
+    {
+      "row": 564,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "041-059-5565",
+      "corrupted": "0410595565"
+    },
+    {
+      "row": 611,
+      "col": "email",
+      "type": "T2_format",
+      "original": "ybag@example.net",
+      "corrupted": "ybagexample.net"
+    },
+    {
+      "row": 839,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "78221",
+      "corrupted": "78221!"
+    },
+    {
+      "row": 726,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jidonghyeon@example.net",
+      "corrupted": "jidonghyeonexample.net"
+    },
+    {
+      "row": 152,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-02-19",
+      "corrupted": "19/02/2025"
+    },
+    {
+      "row": 58,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "84700",
+      "corrupted": "84700  "
+    },
+    {
+      "row": 903,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "77580",
+      "corrupted": "77580!"
+    },
+    {
+      "row": 658,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-08-20",
+      "corrupted": "2022.08.20"
+    },
+    {
+      "row": 542,
+      "col": "email",
+      "type": "T2_format",
+      "original": "bagjeongsun@example.com",
+      "corrupted": "bagjeongsun#example.com"
+    },
+    {
+      "row": 294,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2025-01-09",
+      "corrupted": "09/01/2025"
+    },
+    {
+      "row": 2,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "25534",
+      "corrupted": "25534_x"
+    },
+    {
+      "row": 617,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "09178",
+      "corrupted": "09178!"
+    },
+    {
+      "row": 205,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2025-10-23",
+      "corrupted": "20251023"
+    },
+    {
+      "row": 81,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2024-06-26",
+      "corrupted": "26/06/2024"
+    },
+    {
+      "row": 290,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "011-656-6668",
+      "corrupted": "0116566668"
+    },
+    {
+      "row": 866,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "062-029-2712",
+      "corrupted": "0620292712"
+    },
+    {
+      "row": 838,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "032-844-4902",
+      "corrupted": "0328444902"
+    },
+    {
+      "row": 206,
+      "col": "email",
+      "type": "T2_format",
+      "original": "boram93@example.com",
+      "corrupted": "boram93#example.com"
+    },
+    {
+      "row": 10,
+      "col": "email",
+      "type": "T2_format",
+      "original": "dmun@example.net",
+      "corrupted": "dmun at example.net"
+    },
+    {
+      "row": 532,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-03-09",
+      "corrupted": "20260309"
+    },
+    {
+      "row": 434,
+      "col": "email",
+      "type": "T2_format",
+      "original": "eunjeonghan@example.org",
+      "corrupted": "eunjeonghan#example.org"
+    },
+    {
+      "row": 535,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "74140",
+      "corrupted": "74140_x"
+    },
+    {
+      "row": 522,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-05-13",
+      "corrupted": "13/05/2024"
+    },
+    {
+      "row": 706,
+      "col": "email",
+      "type": "T2_format",
+      "original": "hyeonu75@example.com",
+      "corrupted": "hyeonu75#example.com"
+    },
+    {
+      "row": 987,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "018-634-5443",
+      "corrupted": "0186345443"
+    },
+    {
+      "row": 912,
+      "col": "email",
+      "type": "T2_format",
+      "original": "jeongsigjeong@example.org",
+      "corrupted": "jeongsigjeongexample.org"
+    },
+    {
+      "row": 332,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-04-07",
+      "corrupted": "2026.04.07"
+    },
+    {
+      "row": 680,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "47408",
+      "corrupted": "47408!"
+    },
+    {
+      "row": 601,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-06-28",
+      "corrupted": "28/06/2026"
+    },
+    {
+      "row": 593,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-02-14",
+      "corrupted": "14/02/2025"
+    },
+    {
+      "row": 616,
+      "col": "email",
+      "type": "T2_format",
+      "original": "ocoe@example.com",
+      "corrupted": "ocoe#example.com"
+    },
+    {
+      "row": 44,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "67737",
+      "corrupted": "67737_x"
+    },
+    {
+      "row": 659,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2025-06-28",
+      "corrupted": "2025.06.28"
+    },
+    {
+      "row": 607,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "69681",
+      "corrupted": "69681!"
+    },
+    {
+      "row": 537,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "29659",
+      "corrupted": "29659_x"
+    },
+    {
+      "row": 467,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "052-807-9705",
+      "corrupted": "0528079705"
+    },
+    {
+      "row": 639,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-04-22",
+      "corrupted": "22/04/2023"
+    },
+    {
+      "row": 494,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-03-04",
+      "corrupted": "20250304"
+    },
+    {
+      "row": 26,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2026-07-03",
+      "corrupted": "20260703"
+    },
+    {
+      "row": 583,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "051-111-8600",
+      "corrupted": "0511118600"
+    },
+    {
+      "row": 267,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-11-01",
+      "corrupted": "20251101"
+    },
+    {
+      "row": 587,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2024-10-15",
+      "corrupted": "20241015"
+    },
+    {
+      "row": 462,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "79240",
+      "corrupted": "79240!"
+    },
+    {
+      "row": 323,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "05927",
+      "corrupted": "05927  "
+    },
+    {
+      "row": 722,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "063-789-4319",
+      "corrupted": "0637894319"
+    },
+    {
+      "row": 546,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2023-08-12",
+      "corrupted": "20230812"
+    },
+    {
+      "row": 377,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "019-665-7293",
+      "corrupted": "0196657293"
+    },
+    {
+      "row": 322,
+      "col": "email",
+      "type": "T2_format",
+      "original": "areum57@example.net",
+      "corrupted": "areum57#example.net"
+    },
+    {
+      "row": 652,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "041-585-9177",
+      "corrupted": "0415859177"
+    },
+    {
+      "row": 180,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-02-27",
+      "corrupted": "27/02/2022"
+    },
+    {
+      "row": 998,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "30342",
+      "corrupted": "30342!"
+    },
+    {
+      "row": 533,
+      "col": "email",
+      "type": "T2_format",
+      "original": "rgim@example.net",
+      "corrupted": "rgim#example.net"
+    },
+    {
+      "row": 887,
+      "col": "email",
+      "type": "T2_format",
+      "original": "esong@example.net",
+      "corrupted": "esongexample.net"
+    },
+    {
+      "row": 700,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-01-23",
+      "corrupted": "23/01/2025"
+    },
+    {
+      "row": 228,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "070-5182-7553",
+      "corrupted": "07051827553"
+    },
+    {
+      "row": 381,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2025-07-19",
+      "corrupted": "2025.07.19"
+    },
+    {
+      "row": 971,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2021-12-11",
+      "corrupted": "2021.12.11"
+    },
+    {
+      "row": 351,
+      "col": "email",
+      "type": "T2_format",
+      "original": "ci@example.org",
+      "corrupted": "ci#example.org"
+    },
+    {
+      "row": 189,
+      "col": "email",
+      "type": "T2_format",
+      "original": "gimseongmin@example.net",
+      "corrupted": "gimseongmin at example.net"
+    },
+    {
+      "row": 4,
+      "col": "signup_date",
+      "type": "T2_format",
+      "original": "2022-05-27",
+      "corrupted": "27/05/2022"
+    },
+    {
+      "row": 444,
+      "col": "email",
+      "type": "T2_format",
+      "original": "vbag@example.net",
+      "corrupted": "vbagexample.net"
+    },
+    {
+      "row": 227,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "16335",
+      "corrupted": "16335  "
+    },
+    {
+      "row": 520,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "04611",
+      "corrupted": "04611_x"
+    },
+    {
+      "row": 135,
+      "col": "email",
+      "type": "T2_format",
+      "original": "fbag@example.net",
+      "corrupted": "fbag at example.net"
+    },
+    {
+      "row": 372,
+      "col": "email",
+      "type": "T2_format",
+      "original": "yeonggilgim@example.net",
+      "corrupted": "yeonggilgim at example.net"
+    },
+    {
+      "row": 586,
+      "col": "phone",
+      "type": "T2_format",
+      "original": "011-312-6978",
+      "corrupted": "0113126978"
+    },
+    {
+      "row": 501,
+      "col": "postal_code",
+      "type": "T2_format",
+      "original": "66365",
+      "corrupted": "66365_x"
+    },
+    {
+      "row": 443,
+      "col": "last_purchase_date",
+      "type": "T2_format",
+      "original": "2025-02-20",
+      "corrupted": "20250220"
+    },
+    {
+      "row": 93,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 676050,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 396,
+      "col": "age",
+      "type": "T3_range",
+      "original": 23,
+      "corrupted": 999
+    },
+    {
+      "row": 94,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 171627,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 129,
+      "col": "age",
+      "type": "T3_range",
+      "original": 69,
+      "corrupted": -1
+    },
+    {
+      "row": 448,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 428200,
+      "corrupted": -1
+    },
+    {
+      "row": 325,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1037801,
+      "corrupted": 0
+    },
+    {
+      "row": 316,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 566208,
+      "corrupted": 0
+    },
+    {
+      "row": 105,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1528027,
+      "corrupted": -1
+    },
+    {
+      "row": 521,
+      "col": "age",
+      "type": "T3_range",
+      "original": 58,
+      "corrupted": -1
+    },
+    {
+      "row": 445,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4077494,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 589,
+      "col": "age",
+      "type": "T3_range",
+      "original": 57,
+      "corrupted": -1
+    },
+    {
+      "row": 291,
+      "col": "age",
+      "type": "T3_range",
+      "original": 56,
+      "corrupted": -1
+    },
+    {
+      "row": 547,
+      "col": "age",
+      "type": "T3_range",
+      "original": 47,
+      "corrupted": 999
+    },
+    {
+      "row": 628,
+      "col": "age",
+      "type": "T3_range",
+      "original": 36,
+      "corrupted": -1
+    },
+    {
+      "row": 236,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 183406,
+      "corrupted": -1
+    },
+    {
+      "row": 450,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1397931,
+      "corrupted": 0
+    },
+    {
+      "row": 864,
+      "col": "age",
+      "type": "T3_range",
+      "original": 48,
+      "corrupted": -1
+    },
+    {
+      "row": 886,
+      "col": "age",
+      "type": "T3_range",
+      "original": 65,
+      "corrupted": -1
+    },
+    {
+      "row": 781,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3769226,
+      "corrupted": -1
+    },
+    {
+      "row": 903,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 462510,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 144,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 441138,
+      "corrupted": -1
+    },
+    {
+      "row": 156,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4238174,
+      "corrupted": 0
+    },
+    {
+      "row": 734,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 2351556,
+      "corrupted": 0
+    },
+    {
+      "row": 810,
+      "col": "age",
+      "type": "T3_range",
+      "original": 26,
+      "corrupted": -1
+    },
+    {
+      "row": 951,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1520537,
+      "corrupted": 0
+    },
+    {
+      "row": 488,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 843581,
+      "corrupted": 0
+    },
+    {
+      "row": 520,
+      "col": "age",
+      "type": "T3_range",
+      "original": 32,
+      "corrupted": -1
+    },
+    {
+      "row": 260,
+      "col": "age",
+      "type": "T3_range",
+      "original": 35,
+      "corrupted": 999
+    },
+    {
+      "row": 866,
+      "col": "age",
+      "type": "T3_range",
+      "original": 43,
+      "corrupted": -1
+    },
+    {
+      "row": 978,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 91547,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 46,
+      "col": "age",
+      "type": "T3_range",
+      "original": 58,
+      "corrupted": 999
+    },
+    {
+      "row": 158,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1410104,
+      "corrupted": -1
+    },
+    {
+      "row": 858,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 2979326,
+      "corrupted": 0
+    },
+    {
+      "row": 813,
+      "col": "age",
+      "type": "T3_range",
+      "original": 56,
+      "corrupted": 999
+    },
+    {
+      "row": 36,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 5123797,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 738,
+      "col": "age",
+      "type": "T3_range",
+      "original": 32,
+      "corrupted": 999
+    },
+    {
+      "row": 484,
+      "col": "age",
+      "type": "T3_range",
+      "original": 39,
+      "corrupted": 999
+    },
+    {
+      "row": 178,
+      "col": "age",
+      "type": "T3_range",
+      "original": 60,
+      "corrupted": 999
+    },
+    {
+      "row": 874,
+      "col": "age",
+      "type": "T3_range",
+      "original": 31,
+      "corrupted": 999
+    },
+    {
+      "row": 225,
+      "col": "age",
+      "type": "T3_range",
+      "original": 75,
+      "corrupted": -1
+    },
+    {
+      "row": 334,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 725025,
+      "corrupted": -1
+    },
+    {
+      "row": 587,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 182824,
+      "corrupted": 0
+    },
+    {
+      "row": 134,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 353526,
+      "corrupted": 0
+    },
+    {
+      "row": 650,
+      "col": "age",
+      "type": "T3_range",
+      "original": 45,
+      "corrupted": -1
+    },
+    {
+      "row": 270,
+      "col": "age",
+      "type": "T3_range",
+      "original": 38,
+      "corrupted": 999
+    },
+    {
+      "row": 882,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 446761,
+      "corrupted": 0
+    },
+    {
+      "row": 57,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 5334662,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 211,
+      "col": "age",
+      "type": "T3_range",
+      "original": 61,
+      "corrupted": 999
+    },
+    {
+      "row": 501,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1014068,
+      "corrupted": -1
+    },
+    {
+      "row": 71,
+      "col": "age",
+      "type": "T3_range",
+      "original": 43,
+      "corrupted": 999
+    },
+    {
+      "row": 742,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4575409,
+      "corrupted": 0
+    },
+    {
+      "row": 750,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 643900,
+      "corrupted": 0
+    },
+    {
+      "row": 838,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 126207,
+      "corrupted": 0
+    },
+    {
+      "row": 110,
+      "col": "age",
+      "type": "T3_range",
+      "original": 36,
+      "corrupted": 999
+    },
+    {
+      "row": 35,
+      "col": "age",
+      "type": "T3_range",
+      "original": 47,
+      "corrupted": -1
+    },
+    {
+      "row": 545,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 229753,
+      "corrupted": -1
+    },
+    {
+      "row": 375,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 137133,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 875,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1598499,
+      "corrupted": -1
+    },
+    {
+      "row": 584,
+      "col": "age",
+      "type": "T3_range",
+      "original": 51,
+      "corrupted": -1
+    },
+    {
+      "row": 407,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1673433,
+      "corrupted": 0
+    },
+    {
+      "row": 293,
+      "col": "age",
+      "type": "T3_range",
+      "original": 68,
+      "corrupted": 999
+    },
+    {
+      "row": 525,
+      "col": "age",
+      "type": "T3_range",
+      "original": 30,
+      "corrupted": 999
+    },
+    {
+      "row": 708,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 205782,
+      "corrupted": 0
+    },
+    {
+      "row": 556,
+      "col": "age",
+      "type": "T3_range",
+      "original": 24,
+      "corrupted": 999
+    },
+    {
+      "row": 627,
+      "col": "age",
+      "type": "T3_range",
+      "original": 19,
+      "corrupted": 999
+    },
+    {
+      "row": 553,
+      "col": "age",
+      "type": "T3_range",
+      "original": 28,
+      "corrupted": -1
+    },
+    {
+      "row": 31,
+      "col": "age",
+      "type": "T3_range",
+      "original": 55,
+      "corrupted": -1
+    },
+    {
+      "row": 690,
+      "col": "age",
+      "type": "T3_range",
+      "original": 37,
+      "corrupted": 999
+    },
+    {
+      "row": 285,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 375879,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 787,
+      "col": "age",
+      "type": "T3_range",
+      "original": 35,
+      "corrupted": 999
+    },
+    {
+      "row": 830,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1372317,
+      "corrupted": 0
+    },
+    {
+      "row": 408,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 140990,
+      "corrupted": 0
+    },
+    {
+      "row": 933,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 467735,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 104,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1277143,
+      "corrupted": -1
+    },
+    {
+      "row": 753,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 61346,
+      "corrupted": 0
+    },
+    {
+      "row": 905,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3251754,
+      "corrupted": 0
+    },
+    {
+      "row": 766,
+      "col": "age",
+      "type": "T3_range",
+      "original": 63,
+      "corrupted": -1
+    },
+    {
+      "row": 987,
+      "col": "age",
+      "type": "T3_range",
+      "original": 40,
+      "corrupted": 999
+    },
+    {
+      "row": 969,
+      "col": "age",
+      "type": "T3_range",
+      "original": 65,
+      "corrupted": -1
+    },
+    {
+      "row": 750,
+      "col": "age",
+      "type": "T3_range",
+      "original": 37,
+      "corrupted": 999
+    },
+    {
+      "row": 193,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4763639,
+      "corrupted": 0
+    },
+    {
+      "row": 330,
+      "col": "age",
+      "type": "T3_range",
+      "original": 60,
+      "corrupted": 999
+    },
+    {
+      "row": 833,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 275876,
+      "corrupted": 0
+    },
+    {
+      "row": 526,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 469638,
+      "corrupted": 0
+    },
+    {
+      "row": 460,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 148684,
+      "corrupted": -1
+    },
+    {
+      "row": 935,
+      "col": "age",
+      "type": "T3_range",
+      "original": 25,
+      "corrupted": -1
+    },
+    {
+      "row": 496,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1170952,
+      "corrupted": -1
+    },
+    {
+      "row": 157,
+      "col": "age",
+      "type": "T3_range",
+      "original": 62,
+      "corrupted": -1
+    },
+    {
+      "row": 766,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 866582,
+      "corrupted": 0
+    },
+    {
+      "row": 515,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 416184,
+      "corrupted": 0
+    },
+    {
+      "row": 988,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 343064,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 275,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 338251,
+      "corrupted": 0
+    },
+    {
+      "row": 558,
+      "col": "age",
+      "type": "T3_range",
+      "original": 22,
+      "corrupted": -1
+    },
+    {
+      "row": 625,
+      "col": "age",
+      "type": "T3_range",
+      "original": 48,
+      "corrupted": 999
+    },
+    {
+      "row": 392,
+      "col": "age",
+      "type": "T3_range",
+      "original": 69,
+      "corrupted": -1
+    },
+    {
+      "row": 493,
+      "col": "age",
+      "type": "T3_range",
+      "original": 19,
+      "corrupted": 999
+    },
+    {
+      "row": 327,
+      "col": "age",
+      "type": "T3_range",
+      "original": 52,
+      "corrupted": 999
+    },
+    {
+      "row": 408,
+      "col": "age",
+      "type": "T3_range",
+      "original": 50,
+      "corrupted": 999
+    },
+    {
+      "row": 480,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 5612299,
+      "corrupted": -1
+    },
+    {
+      "row": 396,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 75597,
+      "corrupted": -1
+    },
+    {
+      "row": 446,
+      "col": "age",
+      "type": "T3_range",
+      "original": 67,
+      "corrupted": 999
+    },
+    {
+      "row": 797,
+      "col": "age",
+      "type": "T3_range",
+      "original": 44,
+      "corrupted": 999
+    },
+    {
+      "row": 543,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 2372143,
+      "corrupted": -1
+    },
+    {
+      "row": 263,
+      "col": "age",
+      "type": "T3_range",
+      "original": 23,
+      "corrupted": 999
+    },
+    {
+      "row": 383,
+      "col": "age",
+      "type": "T3_range",
+      "original": 72,
+      "corrupted": -1
+    },
+    {
+      "row": 429,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 844675,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 356,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1821,
+      "corrupted": -1
+    },
+    {
+      "row": 407,
+      "col": "age",
+      "type": "T3_range",
+      "original": 52,
+      "corrupted": -1
+    },
+    {
+      "row": 755,
+      "col": "age",
+      "type": "T3_range",
+      "original": 49,
+      "corrupted": 999
+    },
+    {
+      "row": 482,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1371224,
+      "corrupted": -1
+    },
+    {
+      "row": 735,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 389884,
+      "corrupted": 0
+    },
+    {
+      "row": 370,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 899468,
+      "corrupted": 0
+    },
+    {
+      "row": 105,
+      "col": "age",
+      "type": "T3_range",
+      "original": 42,
+      "corrupted": 999
+    },
+    {
+      "row": 311,
+      "col": "age",
+      "type": "T3_range",
+      "original": 51,
+      "corrupted": 999
+    },
+    {
+      "row": 504,
+      "col": "age",
+      "type": "T3_range",
+      "original": 64,
+      "corrupted": -1
+    },
+    {
+      "row": 639,
+      "col": "age",
+      "type": "T3_range",
+      "original": 40,
+      "corrupted": 999
+    },
+    {
+      "row": 441,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 9065194,
+      "corrupted": -1
+    },
+    {
+      "row": 511,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": 999
+    },
+    {
+      "row": 111,
+      "col": "age",
+      "type": "T3_range",
+      "original": 65,
+      "corrupted": -1
+    },
+    {
+      "row": 992,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 324742,
+      "corrupted": 0
+    },
+    {
+      "row": 649,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 487701,
+      "corrupted": -1
+    },
+    {
+      "row": 554,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1117714,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 905,
+      "col": "age",
+      "type": "T3_range",
+      "original": 22,
+      "corrupted": -1
+    },
+    {
+      "row": 259,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1563943,
+      "corrupted": -1
+    },
+    {
+      "row": 61,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": -1
+    },
+    {
+      "row": 877,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 2610366,
+      "corrupted": 0
+    },
+    {
+      "row": 103,
+      "col": "age",
+      "type": "T3_range",
+      "original": 69,
+      "corrupted": 999
+    },
+    {
+      "row": 101,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3574151,
+      "corrupted": 0
+    },
+    {
+      "row": 283,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 72811,
+      "corrupted": 0
+    },
+    {
+      "row": 126,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 935762,
+      "corrupted": -1
+    },
+    {
+      "row": 797,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 462506,
+      "corrupted": 0
+    },
+    {
+      "row": 645,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3906143,
+      "corrupted": 0
+    },
+    {
+      "row": 902,
+      "col": "age",
+      "type": "T3_range",
+      "original": 47,
+      "corrupted": -1
+    },
+    {
+      "row": 527,
+      "col": "age",
+      "type": "T3_range",
+      "original": 34,
+      "corrupted": -1
+    },
+    {
+      "row": 865,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1890373,
+      "corrupted": -1
+    },
+    {
+      "row": 694,
+      "col": "age",
+      "type": "T3_range",
+      "original": 54,
+      "corrupted": -1
+    },
+    {
+      "row": 703,
+      "col": "age",
+      "type": "T3_range",
+      "original": 41,
+      "corrupted": -1
+    },
+    {
+      "row": 681,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1286344,
+      "corrupted": -1
+    },
+    {
+      "row": 544,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 35543,
+      "corrupted": 0
+    },
+    {
+      "row": 342,
+      "col": "age",
+      "type": "T3_range",
+      "original": 63,
+      "corrupted": -1
+    },
+    {
+      "row": 802,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 5185647,
+      "corrupted": -1
+    },
+    {
+      "row": 561,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1495778,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 624,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 268280,
+      "corrupted": 0
+    },
+    {
+      "row": 77,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 652731,
+      "corrupted": -1
+    },
+    {
+      "row": 870,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 262800,
+      "corrupted": -1
+    },
+    {
+      "row": 667,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4873722,
+      "corrupted": 0
+    },
+    {
+      "row": 174,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 657914,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 880,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1750659,
+      "corrupted": -1
+    },
+    {
+      "row": 809,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 8966348,
+      "corrupted": 0
+    },
+    {
+      "row": 142,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 287949,
+      "corrupted": -1
+    },
+    {
+      "row": 964,
+      "col": "age",
+      "type": "T3_range",
+      "original": 45,
+      "corrupted": 999
+    },
+    {
+      "row": 490,
+      "col": "age",
+      "type": "T3_range",
+      "original": 52,
+      "corrupted": -1
+    },
+    {
+      "row": 606,
+      "col": "age",
+      "type": "T3_range",
+      "original": 46,
+      "corrupted": 999
+    },
+    {
+      "row": 262,
+      "col": "age",
+      "type": "T3_range",
+      "original": 72,
+      "corrupted": 999
+    },
+    {
+      "row": 336,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1859552,
+      "corrupted": 0
+    },
+    {
+      "row": 965,
+      "col": "age",
+      "type": "T3_range",
+      "original": 48,
+      "corrupted": 999
+    },
+    {
+      "row": 609,
+      "col": "age",
+      "type": "T3_range",
+      "original": 38,
+      "corrupted": -1
+    },
+    {
+      "row": 379,
+      "col": "age",
+      "type": "T3_range",
+      "original": 60,
+      "corrupted": -1
+    },
+    {
+      "row": 765,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4006219,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 366,
+      "col": "age",
+      "type": "T3_range",
+      "original": 67,
+      "corrupted": -1
+    },
+    {
+      "row": 686,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 579453,
+      "corrupted": 0
+    },
+    {
+      "row": 623,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 731590,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 128,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 568450,
+      "corrupted": -1
+    },
+    {
+      "row": 887,
+      "col": "age",
+      "type": "T3_range",
+      "original": 52,
+      "corrupted": -1
+    },
+    {
+      "row": 475,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": 999
+    },
+    {
+      "row": 231,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 8779261,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 648,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 73635,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 559,
+      "col": "age",
+      "type": "T3_range",
+      "original": 70,
+      "corrupted": -1
+    },
+    {
+      "row": 613,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3691947,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 516,
+      "col": "age",
+      "type": "T3_range",
+      "original": 42,
+      "corrupted": -1
+    },
+    {
+      "row": 709,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 689905,
+      "corrupted": 0
+    },
+    {
+      "row": 843,
+      "col": "age",
+      "type": "T3_range",
+      "original": 42,
+      "corrupted": 999
+    },
+    {
+      "row": 352,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 31591,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 449,
+      "col": "age",
+      "type": "T3_range",
+      "original": 63,
+      "corrupted": -1
+    },
+    {
+      "row": 748,
+      "col": "age",
+      "type": "T3_range",
+      "original": 29,
+      "corrupted": 999
+    },
+    {
+      "row": 624,
+      "col": "age",
+      "type": "T3_range",
+      "original": 65,
+      "corrupted": -1
+    },
+    {
+      "row": 94,
+      "col": "age",
+      "type": "T3_range",
+      "original": 39,
+      "corrupted": 999
+    },
+    {
+      "row": 958,
+      "col": "age",
+      "type": "T3_range",
+      "original": 19,
+      "corrupted": 999
+    },
+    {
+      "row": 181,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 497748,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 49,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 9437076,
+      "corrupted": -1
+    },
+    {
+      "row": 656,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 8798745,
+      "corrupted": -1
+    },
+    {
+      "row": 759,
+      "col": "age",
+      "type": "T3_range",
+      "original": 30,
+      "corrupted": -1
+    },
+    {
+      "row": 982,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 302911,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 535,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": -1
+    },
+    {
+      "row": 682,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 2807455,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 67,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1034191,
+      "corrupted": 0
+    },
+    {
+      "row": 608,
+      "col": "age",
+      "type": "T3_range",
+      "original": 31,
+      "corrupted": -1
+    },
+    {
+      "row": 805,
+      "col": "age",
+      "type": "T3_range",
+      "original": 28,
+      "corrupted": -1
+    },
+    {
+      "row": 425,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 54813,
+      "corrupted": 0
+    },
+    {
+      "row": 485,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4725624,
+      "corrupted": -1
+    },
+    {
+      "row": 579,
+      "col": "age",
+      "type": "T3_range",
+      "original": 64,
+      "corrupted": 999
+    },
+    {
+      "row": 404,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 69471,
+      "corrupted": 0
+    },
+    {
+      "row": 362,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4416381,
+      "corrupted": 0
+    },
+    {
+      "row": 32,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1353666,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 428,
+      "col": "age",
+      "type": "T3_range",
+      "original": 20,
+      "corrupted": -1
+    },
+    {
+      "row": 107,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": -1
+    },
+    {
+      "row": 268,
+      "col": "age",
+      "type": "T3_range",
+      "original": 70,
+      "corrupted": -1
+    },
+    {
+      "row": 120,
+      "col": "age",
+      "type": "T3_range",
+      "original": 25,
+      "corrupted": 999
+    },
+    {
+      "row": 687,
+      "col": "age",
+      "type": "T3_range",
+      "original": 35,
+      "corrupted": -1
+    },
+    {
+      "row": 907,
+      "col": "age",
+      "type": "T3_range",
+      "original": 68,
+      "corrupted": -1
+    },
+    {
+      "row": 583,
+      "col": "age",
+      "type": "T3_range",
+      "original": 73,
+      "corrupted": 999
+    },
+    {
+      "row": 984,
+      "col": "age",
+      "type": "T3_range",
+      "original": 62,
+      "corrupted": 999
+    },
+    {
+      "row": 170,
+      "col": "age",
+      "type": "T3_range",
+      "original": 21,
+      "corrupted": -1
+    },
+    {
+      "row": 218,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1702506,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 802,
+      "col": "age",
+      "type": "T3_range",
+      "original": 37,
+      "corrupted": -1
+    },
+    {
+      "row": 402,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 672046,
+      "corrupted": -1
+    },
+    {
+      "row": 533,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 481241,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 72,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 287276,
+      "corrupted": -1
+    },
+    {
+      "row": 466,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 3800325,
+      "corrupted": 0
+    },
+    {
+      "row": 304,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 56359,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 279,
+      "col": "age",
+      "type": "T3_range",
+      "original": 31,
+      "corrupted": -1
+    },
+    {
+      "row": 226,
+      "col": "age",
+      "type": "T3_range",
+      "original": 49,
+      "corrupted": -1
+    },
+    {
+      "row": 329,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 831226,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 377,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 453029,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 828,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1036742,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 975,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 854584,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 563,
+      "col": "age",
+      "type": "T3_range",
+      "original": 70,
+      "corrupted": 999
+    },
+    {
+      "row": 543,
+      "col": "age",
+      "type": "T3_range",
+      "original": 47,
+      "corrupted": -1
+    },
+    {
+      "row": 479,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4383960,
+      "corrupted": 0
+    },
+    {
+      "row": 599,
+      "col": "age",
+      "type": "T3_range",
+      "original": 42,
+      "corrupted": -1
+    },
+    {
+      "row": 235,
+      "col": "age",
+      "type": "T3_range",
+      "original": 40,
+      "corrupted": 999
+    },
+    {
+      "row": 192,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 728702,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 167,
+      "col": "age",
+      "type": "T3_range",
+      "original": 22,
+      "corrupted": 999
+    },
+    {
+      "row": 483,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 820194,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 32,
+      "col": "age",
+      "type": "T3_range",
+      "original": 25,
+      "corrupted": 999
+    },
+    {
+      "row": 860,
+      "col": "age",
+      "type": "T3_range",
+      "original": 38,
+      "corrupted": -1
+    },
+    {
+      "row": 307,
+      "col": "age",
+      "type": "T3_range",
+      "original": 25,
+      "corrupted": -1
+    },
+    {
+      "row": 835,
+      "col": "age",
+      "type": "T3_range",
+      "original": 54,
+      "corrupted": -1
+    },
+    {
+      "row": 123,
+      "col": "age",
+      "type": "T3_range",
+      "original": 26,
+      "corrupted": 999
+    },
+    {
+      "row": 98,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 248282,
+      "corrupted": -1
+    },
+    {
+      "row": 401,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 1885529,
+      "corrupted": 1000000000000
+    },
+    {
+      "row": 190,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 169749,
+      "corrupted": 0
+    },
+    {
+      "row": 68,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 4880887,
+      "corrupted": 0
+    },
+    {
+      "row": 764,
+      "col": "age",
+      "type": "T3_range",
+      "original": 33,
+      "corrupted": -1
+    },
+    {
+      "row": 467,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 778291,
+      "corrupted": -1
+    },
+    {
+      "row": 739,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 874802,
+      "corrupted": 0
+    },
+    {
+      "row": 693,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 355094,
+      "corrupted": 0
+    },
+    {
+      "row": 444,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 281861,
+      "corrupted": -1
+    },
+    {
+      "row": 69,
+      "col": "purchase_amount_krw",
+      "type": "T3_range",
+      "original": 7769918,
+      "corrupted": -1
+    },
+    {
+      "row": 752,
+      "col": "age",
+      "type": "T3_range",
+      "original": 54,
+      "corrupted": 999
+    },
+    {
+      "row": 1000,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00019",
+      "corrupted": "CUST-00019_D"
+    },
+    {
+      "row": 1001,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00547",
+      "corrupted": "CUST-00547_D"
+    },
+    {
+      "row": 1002,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00336",
+      "corrupted": "CUST-00336-1"
+    },
+    {
+      "row": 1003,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00623",
+      "corrupted": "CUST-00623X"
+    },
+    {
+      "row": 1004,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00432",
+      "corrupted": "CUST-00432-1"
+    },
+    {
+      "row": 1005,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00297",
+      "corrupted": "CUST-00297_D"
+    },
+    {
+      "row": 1006,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00493",
+      "corrupted": "CUST-00493X"
+    },
+    {
+      "row": 1007,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00884",
+      "corrupted": "CUST-00884-1"
+    },
+    {
+      "row": 1008,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00824",
+      "corrupted": "CUST-00824-1"
+    },
+    {
+      "row": 1009,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00395",
+      "corrupted": "CUST-00395-1"
+    },
+    {
+      "row": 1010,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00147",
+      "corrupted": "CUST-00147_D"
+    },
+    {
+      "row": 1011,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00205",
+      "corrupted": "CUST-00205X"
+    },
+    {
+      "row": 1012,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00251",
+      "corrupted": "CUST-00251X"
+    },
+    {
+      "row": 1013,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00274",
+      "corrupted": "CUST-00274-1"
+    },
+    {
+      "row": 1014,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00139",
+      "corrupted": "CUST-00139_D"
+    },
+    {
+      "row": 1015,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": null,
+      "corrupted": null
+    },
+    {
+      "row": 1016,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00432",
+      "corrupted": "CUST-00432X"
+    },
+    {
+      "row": 1017,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00490",
+      "corrupted": "CUST-00490-1"
+    },
+    {
+      "row": 1018,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00105",
+      "corrupted": "CUST-00105X"
+    },
+    {
+      "row": 1019,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00011",
+      "corrupted": "CUST-00011-1"
+    },
+    {
+      "row": 1020,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00120",
+      "corrupted": "CUST-00120X"
+    },
+    {
+      "row": 1021,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00097",
+      "corrupted": "CUST-00097_D"
+    },
+    {
+      "row": 1022,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00085",
+      "corrupted": "CUST-00085X"
+    },
+    {
+      "row": 1023,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00749",
+      "corrupted": "CUST-00749-1"
+    },
+    {
+      "row": 1024,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00214",
+      "corrupted": "CUST-00214_D"
+    },
+    {
+      "row": 1025,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00445",
+      "corrupted": "CUST-00445-1"
+    },
+    {
+      "row": 1026,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00707",
+      "corrupted": "CUST-00707-1"
+    },
+    {
+      "row": 1027,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00380",
+      "corrupted": "CUST-00380X"
+    },
+    {
+      "row": 1028,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00953",
+      "corrupted": "CUST-00953-1"
+    },
+    {
+      "row": 1029,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00711",
+      "corrupted": "CUST-00711X"
+    },
+    {
+      "row": 1030,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00577",
+      "corrupted": "CUST-00577_D"
+    },
+    {
+      "row": 1031,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00029",
+      "corrupted": "CUST-00029X"
+    },
+    {
+      "row": 1032,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00511",
+      "corrupted": "CUST-00511X"
+    },
+    {
+      "row": 1033,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00296",
+      "corrupted": "CUST-00296_D"
+    },
+    {
+      "row": 1034,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00226",
+      "corrupted": "CUST-00226_D"
+    },
+    {
+      "row": 1035,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00183",
+      "corrupted": "CUST-00183X"
+    },
+    {
+      "row": 1036,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00705",
+      "corrupted": "CUST-00705_D"
+    },
+    {
+      "row": 1037,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00647",
+      "corrupted": "CUST-00647_D"
+    },
+    {
+      "row": 1038,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00537",
+      "corrupted": "CUST-00537-1"
+    },
+    {
+      "row": 1039,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00752",
+      "corrupted": "CUST-00752-1"
+    },
+    {
+      "row": 1040,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00967",
+      "corrupted": "CUST-00967_D"
+    },
+    {
+      "row": 1041,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00278",
+      "corrupted": "CUST-00278X"
+    },
+    {
+      "row": 1042,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00987",
+      "corrupted": "CUST-00987_D"
+    },
+    {
+      "row": 1043,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00579",
+      "corrupted": "CUST-00579-1"
+    },
+    {
+      "row": 1044,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "-",
+      "corrupted": "--1"
+    },
+    {
+      "row": 1045,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00804",
+      "corrupted": "CUST-00804-1"
+    },
+    {
+      "row": 1046,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00889",
+      "corrupted": "CUST-00889X"
+    },
+    {
+      "row": 1047,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00351",
+      "corrupted": "CUST-00351-1"
+    },
+    {
+      "row": 1048,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00801",
+      "corrupted": "CUST-00801X"
+    },
+    {
+      "row": 1049,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00941",
+      "corrupted": "CUST-00941X"
+    },
+    {
+      "row": 1050,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00807",
+      "corrupted": "CUST-00807X"
+    },
+    {
+      "row": 1051,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00164",
+      "corrupted": "CUST-00164_D"
+    },
+    {
+      "row": 1052,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00985",
+      "corrupted": "CUST-00985X"
+    },
+    {
+      "row": 1053,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00681",
+      "corrupted": "CUST-00681-1"
+    },
+    {
+      "row": 1054,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00487",
+      "corrupted": "CUST-00487_D"
+    },
+    {
+      "row": 1055,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00656",
+      "corrupted": "CUST-00656X"
+    },
+    {
+      "row": 1056,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00806",
+      "corrupted": "CUST-00806_D"
+    },
+    {
+      "row": 1057,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00898",
+      "corrupted": "CUST-00898X"
+    },
+    {
+      "row": 1058,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00304",
+      "corrupted": "CUST-00304-1"
+    },
+    {
+      "row": 1059,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00331",
+      "corrupted": "CUST-00331-1"
+    },
+    {
+      "row": 1060,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00502",
+      "corrupted": "CUST-00502X"
+    },
+    {
+      "row": 1061,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00786",
+      "corrupted": "CUST-00786X"
+    },
+    {
+      "row": 1062,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00970",
+      "corrupted": "CUST-00970_D"
+    },
+    {
+      "row": 1063,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00137",
+      "corrupted": "CUST-00137X"
+    },
+    {
+      "row": 1064,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00189",
+      "corrupted": "CUST-00189-1"
+    },
+    {
+      "row": 1065,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00099",
+      "corrupted": "CUST-00099_D"
+    },
+    {
+      "row": 1066,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00230",
+      "corrupted": "CUST-00230_D"
+    },
+    {
+      "row": 1067,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00771",
+      "corrupted": "CUST-00771X"
+    },
+    {
+      "row": 1068,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00263",
+      "corrupted": "CUST-00263_D"
+    },
+    {
+      "row": 1069,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00772",
+      "corrupted": "CUST-00772-1"
+    },
+    {
+      "row": 1070,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00059",
+      "corrupted": "CUST-00059_D"
+    },
+    {
+      "row": 1071,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00449",
+      "corrupted": "CUST-00449X"
+    },
+    {
+      "row": 1072,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00003",
+      "corrupted": "CUST-00003-1"
+    },
+    {
+      "row": 1073,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00813",
+      "corrupted": "CUST-00813_D"
+    },
+    {
+      "row": 1074,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00790",
+      "corrupted": "CUST-00790_D"
+    },
+    {
+      "row": 1075,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00507",
+      "corrupted": "CUST-00507X"
+    },
+    {
+      "row": 1076,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00583",
+      "corrupted": "CUST-00583_D"
+    },
+    {
+      "row": 1077,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00179",
+      "corrupted": "CUST-00179X"
+    },
+    {
+      "row": 1078,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00752",
+      "corrupted": "CUST-00752-1"
+    },
+    {
+      "row": 1079,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00920",
+      "corrupted": "CUST-00920_D"
+    },
+    {
+      "row": 1080,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00160",
+      "corrupted": "CUST-00160X"
+    },
+    {
+      "row": 1081,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00357",
+      "corrupted": "CUST-00357X"
+    },
+    {
+      "row": 1082,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00516",
+      "corrupted": "CUST-00516X"
+    },
+    {
+      "row": 1083,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00285",
+      "corrupted": "CUST-00285_D"
+    },
+    {
+      "row": 1084,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00971",
+      "corrupted": "CUST-00971X"
+    },
+    {
+      "row": 1085,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00692",
+      "corrupted": "CUST-00692X"
+    },
+    {
+      "row": 1086,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00505",
+      "corrupted": "CUST-00505X"
+    },
+    {
+      "row": 1087,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00428",
+      "corrupted": "CUST-00428_D"
+    },
+    {
+      "row": 1088,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00642",
+      "corrupted": "CUST-00642X"
+    },
+    {
+      "row": 1089,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00683",
+      "corrupted": "CUST-00683_D"
+    },
+    {
+      "row": 1090,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00818",
+      "corrupted": "CUST-00818-1"
+    },
+    {
+      "row": 1091,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00683",
+      "corrupted": "CUST-00683-1"
+    },
+    {
+      "row": 1092,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "-",
+      "corrupted": "--1"
+    },
+    {
+      "row": 1093,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00459",
+      "corrupted": "CUST-00459-1"
+    },
+    {
+      "row": 1094,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00359",
+      "corrupted": "CUST-00359X"
+    },
+    {
+      "row": 1095,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00992",
+      "corrupted": "CUST-00992X"
+    },
+    {
+      "row": 1096,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00705",
+      "corrupted": "CUST-00705_D"
+    },
+    {
+      "row": 1097,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00051",
+      "corrupted": "CUST-00051X"
+    },
+    {
+      "row": 1098,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00470",
+      "corrupted": "CUST-00470-1"
+    },
+    {
+      "row": 1099,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00541",
+      "corrupted": "CUST-00541X"
+    },
+    {
+      "row": 1100,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00881",
+      "corrupted": "CUST-00881_D"
+    },
+    {
+      "row": 1101,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00539",
+      "corrupted": "CUST-00539_D"
+    },
+    {
+      "row": 1102,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00761",
+      "corrupted": "CUST-00761-1"
+    },
+    {
+      "row": 1103,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00777",
+      "corrupted": "CUST-00777X"
+    },
+    {
+      "row": 1104,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00632",
+      "corrupted": "CUST-00632_D"
+    },
+    {
+      "row": 1105,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00542",
+      "corrupted": "CUST-00542_D"
+    },
+    {
+      "row": 1106,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00629",
+      "corrupted": "CUST-00629-1"
+    },
+    {
+      "row": 1107,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00973",
+      "corrupted": "CUST-00973-1"
+    },
+    {
+      "row": 1108,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00891",
+      "corrupted": "CUST-00891_D"
+    },
+    {
+      "row": 1109,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00539",
+      "corrupted": "CUST-00539-1"
+    },
+    {
+      "row": 1110,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00136",
+      "corrupted": "CUST-00136-1"
+    },
+    {
+      "row": 1111,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00602",
+      "corrupted": "CUST-00602X"
+    },
+    {
+      "row": 1112,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00339",
+      "corrupted": "CUST-00339_D"
+    },
+    {
+      "row": 1113,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00053",
+      "corrupted": "CUST-00053_D"
+    },
+    {
+      "row": 1114,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00657",
+      "corrupted": "CUST-00657-1"
+    },
+    {
+      "row": 1115,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00524",
+      "corrupted": "CUST-00524_D"
+    },
+    {
+      "row": 1116,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00492",
+      "corrupted": "CUST-00492X"
+    },
+    {
+      "row": 1117,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00306",
+      "corrupted": "CUST-00306_D"
+    },
+    {
+      "row": 1118,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00965",
+      "corrupted": "CUST-00965X"
+    },
+    {
+      "row": 1119,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00455",
+      "corrupted": "CUST-00455-1"
+    },
+    {
+      "row": 1120,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00123",
+      "corrupted": "CUST-00123X"
+    },
+    {
+      "row": 1121,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00026",
+      "corrupted": "CUST-00026-1"
+    },
+    {
+      "row": 1122,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00244",
+      "corrupted": "CUST-00244_D"
+    },
+    {
+      "row": 1123,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00599",
+      "corrupted": "CUST-00599-1"
+    },
+    {
+      "row": 1124,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00132",
+      "corrupted": "CUST-00132_D"
+    },
+    {
+      "row": 1125,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00534",
+      "corrupted": "CUST-00534-1"
+    },
+    {
+      "row": 1126,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00312",
+      "corrupted": "CUST-00312_D"
+    },
+    {
+      "row": 1127,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00299",
+      "corrupted": "CUST-00299-1"
+    },
+    {
+      "row": 1128,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00609",
+      "corrupted": "CUST-00609-1"
+    },
+    {
+      "row": 1129,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00648",
+      "corrupted": "CUST-00648X"
+    },
+    {
+      "row": 1130,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00940",
+      "corrupted": "CUST-00940X"
+    },
+    {
+      "row": 1131,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00920",
+      "corrupted": "CUST-00920-1"
+    },
+    {
+      "row": 1132,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00578",
+      "corrupted": "CUST-00578X"
+    },
+    {
+      "row": 1133,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00225",
+      "corrupted": "CUST-00225X"
+    },
+    {
+      "row": 1134,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00035",
+      "corrupted": "CUST-00035X"
+    },
+    {
+      "row": 1135,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00041",
+      "corrupted": "CUST-00041-1"
+    },
+    {
+      "row": 1136,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00329",
+      "corrupted": "CUST-00329-1"
+    },
+    {
+      "row": 1137,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00586",
+      "corrupted": "CUST-00586-1"
+    },
+    {
+      "row": 1138,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00704",
+      "corrupted": "CUST-00704-1"
+    },
+    {
+      "row": 1139,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00776",
+      "corrupted": "CUST-00776X"
+    },
+    {
+      "row": 1140,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00352",
+      "corrupted": "CUST-00352-1"
+    },
+    {
+      "row": 1141,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00598",
+      "corrupted": "CUST-00598-1"
+    },
+    {
+      "row": 1142,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00389",
+      "corrupted": "CUST-00389_D"
+    },
+    {
+      "row": 1143,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00697",
+      "corrupted": "CUST-00697_D"
+    },
+    {
+      "row": 1144,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00980",
+      "corrupted": "CUST-00980-1"
+    },
+    {
+      "row": 1145,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00500",
+      "corrupted": "CUST-00500_D"
+    },
+    {
+      "row": 1146,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00268",
+      "corrupted": "CUST-00268X"
+    },
+    {
+      "row": 1147,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00191",
+      "corrupted": "CUST-00191_D"
+    },
+    {
+      "row": 1148,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00276",
+      "corrupted": "CUST-00276_D"
+    },
+    {
+      "row": 1149,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00654",
+      "corrupted": "CUST-00654-1"
+    },
+    {
+      "row": 1150,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00216",
+      "corrupted": "CUST-00216-1"
+    },
+    {
+      "row": 1151,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00522",
+      "corrupted": "CUST-00522-1"
+    },
+    {
+      "row": 1152,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00869",
+      "corrupted": "CUST-00869_D"
+    },
+    {
+      "row": 1153,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00079",
+      "corrupted": "CUST-00079X"
+    },
+    {
+      "row": 1154,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00827",
+      "corrupted": "CUST-00827-1"
+    },
+    {
+      "row": 1155,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00026",
+      "corrupted": "CUST-00026-1"
+    },
+    {
+      "row": 1156,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00044",
+      "corrupted": "CUST-00044X"
+    },
+    {
+      "row": 1157,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00742",
+      "corrupted": "CUST-00742-1"
+    },
+    {
+      "row": 1158,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00739",
+      "corrupted": "CUST-00739_D"
+    },
+    {
+      "row": 1159,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00298",
+      "corrupted": "CUST-00298_D"
+    },
+    {
+      "row": 1160,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00722",
+      "corrupted": "CUST-00722-1"
+    },
+    {
+      "row": 1161,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00651",
+      "corrupted": "CUST-00651X"
+    },
+    {
+      "row": 1162,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00606",
+      "corrupted": "CUST-00606-1"
+    },
+    {
+      "row": 1163,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00502",
+      "corrupted": "CUST-00502-1"
+    },
+    {
+      "row": 1164,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00443",
+      "corrupted": "CUST-00443-1"
+    },
+    {
+      "row": 1165,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00959",
+      "corrupted": "CUST-00959X"
+    },
+    {
+      "row": 1166,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00677",
+      "corrupted": "CUST-00677X"
+    },
+    {
+      "row": 1167,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00645",
+      "corrupted": "CUST-00645_D"
+    },
+    {
+      "row": 1168,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00261",
+      "corrupted": "CUST-00261_D"
+    },
+    {
+      "row": 1169,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "",
+      "corrupted": ""
+    },
+    {
+      "row": 1170,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00807",
+      "corrupted": "CUST-00807-1"
+    },
+    {
+      "row": 1171,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00691",
+      "corrupted": "CUST-00691-1"
+    },
+    {
+      "row": 1172,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00784",
+      "corrupted": "CUST-00784X"
+    },
+    {
+      "row": 1173,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00853",
+      "corrupted": "CUST-00853_D"
+    },
+    {
+      "row": 1174,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00888",
+      "corrupted": "CUST-00888-1"
+    },
+    {
+      "row": 1175,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00837",
+      "corrupted": "CUST-00837-1"
+    },
+    {
+      "row": 1176,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00545",
+      "corrupted": "CUST-00545-1"
+    },
+    {
+      "row": 1177,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00326",
+      "corrupted": "CUST-00326-1"
+    },
+    {
+      "row": 1178,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00194",
+      "corrupted": "CUST-00194-1"
+    },
+    {
+      "row": 1179,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00198",
+      "corrupted": "CUST-00198X"
+    },
+    {
+      "row": 1180,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00046",
+      "corrupted": "CUST-00046_D"
+    },
+    {
+      "row": 1181,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00873",
+      "corrupted": "CUST-00873X"
+    },
+    {
+      "row": 1182,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00016",
+      "corrupted": "CUST-00016_D"
+    },
+    {
+      "row": 1183,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00955",
+      "corrupted": "CUST-00955_D"
+    },
+    {
+      "row": 1184,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00288",
+      "corrupted": "CUST-00288_D"
+    },
+    {
+      "row": 1185,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00510",
+      "corrupted": "CUST-00510X"
+    },
+    {
+      "row": 1186,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00028",
+      "corrupted": "CUST-00028_D"
+    },
+    {
+      "row": 1187,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00385",
+      "corrupted": "CUST-00385X"
+    },
+    {
+      "row": 1188,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00519",
+      "corrupted": "CUST-00519-1"
+    },
+    {
+      "row": 1189,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00969",
+      "corrupted": "CUST-00969_D"
+    },
+    {
+      "row": 1190,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00197",
+      "corrupted": "CUST-00197-1"
+    },
+    {
+      "row": 1191,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00132",
+      "corrupted": "CUST-00132X"
+    },
+    {
+      "row": 1192,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00944",
+      "corrupted": "CUST-00944_D"
+    },
+    {
+      "row": 1193,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00510",
+      "corrupted": "CUST-00510-1"
+    },
+    {
+      "row": 1194,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00529",
+      "corrupted": "CUST-00529_D"
+    },
+    {
+      "row": 1195,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00902",
+      "corrupted": "CUST-00902X"
+    },
+    {
+      "row": 1196,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00473",
+      "corrupted": "CUST-00473X"
+    },
+    {
+      "row": 1197,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00462",
+      "corrupted": "CUST-00462-1"
+    },
+    {
+      "row": 1198,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00444",
+      "corrupted": "CUST-00444X"
+    },
+    {
+      "row": 1199,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00249",
+      "corrupted": "CUST-00249-1"
+    },
+    {
+      "row": 1200,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00282",
+      "corrupted": "CUST-00282-1"
+    },
+    {
+      "row": 1201,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00376",
+      "corrupted": "CUST-00376X"
+    },
+    {
+      "row": 1202,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00068",
+      "corrupted": "CUST-00068_D"
+    },
+    {
+      "row": 1203,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00191",
+      "corrupted": "CUST-00191X"
+    },
+    {
+      "row": 1204,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00892",
+      "corrupted": "CUST-00892X"
+    },
+    {
+      "row": 1205,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00129",
+      "corrupted": "CUST-00129-1"
+    },
+    {
+      "row": 1206,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00373",
+      "corrupted": "CUST-00373_D"
+    },
+    {
+      "row": 1207,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00980",
+      "corrupted": "CUST-00980_D"
+    },
+    {
+      "row": 1208,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00533",
+      "corrupted": "CUST-00533-1"
+    },
+    {
+      "row": 1209,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00677",
+      "corrupted": "CUST-00677X"
+    },
+    {
+      "row": 1210,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00303",
+      "corrupted": "CUST-00303X"
+    },
+    {
+      "row": 1211,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00673",
+      "corrupted": "CUST-00673_D"
+    },
+    {
+      "row": 1212,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00948",
+      "corrupted": "CUST-00948_D"
+    },
+    {
+      "row": 1213,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00258",
+      "corrupted": "CUST-00258X"
+    },
+    {
+      "row": 1214,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00303",
+      "corrupted": "CUST-00303-1"
+    },
+    {
+      "row": 1215,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00584",
+      "corrupted": "CUST-00584X"
+    },
+    {
+      "row": 1216,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00087",
+      "corrupted": "CUST-00087X"
+    },
+    {
+      "row": 1217,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00519",
+      "corrupted": "CUST-00519-1"
+    },
+    {
+      "row": 1218,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00591",
+      "corrupted": "CUST-00591-1"
+    },
+    {
+      "row": 1219,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00443",
+      "corrupted": "CUST-00443-1"
+    },
+    {
+      "row": 1220,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00759",
+      "corrupted": "CUST-00759X"
+    },
+    {
+      "row": 1221,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00147",
+      "corrupted": "CUST-00147X"
+    },
+    {
+      "row": 1222,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00269",
+      "corrupted": "CUST-00269X"
+    },
+    {
+      "row": 1223,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00147",
+      "corrupted": "CUST-00147_D"
+    },
+    {
+      "row": 1224,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00183",
+      "corrupted": "CUST-00183-1"
+    },
+    {
+      "row": 1225,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00291",
+      "corrupted": "CUST-00291-1"
+    },
+    {
+      "row": 1226,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00180",
+      "corrupted": "CUST-00180X"
+    },
+    {
+      "row": 1227,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00920",
+      "corrupted": "CUST-00920-1"
+    },
+    {
+      "row": 1228,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00872",
+      "corrupted": "CUST-00872-1"
+    },
+    {
+      "row": 1229,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00917",
+      "corrupted": "CUST-00917_D"
+    },
+    {
+      "row": 1230,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00058",
+      "corrupted": "CUST-00058X"
+    },
+    {
+      "row": 1231,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00957",
+      "corrupted": "CUST-00957-1"
+    },
+    {
+      "row": 1232,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00787",
+      "corrupted": "CUST-00787-1"
+    },
+    {
+      "row": 1233,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00702",
+      "corrupted": "CUST-00702-1"
+    },
+    {
+      "row": 1234,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00013",
+      "corrupted": "CUST-00013_D"
+    },
+    {
+      "row": 1235,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00336",
+      "corrupted": "CUST-00336-1"
+    },
+    {
+      "row": 1236,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00265",
+      "corrupted": "CUST-00265X"
+    },
+    {
+      "row": 1237,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00377",
+      "corrupted": "CUST-00377X"
+    },
+    {
+      "row": 1238,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00122",
+      "corrupted": "CUST-00122_D"
+    },
+    {
+      "row": 1239,
+      "col": "customer_id",
+      "type": "T4_duplicate",
+      "original": "CUST-00834",
+      "corrupted": "CUST-00834-1"
+    },
+    {
+      "row": 155,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-23",
+      "corrupted": "2026-12-12"
+    },
+    {
+      "row": 72,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-03-08",
+      "corrupted": "2027-03-08"
+    },
+    {
+      "row": 49,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-07-21",
+      "corrupted": "2026-04-18"
+    },
+    {
+      "row": 740,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-19",
+      "corrupted": "2026-10-28"
+    },
+    {
+      "row": 266,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-05-13",
+      "corrupted": "2027-06-23"
+    },
+    {
+      "row": 246,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-06-01",
+      "corrupted": "2024-07-14"
+    },
+    {
+      "row": 480,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-08-08",
+      "corrupted": "2025-11-22"
+    },
+    {
+      "row": 495,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-08-10",
+      "corrupted": "2027-06-12"
+    },
+    {
+      "row": 430,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-02-06",
+      "corrupted": "2025-09-30"
+    },
+    {
+      "row": 409,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-03-10",
+      "corrupted": "2026-11-25"
+    },
+    {
+      "row": 837,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-27",
+      "corrupted": "2026-12-17"
+    },
+    {
+      "row": 353,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-06",
+      "corrupted": "2027-07-02"
+    },
+    {
+      "row": 550,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-16",
+      "corrupted": "2026-07-01"
+    },
+    {
+      "row": 159,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-07",
+      "corrupted": "2024-08-02"
+    },
+    {
+      "row": 828,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-13",
+      "corrupted": "2024-11-02"
+    },
+    {
+      "row": 798,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-25",
+      "corrupted": "2027-06-01"
+    },
+    {
+      "row": 866,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-09-04",
+      "corrupted": "2025-12-20"
+    },
+    {
+      "row": 733,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-22",
+      "corrupted": "2025-01-08"
+    },
+    {
+      "row": 515,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-04-17",
+      "corrupted": "2023-12-21"
+    },
+    {
+      "row": 806,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-02-22",
+      "corrupted": "2025-08-25"
+    },
+    {
+      "row": 317,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-19",
+      "corrupted": "2026-08-31"
+    },
+    {
+      "row": 543,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-11",
+      "corrupted": "2027-05-07"
+    },
+    {
+      "row": 957,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-01-03",
+      "corrupted": "2026-04-10"
+    },
+    {
+      "row": 627,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-04",
+      "corrupted": "2026-10-27"
+    },
+    {
+      "row": 450,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-06-09",
+      "corrupted": "2026-11-21"
+    },
+    {
+      "row": 576,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-07",
+      "corrupted": "2027-06-28"
+    },
+    {
+      "row": 680,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-09-03",
+      "corrupted": "2026-02-09"
+    },
+    {
+      "row": 320,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-30",
+      "corrupted": "2025-12-22"
+    },
+    {
+      "row": 965,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-01-01",
+      "corrupted": "2026-07-04"
+    },
+    {
+      "row": 580,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-09-25",
+      "corrupted": "2026-07-06"
+    },
+    {
+      "row": 618,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-11-13",
+      "corrupted": "2026-09-20"
+    },
+    {
+      "row": 21,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-02-07",
+      "corrupted": "2026-08-10"
+    },
+    {
+      "row": 767,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-09-09",
+      "corrupted": "2025-10-25"
+    },
+    {
+      "row": 553,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-03-21",
+      "corrupted": "2027-05-22"
+    },
+    {
+      "row": 551,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-01-28",
+      "corrupted": "2024-12-07"
+    },
+    {
+      "row": 830,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-12",
+      "corrupted": "2027-05-17"
+    },
+    {
+      "row": 342,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-06-27",
+      "corrupted": "2027-07-01"
+    },
+    {
+      "row": 518,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-01-09",
+      "corrupted": "2024-11-19"
+    },
+    {
+      "row": 566,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-06-03",
+      "corrupted": "2026-09-15"
+    },
+    {
+      "row": 765,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-07-16",
+      "corrupted": "2025-08-18"
+    },
+    {
+      "row": 59,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-12-29",
+      "corrupted": "2027-02-12"
+    },
+    {
+      "row": 999,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-26",
+      "corrupted": "2027-02-13"
+    },
+    {
+      "row": 7,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-12-13",
+      "corrupted": "2026-01-16"
+    },
+    {
+      "row": 976,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-03-23",
+      "corrupted": "2025-06-15"
+    },
+    {
+      "row": 570,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-19",
+      "corrupted": "2023-09-06"
+    },
+    {
+      "row": 313,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-01-13",
+      "corrupted": "2026-02-09"
+    },
+    {
+      "row": 643,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-20",
+      "corrupted": "2027-03-15"
+    },
+    {
+      "row": 100,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-02-11",
+      "corrupted": "2026-05-11"
+    },
+    {
+      "row": 782,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-04-14",
+      "corrupted": "2025-11-30"
+    },
+    {
+      "row": 621,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-14",
+      "corrupted": "2027-01-09"
+    },
+    {
+      "row": 14,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-04-23",
+      "corrupted": "2024-10-17"
+    },
+    {
+      "row": 785,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-09-05",
+      "corrupted": "2026-10-15"
+    },
+    {
+      "row": 276,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-08-05",
+      "corrupted": "2027-01-30"
+    },
+    {
+      "row": 179,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-03-15",
+      "corrupted": "2026-06-28"
+    },
+    {
+      "row": 291,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-06-15",
+      "corrupted": "2026-10-09"
+    },
+    {
+      "row": 200,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-03-04",
+      "corrupted": "2027-03-14"
+    },
+    {
+      "row": 55,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-06-17",
+      "corrupted": "2027-06-21"
+    },
+    {
+      "row": 156,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-08-22",
+      "corrupted": "2026-05-31"
+    },
+    {
+      "row": 692,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-09-11",
+      "corrupted": "2027-03-30"
+    },
+    {
+      "row": 568,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-05",
+      "corrupted": "2026-11-25"
+    },
+    {
+      "row": 426,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-04-04",
+      "corrupted": "2026-03-06"
+    },
+    {
+      "row": 542,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-12-11",
+      "corrupted": "2024-04-12"
+    },
+    {
+      "row": 898,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-05-06",
+      "corrupted": "2027-05-15"
+    },
+    {
+      "row": 829,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-04-06",
+      "corrupted": "2025-06-26"
+    },
+    {
+      "row": 843,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-04-14",
+      "corrupted": "2024-10-08"
+    },
+    {
+      "row": 303,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-04-13",
+      "corrupted": "2026-12-15"
+    },
+    {
+      "row": 102,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-11-14",
+      "corrupted": "2024-06-10"
+    },
+    {
+      "row": 472,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-09-14",
+      "corrupted": "2026-11-30"
+    },
+    {
+      "row": 53,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-03",
+      "corrupted": "2022-10-10"
+    },
+    {
+      "row": 13,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-09-08",
+      "corrupted": "2026-07-27"
+    },
+    {
+      "row": 987,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-04-27",
+      "corrupted": "2027-05-31"
+    },
+    {
+      "row": 673,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-05-15",
+      "corrupted": "2025-03-05"
+    },
+    {
+      "row": 694,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-09-20",
+      "corrupted": "2026-03-23"
+    },
+    {
+      "row": 241,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-03-30",
+      "corrupted": "2026-08-04"
+    },
+    {
+      "row": 333,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-05-26",
+      "corrupted": "2027-06-13"
+    },
+    {
+      "row": 280,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-07-04",
+      "corrupted": "2027-02-16"
+    },
+    {
+      "row": 110,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-12-16",
+      "corrupted": "2025-11-12"
+    },
+    {
+      "row": 386,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-08-08",
+      "corrupted": "2025-07-27"
+    },
+    {
+      "row": 302,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-05-05",
+      "corrupted": "2026-08-16"
+    },
+    {
+      "row": 505,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-28",
+      "corrupted": "2026-10-14"
+    },
+    {
+      "row": 942,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-28",
+      "corrupted": "2027-02-21"
+    },
+    {
+      "row": 589,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-08-27",
+      "corrupted": "2027-06-20"
+    },
+    {
+      "row": 919,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-05-28",
+      "corrupted": "2027-02-02"
+    },
+    {
+      "row": 501,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-05-09",
+      "corrupted": "2023-05-22"
+    },
+    {
+      "row": 371,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-10-20",
+      "corrupted": "2027-05-15"
+    },
+    {
+      "row": 456,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-01-22",
+      "corrupted": "2026-04-27"
+    },
+    {
+      "row": 322,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-04-15",
+      "corrupted": "2026-12-22"
+    },
+    {
+      "row": 127,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-05-21",
+      "corrupted": "2023-05-26"
+    },
+    {
+      "row": 351,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-10-01",
+      "corrupted": "2025-12-14"
+    },
+    {
+      "row": 777,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-07-12",
+      "corrupted": "2025-12-20"
+    },
+    {
+      "row": 461,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-02",
+      "corrupted": "2027-05-27"
+    },
+    {
+      "row": 747,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-02-10",
+      "corrupted": "2025-03-14"
+    },
+    {
+      "row": 536,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-03-22",
+      "corrupted": "2026-10-10"
+    },
+    {
+      "row": 63,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-05-08",
+      "corrupted": "2025-11-28"
+    },
+    {
+      "row": 288,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-05-18",
+      "corrupted": "2027-05-21"
+    },
+    {
+      "row": 699,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-01-25",
+      "corrupted": "2024-08-31"
+    },
+    {
+      "row": 62,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-21",
+      "corrupted": "2026-03-07"
+    },
+    {
+      "row": 874,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-05",
+      "corrupted": "2027-06-18"
+    },
+    {
+      "row": 116,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-04-12",
+      "corrupted": "2024-12-12"
+    },
+    {
+      "row": 547,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-10-09",
+      "corrupted": "2024-09-07"
+    },
+    {
+      "row": 206,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-01-03",
+      "corrupted": "2024-03-03"
+    },
+    {
+      "row": 403,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-01-08",
+      "corrupted": "2023-01-18"
+    },
+    {
+      "row": 225,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-01-10",
+      "corrupted": "2026-12-07"
+    },
+    {
+      "row": 186,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-12-02",
+      "corrupted": "2027-04-25"
+    },
+    {
+      "row": 379,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-04-22",
+      "corrupted": "2026-11-06"
+    },
+    {
+      "row": 602,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-04-12",
+      "corrupted": "2024-05-27"
+    },
+    {
+      "row": 922,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-08",
+      "corrupted": "2026-10-24"
+    },
+    {
+      "row": 234,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-05-11",
+      "corrupted": "2024-11-20"
+    },
+    {
+      "row": 451,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-23",
+      "corrupted": "2027-06-17"
+    },
+    {
+      "row": 796,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-11-08",
+      "corrupted": "2026-07-02"
+    },
+    {
+      "row": 523,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-06-20",
+      "corrupted": "2027-07-02"
+    },
+    {
+      "row": 76,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-05-02",
+      "corrupted": "2023-06-21"
+    },
+    {
+      "row": 132,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-07",
+      "corrupted": "2027-05-29"
+    },
+    {
+      "row": 91,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-02",
+      "corrupted": "2024-11-07"
+    },
+    {
+      "row": 329,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-16",
+      "corrupted": "2026-08-14"
+    },
+    {
+      "row": 170,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-12-06",
+      "corrupted": "2027-03-28"
+    },
+    {
+      "row": 668,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-20",
+      "corrupted": "2027-06-28"
+    },
+    {
+      "row": 424,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-04-26",
+      "corrupted": "2027-02-21"
+    },
+    {
+      "row": 92,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-12-30",
+      "corrupted": "2027-06-29"
+    },
+    {
+      "row": 831,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-16",
+      "corrupted": "2026-09-21"
+    },
+    {
+      "row": 710,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-06",
+      "corrupted": "2026-07-29"
+    },
+    {
+      "row": 728,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-08-07",
+      "corrupted": "2023-09-25"
+    },
+    {
+      "row": 719,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-05-08",
+      "corrupted": "2024-05-25"
+    },
+    {
+      "row": 309,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-07-05",
+      "corrupted": "2026-12-22"
+    },
+    {
+      "row": 595,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-07-03",
+      "corrupted": "2027-04-17"
+    },
+    {
+      "row": 924,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-03-01",
+      "corrupted": "2027-05-18"
+    },
+    {
+      "row": 360,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-14",
+      "corrupted": "2026-07-08"
+    },
+    {
+      "row": 182,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-12-16",
+      "corrupted": "2027-02-06"
+    },
+    {
+      "row": 104,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-11-23",
+      "corrupted": "2025-09-24"
+    },
+    {
+      "row": 720,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-10-19",
+      "corrupted": "2026-02-14"
+    },
+    {
+      "row": 633,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-06-11",
+      "corrupted": "2027-07-04"
+    },
+    {
+      "row": 612,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-06",
+      "corrupted": "2027-03-05"
+    },
+    {
+      "row": 68,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-07-17",
+      "corrupted": "2027-06-25"
+    },
+    {
+      "row": 596,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-03-11",
+      "corrupted": "2025-02-22"
+    },
+    {
+      "row": 324,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-29",
+      "corrupted": "2024-05-11"
+    },
+    {
+      "row": 422,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-01",
+      "corrupted": "2027-06-17"
+    },
+    {
+      "row": 164,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-01-26",
+      "corrupted": "2027-06-09"
+    },
+    {
+      "row": 724,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-11-13",
+      "corrupted": "2027-06-13"
+    },
+    {
+      "row": 734,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-02-05",
+      "corrupted": "2027-06-14"
+    },
+    {
+      "row": 82,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-01-29",
+      "corrupted": "2027-06-07"
+    },
+    {
+      "row": 512,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-21",
+      "corrupted": "2027-03-03"
+    },
+    {
+      "row": 301,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-02-16",
+      "corrupted": "2026-07-10"
+    },
+    {
+      "row": 160,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-11-17",
+      "corrupted": "2026-11-08"
+    },
+    {
+      "row": 481,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-12-07",
+      "corrupted": "2027-03-18"
+    },
+    {
+      "row": 545,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-13",
+      "corrupted": "2027-03-15"
+    },
+    {
+      "row": 389,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-12-13",
+      "corrupted": "2025-01-16"
+    },
+    {
+      "row": 778,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-11-26",
+      "corrupted": "2026-06-17"
+    },
+    {
+      "row": 741,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-06-01",
+      "corrupted": "2023-12-23"
+    },
+    {
+      "row": 20,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-07-11",
+      "corrupted": "2026-07-28"
+    },
+    {
+      "row": 655,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-13",
+      "corrupted": "2027-02-17"
+    },
+    {
+      "row": 947,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-08-16",
+      "corrupted": "2027-06-12"
+    },
+    {
+      "row": 848,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-04-09",
+      "corrupted": "2027-06-25"
+    },
+    {
+      "row": 955,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-06-27",
+      "corrupted": "2026-04-21"
+    },
+    {
+      "row": 783,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-01-02",
+      "corrupted": "2027-03-11"
+    },
+    {
+      "row": 40,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-10-03",
+      "corrupted": "2027-04-11"
+    },
+    {
+      "row": 80,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-15",
+      "corrupted": "2025-11-29"
+    },
+    {
+      "row": 521,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-13",
+      "corrupted": "2026-02-21"
+    },
+    {
+      "row": 307,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-03-05",
+      "corrupted": "2023-11-23"
+    },
+    {
+      "row": 150,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-02",
+      "corrupted": "2026-10-02"
+    },
+    {
+      "row": 657,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-03-09",
+      "corrupted": "2027-04-03"
+    },
+    {
+      "row": 804,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-30",
+      "corrupted": "2027-06-22"
+    },
+    {
+      "row": 528,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-16",
+      "corrupted": "2027-02-05"
+    },
+    {
+      "row": 717,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-11",
+      "corrupted": "2027-03-04"
+    },
+    {
+      "row": 28,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-11-24",
+      "corrupted": "2025-02-27"
+    },
+    {
+      "row": 380,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-27",
+      "corrupted": "2027-05-05"
+    },
+    {
+      "row": 459,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-09-24",
+      "corrupted": "2026-02-19"
+    },
+    {
+      "row": 124,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-09",
+      "corrupted": "2027-03-22"
+    },
+    {
+      "row": 905,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-05-14",
+      "corrupted": "2024-11-09"
+    },
+    {
+      "row": 577,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-11-16",
+      "corrupted": "2024-08-15"
+    },
+    {
+      "row": 435,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-02-23",
+      "corrupted": "2025-02-05"
+    },
+    {
+      "row": 909,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-04-30",
+      "corrupted": "2027-06-04"
+    },
+    {
+      "row": 141,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-12-31",
+      "corrupted": "2027-05-25"
+    },
+    {
+      "row": 217,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-12-15",
+      "corrupted": "2025-01-03"
+    },
+    {
+      "row": 586,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-12-01",
+      "corrupted": "2026-10-09"
+    },
+    {
+      "row": 56,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-12-02",
+      "corrupted": "2025-04-10"
+    },
+    {
+      "row": 791,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-02",
+      "corrupted": "2027-03-05"
+    },
+    {
+      "row": 449,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-08-23",
+      "corrupted": "2027-06-20"
+    },
+    {
+      "row": 912,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-06-29",
+      "corrupted": "2025-03-20"
+    },
+    {
+      "row": 242,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-01-16",
+      "corrupted": "2027-02-27"
+    },
+    {
+      "row": 383,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-27",
+      "corrupted": "2025-03-15"
+    },
+    {
+      "row": 382,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-11-02",
+      "corrupted": "2025-10-10"
+    },
+    {
+      "row": 373,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-05-29",
+      "corrupted": "2027-04-03"
+    },
+    {
+      "row": 1,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-07-25",
+      "corrupted": "2025-10-22"
+    },
+    {
+      "row": 270,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-05-07",
+      "corrupted": "2026-01-01"
+    },
+    {
+      "row": 479,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-11-13",
+      "corrupted": "2025-11-21"
+    },
+    {
+      "row": 869,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-08-11",
+      "corrupted": "2024-07-22"
+    },
+    {
+      "row": 879,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-07-18",
+      "corrupted": "2023-09-09"
+    },
+    {
+      "row": 975,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-09-20",
+      "corrupted": "2025-11-11"
+    },
+    {
+      "row": 686,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-12-31",
+      "corrupted": "2023-05-30"
+    },
+    {
+      "row": 604,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-07-02",
+      "corrupted": "2025-04-03"
+    },
+    {
+      "row": 564,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-12-13",
+      "corrupted": "2025-07-06"
+    },
+    {
+      "row": 950,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-10-31",
+      "corrupted": "2024-10-20"
+    },
+    {
+      "row": 858,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-08-17",
+      "corrupted": "2027-06-20"
+    },
+    {
+      "row": 852,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-09-17",
+      "corrupted": "2025-11-06"
+    },
+    {
+      "row": 732,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-02",
+      "corrupted": "2027-02-28"
+    },
+    {
+      "row": 120,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-09-23",
+      "corrupted": "2027-06-01"
+    },
+    {
+      "row": 807,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-10-25",
+      "corrupted": "2027-04-25"
+    },
+    {
+      "row": 654,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-06-16",
+      "corrupted": "2027-06-26"
+    },
+    {
+      "row": 442,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-10-20",
+      "corrupted": "2026-09-20"
+    },
+    {
+      "row": 79,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-15",
+      "corrupted": "2027-03-03"
+    },
+    {
+      "row": 707,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-08-07",
+      "corrupted": "2026-04-30"
+    },
+    {
+      "row": 8,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-03-20",
+      "corrupted": "2026-07-14"
+    },
+    {
+      "row": 347,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2024-09-19",
+      "corrupted": "2027-03-22"
+    },
+    {
+      "row": 954,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-09-23",
+      "corrupted": "2024-07-04"
+    },
+    {
+      "row": 128,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-10-22",
+      "corrupted": "2025-06-03"
+    },
+    {
+      "row": 113,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-10-01",
+      "corrupted": "2026-01-06"
+    },
+    {
+      "row": 94,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-09-11",
+      "corrupted": "2026-03-30"
+    },
+    {
+      "row": 674,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-03-13",
+      "corrupted": "2026-12-11"
+    },
+    {
+      "row": 101,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-09-25",
+      "corrupted": "2027-05-16"
+    },
+    {
+      "row": 144,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-02-22",
+      "corrupted": "2025-09-24"
+    },
+    {
+      "row": 648,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-02-12",
+      "corrupted": "2027-05-27"
+    },
+    {
+      "row": 944,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-12-06",
+      "corrupted": "2027-02-27"
+    },
+    {
+      "row": 845,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2022-06-24",
+      "corrupted": "2026-03-19"
+    },
+    {
+      "row": 61,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2023-08-27",
+      "corrupted": "2024-11-14"
+    },
+    {
+      "row": 327,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-16",
+      "corrupted": "2026-07-18"
+    },
+    {
+      "row": 968,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-20",
+      "corrupted": "2025-11-26"
+    },
+    {
+      "row": 972,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-15",
+      "corrupted": "2026-11-17"
+    },
+    {
+      "row": 167,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-11-14",
+      "corrupted": "2027-05-23"
+    },
+    {
+      "row": 534,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-03-30",
+      "corrupted": "2027-05-10"
+    },
+    {
+      "row": 757,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-07-24",
+      "corrupted": "2026-06-28"
+    },
+    {
+      "row": 370,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-10-18",
+      "corrupted": "2024-04-20"
+    },
+    {
+      "row": 341,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-11-09",
+      "corrupted": "2026-08-07"
+    },
+    {
+      "row": 143,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-27",
+      "corrupted": "2026-09-16"
+    },
+    {
+      "row": 939,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-06-17",
+      "corrupted": "2027-04-18"
+    },
+    {
+      "row": 749,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2025-04-06",
+      "corrupted": "2026-10-25"
+    },
+    {
+      "row": 789,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2026-03-18",
+      "corrupted": "2027-04-08"
+    },
+    {
+      "row": 907,
+      "col": "signup_date",
+      "type": "T5_crossfield",
+      "original": "2021-09-16",
+      "corrupted": "2023-03-25"
+    }
+  ]
+}
