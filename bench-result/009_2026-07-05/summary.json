@@ -1,0 +1,23 @@
+{
+  "round": 9,
+  "date": "2026-07-05",
+  "recorded_at": "2026-07-05T20:34:58.526519",
+  "experiment": "GEMv1",
+  "dataset": "runs/injected/S1_sample120_r10_s1.json",
+  "configs": "A3",
+  "reps": 1,
+  "error_rate": 0.1,
+  "seed": 1,
+  "runs": [
+    {
+      "run_id": "GEMv1-S1_sample120_r10_s1-r10-A3-s1-rep1",
+      "config": "A3",
+      "status": "ok",
+      "f1": 0.3649,
+      "precision": 0.3041,
+      "recall": 0.4561,
+      "latency_s": 11.2,
+      "usd": 0.004366
+    }
+  ]
+}
