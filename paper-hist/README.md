@@ -18,3 +18,4 @@
 | 2026-07-05 | `2026-07-05_ruleset-v2-freeze-prep.md` | 모델 고정·DQ점수/비용 룰 v2·2A 강건통계 교체·스모크 결과 (동결 준비) |
 | 2026-07-05 | `2026-07-05_llm-backend-hybrid.md` | 2B 하이브리드 백엔드(cli/api) 구현·검증 — API는 크레딧 충전 대기, partial 상태 도입 |
 | 2026-07-05 | `2026-07-05_schema-v3-slim.md` | 2B 응답 스키마 v3(에코 제거) — F1 동등 검증, E1 예산 ~$50-90 재추정, CLI thinking 계측 발견 |
+| 2026-07-05 | `2026-07-05_detector-model-change-gemini.md` | 계획 개정: Detector 모델 gemini-2.5-flash로 변경 (Anthropic 결제 불가) — 검증 대기 |

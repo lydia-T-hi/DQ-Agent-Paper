@@ -91,9 +91,13 @@ env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}
 ## 환경 변수 (.env)
 
 ```
-OPENAI_API_KEY=sk-...    # Stage 3A 활성화 시 필요 (--skip-openai 시 불필요)
+OPENAI_API_KEY=sk-...    # Stage 3A(Validator, gpt-4o) 활성화 시 필요 (--skip-openai 시 불필요)
+GOOGLE_API_KEY=AIza...   # Stage 2B api 백엔드(Detector, gemini-2.5-flash) — 본실험(E1/E2)용
 # ANTHROPIC_API_KEY는 설정하지 않는 것을 권장 (Claude CLI가 OAuth 사용)
 ```
+
+**Stage 2B 백엔드**: `--llm-backend cli`(기본, Claude CLI OAuth 무료 — 개발용) |
+`api`(Gemini, temperature=0 — 본실험용). 논문 비용 지표는 api 실측만 사용.
 
 ---
 

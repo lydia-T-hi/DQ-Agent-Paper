@@ -21,11 +21,18 @@
       "output_per_mtok": 10.00,
       "cache_write_multiplier": 0.0,
       "cache_read_multiplier": 0.50,
-      "source": "OpenAI 공시 (모델 지식 기준 — 게재 전 재확인 필요)"
+      "source": "OpenAI 공시 (웹 검색 2026-07-05 재확인: legacy $2.5/$10)"
+    },
+    "gemini-2.5-flash": {
+      "input_per_mtok": 0.30,
+      "output_per_mtok": 2.50,
+      "cache_write_multiplier": 0.0,
+      "cache_read_multiplier": 0.10,
+      "source": "Google 공시 (웹 검색 2026-07-05 — 무료 티어 사용 시에도 공시 단가로 환산 계상)"
     }
   },
   "stage_default_model": {
-    "stage2b": "claude-sonnet-4-6",
+    "stage2b": "gemini-2.5-flash",
     "stage3a": "gpt-4o"
   }
 }
